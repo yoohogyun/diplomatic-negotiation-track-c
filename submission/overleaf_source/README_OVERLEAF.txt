@@ -10,7 +10,7 @@ Overleaf 공동작업용 최소 프로젝트
 1. authors.tex: 실제 이름/소속/학번. pdfLaTeX에서는 영문 표기를 사용합니다.
 2. main.tex 2행: 실명 과제 제출 시 [review]를 [final]로 변경합니다. 익명 검토 초안은 review를 유지합니다.
 3. 역할·실제 팀원 재현 기록은 별도 제출 폴더의 TEAM_RECORD.txt에 작성합니다. 논문 본문에 억지로 넣을 필요는 없습니다.
-4. 이름/내용 수정 후 결론까지4쪽인지 다시 확인합니다. 원본 ACL 여백/폰트를 줄이지 마세요.
+4. 이름/내용 수정 후 Limitations와 Ethical Considerations 끝까지4쪽인지 다시 확인합니다. References는5쪽에서 시작합니다. 원본 ACL 여백/폰트를 줄이지 마세요.
 
 편집 위치
 main.tex: 제목, 초록, Introduction, Related Work
@@ -25,7 +25,8 @@ figures/: 컴파일용 벡터 PDF 그림5개
 
 티저 수정: 별도 제공 teaser_editable_v2.pptx를 PowerPoint에서 편집한 후 PDF로 내보내 figures/teaser.pdf만 교체합니다.
 논문용 수치 수정은 반드시 저장 실험 결과와 대조하세요.
-현재 출력: 본문4쪽 + 한계·윤리·참고문헌2쪽 + 부록2쪽 = 전체8쪽.
+현재 출력: 한계·윤리 포함 References 이전 전체4쪽 + 참고문헌1쪽 + 부록2쪽 = 전체7쪽.
+티저는 제목·저자 아래, Abstract 위에 전폭으로 배치됩니다. main.tex의 paperteaser가 ACL 제목 블록에 그림을 추가합니다.
 긴 상세 설명은 GitHub paper/supplementary_appendix_full.tex에 별도 보존했습니다.
 
 공식 사용법

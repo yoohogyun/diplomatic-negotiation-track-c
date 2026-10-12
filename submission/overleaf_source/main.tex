@@ -15,19 +15,26 @@
 \input{authors}
 
 \usepackage{capt-of}
+% Add a non-floating, full-width teaser to ACL's title block.
+\newcommand{\paperteaser}{%
+  \begin{minipage}{\textwidth}
+  \centering
+  \captionsetup{hypcap=false}
+  \includegraphics[width=\textwidth]{figures/teaser.pdf}
+  \captionof{figure}{Real diplomatic sources ground fixed Luna utterances. A public-belief planner or its distilled PPO policy selects actions under the same language execution. Responses update public beliefs; distillation transfers planner supervision. Zero further model calls refers only to local strategy selection.}
+  \label{fig:teaser}
+  \end{minipage}\par\vspace{8pt}%
+}
 \begin{document}
+\makeatletter
+\let\acloriginalmaketitle\@maketitle
+\def\@maketitle{\acloriginalmaketitle\paperteaser}
+\makeatother
 \maketitle
 
 \begin{abstract}
 Can explicit strategic control improve negotiation with a lower-cost language model? We study a simulation grounded in 12 real diplomatic documents, holding GPT-5.6 Luna's generated utterances and their interpretations fixed across controllers. On 64 matched conditions, belief-state planning achieves net utility 0.533, compared with 0.514 for direct action selection by GPT-5.6 Sol with medium reasoning. Planner-distilled PPO reaches 0.475 without further model calls for strategy selection. Separate interventions attribute most of the learned policy's gain to signals and updated beliefs. Dialogue analysis connects these mechanisms to conditional offers and commitment wording. The results identify the benefits of explicit control under declared negotiation rules.
 \end{abstract}
-
-\begin{figure*}[t]
-\centering
-\includegraphics[width=\textwidth]{figures/teaser.pdf}
-\caption{Overview. (A) Real diplomatic sources provide context for a fixed set of Luna utterances and interpreted meanings. (B) A public-belief planner or its distilled PPO policy selects actions; observed responses update the public state. Distillation transfers planner supervision to the policy, while language stays fixed. (C) Matched utility with the same language execution. Zero further model calls refers only to local strategy selection.}
-\label{fig:teaser}
-\end{figure*}
 
 \section{Introduction}
 Large language model (LLM) agents create opportunities to negotiate on behalf of users \citep{yao2023react,bianchi2024negotiationarena}. They must pursue user goals while responding to parties with different interests and incomplete information. Existing benchmarks show that strategic choices affect outcomes \citep{abdelnabi2024stakeholders}. Repeated decisions also make inference cost relevant \citep{kapoor2024agents}, motivating systems that assign specialized roles to lower-cost models \citep{belcak2025small}.
@@ -36,7 +43,7 @@ Prior work separates strategy from language generation \citep{he-etal-2018-decou
 
 We construct a diplomatic negotiation simulation from 12 real documents across six event groups. The documents provide context and examples of reciprocal conditions; utilities, hidden opponent types, and responses are synthetic. GPT-5.6 Luna (Luna) generates and separately interprets 396 fixed utterances. We compare Random, Heuristic, Bandit, PPO, direct model decisions, an exact public-belief planner, and a policy distilled from that planner (Figure~\ref{fig:teaser}). The planner knows the simulation rules but never observes the hidden type.
 
-On 64 matched conditions, the planner achieves higher utility than direct action selection by GPT-5.6 Sol (Sol) with medium reasoning. Distilled PPO improves on base PPO and acts without further model calls for strategy selection. We then use interventions and matched dialogue traces to explain these results. This analysis distinguishes questions that reveal information from signals that change acceptance incentives, and examines whether actions preserve the conditions and commitments expressed in dialogue. Our contribution is a controlled comparison linking negotiation outcomes, strategic computation, and discourse meaning.
+On 64 matched conditions, the planner outperforms direct action selection by GPT-5.6 Sol (Sol) with medium reasoning. Distilled PPO improves on base PPO without further strategy-selection model calls. Interventions and dialogue traces distinguish information-seeking questions from incentive-changing signals and test whether actions preserve expressed commitments. Our contribution links negotiation outcomes, strategic computation, and discourse meaning under controlled language conditions.
 
 \section{Related Work}
 \paragraph{Negotiation agents.}
@@ -52,13 +59,12 @@ On 64 matched conditions, the planner achieves higher utility than direct action
 
 \input{discussion_conclusion}
 
-\clearpage
 \input{limitations}
 
 \input{ethics}
 
-% Current compiled draft; abstract and layout revised with the main-text budget.
-
+% User's submission budget includes Limitations and Ethics in the first four pages.
+\clearpage
 \bibliography{references}
 
 \clearpage

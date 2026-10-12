@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "paper_main_pages": 4,
-  "paper_total_pages": 8,
+  "paper_total_pages": 7,
   "source_zip_compiled_independently": true,
   "overleaf_service_itself_used": false,
   "experimental_results_changed": false,
@@ -24,5 +24,9 @@
     "62-example independent annotation study"
   ],
   "appendix_pages": 2,
-  "appendix_within_recommended_length": true
+  "appendix_within_recommended_length": true,
+  "pre_references_pages": 4,
+  "limitations_and_ethics_within_four_pages": true,
+  "teaser_page": 1,
+  "teaser_above_abstract": true
 }
