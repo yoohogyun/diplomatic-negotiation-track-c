@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-12",
+  "previous_count": 15,
+  "current_cited_count": 24,
+  "verification_scope": "Primary abstracts, citation metadata, and relevant PDF text; no uncited bibliography padding.",
+  "added": [
+    {
+      "key": "zhan2024survey",
+      "source": "https://aclanthology.org/2024.findings-eacl.136/",
+      "supports": "Negotiation dialogue scope; author Haffari uses the authoritative PDF spelling, correcting truncated web metadata."
+    },
+    {
+      "key": "lin2024decision",
+      "source": "https://aclanthology.org/2024.tacl-1.50/",
+      "supports": "Decision-oriented human–AI dialogue and goal-directed decision challenges."
+    },
+    {
+      "key": "chan2024negotiationtom",
+      "source": "https://aclanthology.org/2024.findings-emnlp.244/",
+      "supports": "Negotiation mental-state reasoning benchmark."
+    },
+    {
+      "key": "zhang2024trip",
+      "source": "https://aclanthology.org/2024.emnlp-main.26/",
+      "supports": "Strategic planning with diverse user simulation."
+    },
+    {
+      "key": "hakimov2026price",
+      "source": "https://aclanthology.org/2026.findings-eacl.27/",
+      "supports": "Reasoning performance and negotiation inference cost; uses published 2026 version."
+    },
+    {
+      "key": "gandhi2023strategic",
+      "source": "https://arxiv.org/abs/2305.19165",
+      "supports": "State/value/belief reasoning demonstrations; workshop venue checked against author publication list."
+    },
+    {
+      "key": "young2013pomdp",
+      "source": "https://mi.eng.cam.ac.uk/~sjy/papers/ygtw13.pdf",
+      "supports": "Explicit uncertainty and Bayesian belief-state dialogue management."
+    },
+    {
+      "key": "rusu2016distillation",
+      "source": "https://arxiv.org/abs/1511.06295",
+      "supports": "Transferring expert action values/policies to a smaller policy."
+    },
+    {
+      "key": "anthony2017expert",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2017/hash/d8e1344e27a5b08cdfd5d027d9b8d6de-Abstract.html",
+      "supports": "Planning and policy generalisation; conceptual lineage, not a claim to implement full iterative ExIt."
+    }
+  ]
+}

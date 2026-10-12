@@ -12,3 +12,5 @@ Submission audit revision: main text remains four pages; total twelve after Ethi
 Latest revision: appendix condensed to the recommended two pages; total eight pages, main text four. All six discourse cases and principal diagnostics retained. Extracted ZIP independently compiled.
 
 Latest user correction: References must start after a maximum of four pages including Limitations and Ethics. Achieved: pre-reference content4, References1, appendix2, total7. Full-width teaser now above Abstract on page1.
+
+Latest: references expanded from15 to24 and flow after Limitations without a page break. Separate Ethics removed at user request; model-assistance disclosure retained. Total7 pages, appendix2.

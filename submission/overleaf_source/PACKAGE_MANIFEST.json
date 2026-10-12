@@ -4,7 +4,7 @@
   "files": [
     {
       "path": "main.tex",
-      "sha256": "b0049d7a095615616d5f1acdb0a3fd09e3c9d4bdb544af7d7cc0f531b28f6e94"
+      "sha256": "52dcde15483308817a6f852ce73ce6daff2a95857326931f197bc8f64ff5c187"
     },
     {
       "path": "authors.tex",
@@ -12,7 +12,7 @@
     },
     {
       "path": "methods_results.tex",
-      "sha256": "66aea6c0535e535a2c4faeaedd2883402aee411854760bded40531e185895be8"
+      "sha256": "42054e2543d9c4cdbdabf85ff024d88e36e75d52d6da77aeb3c772e695f4d51f"
     },
     {
       "path": "discussion_conclusion.tex",
@@ -20,11 +20,7 @@
     },
     {
       "path": "limitations.tex",
-      "sha256": "8d84403461d4835066294c18fe6426e67a62d5644de15003bb658fe572f01011"
-    },
-    {
-      "path": "ethics.tex",
-      "sha256": "194d3abf70a6b7ec70b14e8b0b40de21a13f8113d6c22dd5369b694c4833207c"
+      "sha256": "e87a5d44ffd7b38514452dca38ec8f1ce86fe5650544e4ba38652682d9f36fd3"
     },
     {
       "path": "appendix_experiments.tex",
@@ -44,7 +40,7 @@
     },
     {
       "path": "references.bib",
-      "sha256": "d447fdcacf4cda5005becfac143a332e3bccea6120152a8c9563dcda0c5d13a5"
+      "sha256": "913308855d2e3663b6cfb06b3b7eb04cb25713ea62558a5e1fd7b35a788190e7"
     },
     {
       "path": "acl.sty",
@@ -76,7 +72,7 @@
     },
     {
       "path": "README_OVERLEAF.txt",
-      "sha256": "3b93bec083bf850af350c41697de80f7ed1cf02de159fd7a30b190e69f2d83ad"
+      "sha256": "ad96f517c80cf7e0de7c3e457ba42c67496bd9983fb1694dec763b95f563f603"
     }
   ]
 }

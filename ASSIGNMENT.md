@@ -13,7 +13,7 @@
 | 효용·비용·합의·결렬·길이·전이·학습 곡선 | `study_results/` 표, raw, training_logs, 그림 |
 | 최소 6개 에피소드의 담화 분석 | 본문 Figure 3 및 분석, Appendix B의 실제 합성 발화 인용을 포함한 6개 사례; Appendix C의 행동 전이 해석 |
 | GitHub 코드·자료·실행 절차 | 이 저장소와 오프라인 검증 명령; 비공개이므로 평가자 접근 권한 필요 |
-| Limitations·Ethics 포함 References 이전 4쪽, 편집 가능한 소스 | `paper/main.pdf`, `paper/*.tex`, Overleaf ZIP 완료. 저자 정보는 사용자가 기입 |
+| Limitations 포함 References 이전 4쪽, 편집 가능한 소스 | `paper/main.pdf`, `paper/*.tex`, Overleaf ZIP 완료. 저자 정보는 사용자가 기입 |
 | 실제 다른 팀원의 재현과 기여도 | `submission/TEAM_RECORD.txt`에 실제 수행 후 사용자가 기입. 자동 재현과 구별 |
 
 PPO가 1등일 필요는 없다. 고정 템플릿/캐시 언어 모듈과 Luna none도 허용된다. 계획기는 추가 비교이며 필수 4정책을 대체하지 않는다. 실제 학회 투고·게재가 과제 완료 조건은 아니다. 20턴 담화 검토는 권장이고, 우리가 만든 62개 라벨링 표는 추가 연구용이다.
