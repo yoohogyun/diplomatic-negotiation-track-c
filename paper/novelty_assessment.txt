@@ -1,0 +1,16 @@
+Novelty assessment, 2026-10-12
+
+Current assessment: limited empirical/diagnostic contribution; a strong COLING novelty claim is not yet established. Neither adding a planner to a language model nor improving a smaller model's negotiation is new. Using diplomatic context alone is insufficient.
+
+Closest newly verified prior work:
+Hua et al. 2026 SocialRL, arXiv:2608.13787, trains a 4B model across six negotiation domains and reports frontier-level results plus distillation. https://arxiv.org/abs/2608.13787
+Tabacof and Joglekar 2026, arXiv:2610.06204, studies RL-trained small negotiation sellers and inference about learning-rate/model-size effects. https://arxiv.org/abs/2610.06204
+Also retain He2018 and FAIR2022 CICERO as established architecture precedents. No claim of first work; this was a targeted search, not an exhaustive novelty proof.
+
+Defensible current contribution: compare controllers with a fixed interpreted language bank under a common diplomatic simulator; inspect strategy API use and exact-model knowledge; use ablations and matched traces to separate belief updating, costly signals and semantic commitment errors. Findings, not a novel algorithm.
+
+Critical weaknesses: the exact planner has known-rule advantage; learned PPO remains below Sol medium and barely exceeds heuristic on matched64; 44 style0 test action meanings match canonical templates, so existing utility does not prove Luna's necessity; only two evaluation event groups; generated language and synthetic payoffs are not real diplomacy outcomes.
+
+Highest-value future novelty evidence (NOT RUN): held-out diplomatic paraphrases/conditional changes with template control and actual semantic fidelity evaluation; environment-only model mismatch with fixed controller assumptions. No new paid experiment authorized or run by this writing task. A narrative change does not resolve these evidence gaps.
+
+Five English/Korean Introduction paragraphs drafted. Reference count 9. Main study/follow-up/matched cohorts remain distinct; numbers in paragraph4 refer only to matched64/style0/Luna bank. Paragraph5 interventions concern learned policy on the separate numerical follow-up; selected dialogue examples are illustrative, not human accuracy estimates. No overall cost reduction or general strong-model replacement claim.

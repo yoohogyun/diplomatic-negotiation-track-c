@@ -1,0 +1,89 @@
+\section{Method}
+
+\paragraph{Data and task.}
+
+We use 12 document contexts from six diplomatic event groups, including CMFA PressCon \citep{mochtak2021corpus} and Security Council discourse. Training covers the Korean Peninsula, South Sudan, and Kashmir (six contexts); development uses Gaza (two); testing uses Syria and Iran (four). Passages about ceasefires, reciprocal measures, and commitments guide synthetic bilateral negotiations. One party offers to maintain its measure for $x\in\{1,2,3\}$ weeks if the counterpart maintains its measure for $y\in\{1,2\}$ weeks. Durations, payoffs, types, and responses are researcher-defined.
+
+\paragraph{State, actions, and reward.}
+
+The agent has at most five decisions and cannot observe the counterpart's type, $\tau\in\{S,H\}$. It observes the offer, acceptance, commitments, costs, and belief $b_t=P(\tau=H)$. Eleven actions cover ambiguity, signaling, a private question, six conditional offers, ratification, and withdrawal. Questions provide noisy type cues; offer responses also reveal information. Ratification requires observed acceptance and own utility at least as high as the outside option.
+
+Specifically, an agreement gives $u_A=0.5y-0.18x$, and the counterpart accepts when $u_B=0.35x-c_\tau y+\delta z\geq0$, where $z$ records a signal and $c_\tau$ determines the cost of reciprocal measures. A signal therefore changes an incentive; a question changes information. For response likelihoods $L_H$ and $L_S$, the public belief becomes
+\begin{equation}
+ b_{t+1}=\frac{b_tL_H}{b_tL_H+(1-b_t)L_S}.
+\end{equation}
+Equal response likelihoods leave the belief unchanged. Step rewards are
+\begin{equation}
+ r_t=d_tu_{\mathrm{end}}-0.01-c^{\mathrm{act}}_t-0.005e_{t+1}^2,
+\end{equation}
+where $d_t$ marks termination, $e$ counts rejected offers, and $c^{\mathrm{act}}_t$ sums question, signal, rejection, reversal, and invalid-action charges. Terminal utility is $u_A$ at agreement or 0.12 at withdrawal or expiration, paid once. We report $\sum_t r_t$. Appendix~\ref{app:environment} gives all costs and transition rules.
+
+\paragraph{Shared language execution.}
+
+GPT-5.6 Luna generates three utterance styles for each context--action pair, yielding 396 utterances. A separate Luna call interprets each utterance's function, reciprocal terms, and stated cost. These interpreted meanings determine transitions, and mismatches with the intended action are retained. Every controller uses this same fixed set. Counterpart replies use fixed templates. This separates action selection from language realization while keeping the consequences of interpreted utterances in the environment.
+
+\paragraph{Strategic controllers.}
+
+We compare Random, a development-selected signal-first Heuristic, an immediate-reward contextual Bandit, and PPO \citep{schulman2017ppo}. An exact belief-state planner maximizes expected net utility using the declared response rules and interpreted utterances, without access to the true type. To obtain a learned controller, we distill its action values and then refine the policy with PPO. Teacher targets come only from training contexts and configurations. The distilled policy acts without invoking the planner. We also test direct action selection by Luna with reasoning set to \texttt{none}, and GPT-5.6 Sol with \texttt{none} or \texttt{medium}. Direct models receive the public state and numerical rules.
+
+The planner evaluates future response branches by backward recursion over the remaining decisions. Distillation uses 43,440 public states from planner trajectories and exploratory trajectories. The policy learns a soft distribution over the eleven action values, with temperature 0.03, together with a value estimate. After 2,400 supervised updates, PPO refines the same network through interaction. At deployment, it receives 31 public features and chooses its highest-scoring action. Thus, planning supplies offline supervision, while the learned policy replaces repeated planning with a local network evaluation.
+
+\section{Experimental Setup}
+
+The initial evaluation crosses four test contexts with 64 numerical configurations and three styles. A matched comparison uses the first 16 configurations and one style, giving 64 context--configuration conditions. A follow-up uses 64 new configurations with the same test contexts and three styles. We compute expectations over hidden types and question responses, then average within event groups and across groups. Learned results average three seeds. Bandit and base PPO each receive 102,400 training steps per seed; distilled PPO receives additional teacher supervision. Final checkpoints are used, with method selection on development data. Appendices~\ref{app:training} and~\ref{app:diagnostics} provide settings and diagnostic analyses.
+
+\section{Results}
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrr}
+\toprule
+Controller & Utility & Agree. & Calls \\
+\midrule
+\multicolumn{4}{l}{\textit{A. Initial: 256 conditions, three styles}} \\
+Random & -0.146 $\pm$ 0.001 & 11.0 & 0 \\
+Bandit & 0.118 $\pm$ 0.001 & 23.8 & 0 \\
+Heuristic & 0.419 & 94.8 & 0 \\
+PPO & 0.358 $\pm$ 0.018 & 73.0 & 0 \\
+Planner & 0.488 & 93.3 & 0 \\
+\midrule
+\multicolumn{4}{l}{\textit{B. Matched: 64 conditions, one style}} \\
+Luna none & -0.368 & 24.3 & 3.949 \\
+Sol none & -0.367 & 26.3 & 4.773 \\
+Sol medium & 0.514 & 100.0 & 3.429 \\
+Heuristic & 0.470 & 100.0 & 0 \\
+PPO & 0.378 $\pm$ 0.012 & 81.9 & 0 \\
+Distilled PPO & 0.475 $\pm$ 0.016 & 98.3 & 0 \\
+Planner & 0.533 & 100.0 & 0 \\
+\bottomrule
+\end{tabular}
+\caption{Policy comparison with fixed Luna utterances. Agreement is a percentage; calls are per negotiation for strategy selection. $\pm$: three-seed SD (evaluation seeds for Random). Panels use different conditions.}
+\label{tab:policies}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/intervention_losses.pdf}
+\caption{Evaluation-time interventions on distilled PPO. Losses are differences in three-seed mean utility on the follow-up conditions. Full values and seed variation appear in Table~\ref{tab:interventions}.}
+\label{fig:interventions}
+\end{figure}
+
+Table~\ref{tab:policies} separates the initial and matched evaluations. In the initial evaluation, PPO outperforms Random and Bandit but falls below the heuristic. In the matched comparison, the planner reaches 0.533 utility, compared with 0.514 for Sol medium. Distilled PPO reaches 0.475, improving on base PPO (0.378) and slightly exceeding the heuristic (0.470). Sol none remains near Luna none, whereas Sol medium performs substantially better. Thus, the direct-model results depend strongly on the tested reasoning setting.
+
+Local controllers require no language model calls for action selection. Sol medium uses an expected 3.429 calls per negotiation, corresponding to 4,184.8 tokens and \$0.02363 at the recorded request costs. These figures count logical requests even when experimental caching avoids a repeated call. These strategy-selection figures exclude shared utterance construction, interpretation, and offline training.
+
+On the follow-up configurations, distilled PPO achieves 0.468 utility, compared with 0.364 for base PPO and 0.445 for the heuristic (Figure~\ref{fig:interventions}). Blocking signals reduces utility by 0.094; replacing the posterior feature with the prior reduces it by 0.041. Blocking questions reduces it by only 0.001. These are evaluation-time interventions without retraining. The learned policy benefits mainly from signals and updated beliefs in this setting. Updated beliefs can come from offer responses as well as questions. The planner's no-question comparison yields a larger utility loss of 0.008.
+
+\paragraph{Discourse analysis.}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/discourse_paths.pdf}
+\caption{Selected paths under the same Iran-context condition and soft counterpart. Terms $x$:$y$ denote own and reciprocal durations. Values are episode net utility; the learned path uses seed 17.}
+\label{fig:discourse}
+\end{figure}
+
+Matched Iran-context traces illustrate this distinction (Figure~\ref{fig:discourse}). Luna none repeats a rejected 1:2 offer four times and withdraws, yielding $-0.80$. The planner and Sol medium ask a private question, send a signal, and obtain acceptance of that same offer, yielding 0.70. The question changes the belief from 0.65 to 0; the signal raises the soft counterpart's acceptance utility from $-0.05$ to 0.05. The learned controller instead signals and offers 2:2, yielding 0.55. Wording also matters: in a Syria-context pair, explicit withdrawal terminates the episode, while conditional withdrawal is interpreted as invalid and incurs repeated costs. Appendix~\ref{app:discourse} examines these paths and distinguishes expressed readiness to ratify from ratification itself.
+
+These paths show why action order matters. The repeated 1:2 demand is rejected by both types before signaling, so rejection provides no new type information. A question can resolve uncertainty, but it does not itself make the demand acceptable. The subsequent signal changes that condition. The learned policy reaches agreement by offering a larger own concession instead. Its successful agreement therefore does not imply that it reproduces the planner's information-gathering strategy. Comparing speech-act sequences reveals this difference even when both paths end in ratification.

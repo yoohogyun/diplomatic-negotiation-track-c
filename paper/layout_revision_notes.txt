@@ -1,0 +1,10 @@
+2026-10-12 full-width revision
+1. Generated and inspected an image-model concept; rebuilt it as an editable native PowerPoint diagram and chart.
+2. Exported vector teaser PDF from installed PowerPoint. Figure* uses textwidth and appears on page 2 in the body.
+3. Expanded utility/response rules, Bayesian belief updates, costs, planner recursion and distillation.
+4. Added Figure 3 and speech-act sequence interpretation from existing matched Iran traces.
+5. Main text fills four pages, with Conclusion ending near the bottom of page 4. Limitations and references start on page 5, appendices on page 6.
+6. All nine pages visually inspected. No overfull boxes or unresolved citations/references. Three main figures, one main table, three appendix tables. Original ACL style unchanged.
+7. Numerical results unchanged; one image-generation concept, zero new negotiation model calls.
+
+Submission audit revision: main text remains four pages; total twelve after Ethics, source citation, and Appendix D diagnostics. Source ZIP independently compiled. See submission/SUBMISSION_REVIEW.txt for requirement mapping and remaining user tasks.

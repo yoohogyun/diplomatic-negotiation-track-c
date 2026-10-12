@@ -1,0 +1,145 @@
+policy,from,to,count,probability
+"Bandit, seed 17",A,A,312,0.3482142857142857
+"Bandit, seed 17",A,S,0,0.0
+"Bandit, seed 17",A,Q,0,0.0
+"Bandit, seed 17",A,O,584,0.6517857142857143
+"Bandit, seed 17",A,R,0,0.0
+"Bandit, seed 17",A,W,0,0.0
+"Bandit, seed 17",S,A,0,
+"Bandit, seed 17",S,S,0,
+"Bandit, seed 17",S,Q,0,
+"Bandit, seed 17",S,O,0,
+"Bandit, seed 17",S,R,0,
+"Bandit, seed 17",S,W,0,
+"Bandit, seed 17",Q,A,0,
+"Bandit, seed 17",Q,S,0,
+"Bandit, seed 17",Q,Q,0,
+"Bandit, seed 17",Q,O,0,
+"Bandit, seed 17",Q,R,0,
+"Bandit, seed 17",Q,W,0,
+"Bandit, seed 17",O,A,64,0.0784313725490196
+"Bandit, seed 17",O,S,0,0.0
+"Bandit, seed 17",O,Q,0,0.0
+"Bandit, seed 17",O,O,0,0.0
+"Bandit, seed 17",O,R,752,0.9215686274509803
+"Bandit, seed 17",O,W,0,0.0
+"Bandit, seed 17",R,A,16,1.0
+"Bandit, seed 17",R,S,0,0.0
+"Bandit, seed 17",R,Q,0,0.0
+"Bandit, seed 17",R,O,0,0.0
+"Bandit, seed 17",R,R,0,0.0
+"Bandit, seed 17",R,W,0,0.0
+"Bandit, seed 17",W,A,0,
+"Bandit, seed 17",W,S,0,
+"Bandit, seed 17",W,Q,0,
+"Bandit, seed 17",W,O,0,
+"Bandit, seed 17",W,R,0,
+"Bandit, seed 17",W,W,0,
+Heuristic,A,A,0,
+Heuristic,A,S,0,
+Heuristic,A,Q,0,
+Heuristic,A,O,0,
+Heuristic,A,R,0,
+Heuristic,A,W,0,
+Heuristic,S,A,0,0.0
+Heuristic,S,S,0,0.0
+Heuristic,S,Q,0,0.0
+Heuristic,S,O,2568,0.9907407407407407
+Heuristic,S,R,0,0.0
+Heuristic,S,W,24,0.009259259259259259
+Heuristic,Q,A,0,
+Heuristic,Q,S,0,
+Heuristic,Q,Q,0,
+Heuristic,Q,O,0,
+Heuristic,Q,R,0,
+Heuristic,Q,W,0,
+Heuristic,O,A,0,0.0
+Heuristic,O,S,0,0.0
+Heuristic,O,Q,0,0.0
+Heuristic,O,O,480,0.15748031496062992
+Heuristic,O,R,2460,0.8070866141732284
+Heuristic,O,W,108,0.03543307086614173
+Heuristic,R,A,0,
+Heuristic,R,S,0,
+Heuristic,R,Q,0,
+Heuristic,R,O,0,
+Heuristic,R,R,0,
+Heuristic,R,W,0,
+Heuristic,W,A,0,0.0
+Heuristic,W,S,0,0.0
+Heuristic,W,Q,0,0.0
+Heuristic,W,O,0,0.0
+Heuristic,W,R,0,0.0
+Heuristic,W,W,96,1.0
+"PPO, seed 17",A,A,2260,1.0
+"PPO, seed 17",A,S,0,0.0
+"PPO, seed 17",A,Q,0,0.0
+"PPO, seed 17",A,O,0,0.0
+"PPO, seed 17",A,R,0,0.0
+"PPO, seed 17",A,W,0,0.0
+"PPO, seed 17",S,A,0,
+"PPO, seed 17",S,S,0,
+"PPO, seed 17",S,Q,0,
+"PPO, seed 17",S,O,0,
+"PPO, seed 17",S,R,0,
+"PPO, seed 17",S,W,0,
+"PPO, seed 17",Q,A,0,
+"PPO, seed 17",Q,S,0,
+"PPO, seed 17",Q,Q,0,
+"PPO, seed 17",Q,O,0,
+"PPO, seed 17",Q,R,0,
+"PPO, seed 17",Q,W,0,
+"PPO, seed 17",O,A,700,0.274294670846395
+"PPO, seed 17",O,S,0,0.0
+"PPO, seed 17",O,Q,0,0.0
+"PPO, seed 17",O,O,0,0.0
+"PPO, seed 17",O,R,1852,0.725705329153605
+"PPO, seed 17",O,W,0,0.0
+"PPO, seed 17",R,A,0,
+"PPO, seed 17",R,S,0,
+"PPO, seed 17",R,Q,0,
+"PPO, seed 17",R,O,0,
+"PPO, seed 17",R,R,0,
+"PPO, seed 17",R,W,0,
+"PPO, seed 17",W,A,0,
+"PPO, seed 17",W,S,0,
+"PPO, seed 17",W,Q,0,
+"PPO, seed 17",W,O,0,
+"PPO, seed 17",W,R,0,
+"PPO, seed 17",W,W,0,
+Planner,A,A,136,0.8947368421052632
+Planner,A,S,0,0.0
+Planner,A,Q,0,0.0
+Planner,A,O,16,0.10526315789473684
+Planner,A,R,0,0.0
+Planner,A,W,0,0.0
+Planner,S,A,0,0.0
+Planner,S,S,0,0.0
+Planner,S,Q,168,0.1276595744680851
+Planner,S,O,1148,0.8723404255319149
+Planner,S,R,0,0.0
+Planner,S,W,0,0.0
+Planner,Q,A,16,0.031746031746031744
+Planner,Q,S,96,0.19047619047619047
+Planner,Q,Q,0,0.0
+Planner,Q,O,360,0.7142857142857143
+Planner,Q,R,0,0.0
+Planner,Q,W,32,0.06349206349206349
+Planner,O,A,32,0.009489916963226572
+Planner,O,S,124,0.036773428232502965
+Planner,O,Q,0,0.0
+Planner,O,O,704,0.20877817319098457
+Planner,O,R,2432,0.7212336892052195
+Planner,O,W,80,0.02372479240806643
+Planner,R,A,0,
+Planner,R,S,0,
+Planner,R,Q,0,
+Planner,R,O,0,
+Planner,R,R,0,
+Planner,R,W,0,
+Planner,W,A,0,
+Planner,W,S,0,
+Planner,W,Q,0,
+Planner,W,O,0,
+Planner,W,R,0,
+Planner,W,W,0,

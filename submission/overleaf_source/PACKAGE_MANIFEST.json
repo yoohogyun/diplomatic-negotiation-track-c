@@ -1,0 +1,82 @@
+{
+  "main_document": "main.tex",
+  "compiler": "pdfLaTeX",
+  "files": [
+    {
+      "path": "main.tex",
+      "sha256": "28a8473dda36c6b3a6b8b696d08e0265e58f291577ab99e375d87259a29e1a57"
+    },
+    {
+      "path": "authors.tex",
+      "sha256": "a24456514faac641c85a2c71a636c8220c11536d55a69836b8a2250835c560f8"
+    },
+    {
+      "path": "methods_results.tex",
+      "sha256": "3dbd30e46b67e77121759c463a6082f57271be692c97c27614fb2b44d2f9497a"
+    },
+    {
+      "path": "discussion_conclusion.tex",
+      "sha256": "9ae9e733318112a8e297e3dd2403b937eae3efcf0803df0a68a24326d443bab8"
+    },
+    {
+      "path": "limitations.tex",
+      "sha256": "8d84403461d4835066294c18fe6426e67a62d5644de15003bb658fe572f01011"
+    },
+    {
+      "path": "ethics.tex",
+      "sha256": "8ef5fa74e626d63b56f672575b54876d6e096705465316cd368e98edbac07fcb"
+    },
+    {
+      "path": "appendix_experiments.tex",
+      "sha256": "3a9d77e8616d9552575edb6b4cf939989917b5e39caa2b631b540fee3e9dba16"
+    },
+    {
+      "path": "appendix_assignment.tex",
+      "sha256": "73bbc9df518bd82dc823c5a480aa1832636f58cfaa965a115555e7f5092eb446"
+    },
+    {
+      "path": "assignment_metrics_table.tex",
+      "sha256": "212a788fb9e658021f9d06da23e2bbf4c2c1b5f796fd3e1a6457f6b0c56bb0a2"
+    },
+    {
+      "path": "assignment_sensitivity_table.tex",
+      "sha256": "d2b8f507c978138eb8f2680ac20c34a3ee05627db56bacf0601704b6806cc2c9"
+    },
+    {
+      "path": "references.bib",
+      "sha256": "d447fdcacf4cda5005becfac143a332e3bccea6120152a8c9563dcda0c5d13a5"
+    },
+    {
+      "path": "acl.sty",
+      "sha256": "19dfeddc2c0e448f3926a0bef048a9db3f3611b46265b760caabd7ada4f361de"
+    },
+    {
+      "path": "acl_natbib.bst",
+      "sha256": "6fbb306202290f4b68e74ac1460a8b27398500cb6dfeb4492e74c457eae7cd1e"
+    },
+    {
+      "path": "figures/teaser.pdf",
+      "sha256": "e685b6c932dee05eea0ed889c362244fe94dcb9a7e658ef1d056a957c2a88c33"
+    },
+    {
+      "path": "figures/intervention_losses.pdf",
+      "sha256": "79ee7a24363760a932c8feaf333a04a88e83359a4a259b12ca1e22405557f357"
+    },
+    {
+      "path": "figures/discourse_paths.pdf",
+      "sha256": "6c4212fbe8197a5d5f8e7757508226250a5dbf4488c2671b4bfa4b2f13376d36"
+    },
+    {
+      "path": "figures/assignment_transitions.pdf",
+      "sha256": "d12b457a288dd073fe865e8b7d93cdb79e67418b3b31bf899c3cc8df783a2342"
+    },
+    {
+      "path": "figures/assignment_learning.pdf",
+      "sha256": "6a769bd0a51d63ea2395f56818a2b7e40ed83de8884e336bfbf3994dcbfbd146"
+    },
+    {
+      "path": "README_OVERLEAF.txt",
+      "sha256": "8400a552a5a7e53274cfa5c732fb003e071f43f2767499a8c66bf6c7ca895485"
+    }
+  ]
+}

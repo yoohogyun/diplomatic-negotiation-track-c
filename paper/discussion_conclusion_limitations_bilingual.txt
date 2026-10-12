@@ -1,0 +1,47 @@
+6. Discussion
+
+Our results support assigning explicit strategic decisions to a separate controller when the negotiation rules can be specified. The planner uses beliefs, action costs, and future consequences to improve decisions under the same language conditions. Distillation transfers part of this behavior to a policy that acts without search or further language model calls. Its improvement over base PPO shows the value of planner supervision in this setting. Its remaining gap to Sol medium, and its small advantage over the matched heuristic, also show that exact planning and learned control offer different performance trade-offs.
+
+본 연구의 결과는 협상 규칙을 명시할 수 있는 상황에서 전략적 의사결정을 별도의 제어기에 맡기는 접근을 뒷받침한다. 계획기는 같은 언어 조건에서 믿음, 행동 비용, 이후의 결과를 고려해 의사결정을 개선한다. 증류는 이러한 행동의 일부를 탐색이나 추가 언어 모델 호출 없이 실행하는 정책으로 옮긴다. 기본 PPO 대비 개선은 이 환경에서 계획기의 지도가 유용함을 보여준다. 한편 학습 정책은 여전히 Sol medium보다 낮은 효용을 보이고, 동일 조건의 Heuristic에 대한 이점도 작다. 이는 정확한 계획과 학습된 제어가 서로 다른 성능상의 절충을 제공함을 보여준다.
+
+The interventions suggest that asking more questions is not the main source of the learned policy's improvement. Signals change acceptance incentives, while responses to offers can update beliefs without a separate question. Useful information therefore depends on what the agent can subsequently do with it and what obtaining it costs. Discourse analysis adds a complementary requirement: the chosen action must be expressed with the intended conditions and commitment strength. A conditional threat to withdraw and an actual withdrawal can lead to different transitions. Strategic evaluation should therefore connect utility, information use, and the meaning of the resulting utterance.
+
+개입 실험은 질문을 더 많이 하는 것이 학습 정책 개선의 주된 원인은 아님을 시사한다. 신호는 상대방의 수락 유인을 바꾸며, 제안에 대한 반응은 별도의 질문 없이도 믿음을 갱신할 수 있다. 따라서 정보의 유용성은 에이전트가 그 정보를 얻은 뒤 무엇을 할 수 있는지, 그리고 정보를 얻는 데 얼마의 비용이 드는지에 달려 있다. 담화 분석은 여기에 추가적인 요건을 제시한다. 선택한 행동은 의도한 조건과 약속의 강도를 유지하는 표현으로 전달되어야 한다. 조건부 철회 위협과 실제 철회는 서로 다른 상태 전이로 이어질 수 있다. 따라서 전략 평가는 효용, 정보 활용, 최종 발화의 의미를 함께 연결해야 한다.
+
+7. Conclusion
+
+We studied strategic control for a lower-cost language model in a diplomatic negotiation simulation grounded in real documents. With utterances held fixed, belief-state planning achieved the highest utility in the matched comparison, and planner-distilled PPO improved on base PPO without further model calls for action selection. Interventions linked the learned policy's gains mainly to signals and updated beliefs. Dialogue traces further showed how information use and commitment wording shape negotiation paths. These findings identify explicit strategic control as a useful component of negotiation systems and show how controlled comparisons can explain its benefits.
+
+본 연구는 실제 문서에 근거한 외교 협상 시뮬레이션에서 저비용 언어 모델을 위한 전략 제어를 연구했다. 발화를 동일하게 유지한 비교에서 믿음 상태 계획기는 가장 높은 효용을 얻었으며, 계획기에서 증류한 PPO는 행동 선택을 위한 추가 모델 호출 없이 기본 PPO를 개선했다. 개입 실험은 학습 정책의 개선이 주로 신호와 갱신된 믿음에 연결됨을 보여주었다. 대화 경로 분석은 정보 활용과 약속의 표현이 협상 전개에 미치는 영향도 보여주었다. 이 결과는 명시적인 전략 제어가 협상 시스템의 유용한 구성 요소가 될 수 있음을 보여주며, 통제된 비교를 통해 그 효과를 설명하는 방법을 제시한다.
+
+Limitations
+
+Scope of the simulation.
+Real diplomatic documents provide linguistic context, but the negotiations, utilities, and opponent responses are synthetic. The environment has two fixed opponent types, eleven actions, and at most five decisions. It does not model evolving preferences, multiple stakeholders, or the institutional process of implementing an agreement. The results concern this controlled task and do not establish reliable performance in real diplomatic negotiations.
+
+시뮬레이션의 범위.
+실제 외교 문서는 언어적 맥락을 제공하지만, 협상 과정과 효용, 상대방 반응은 합성이다. 환경은 두 가지 고정된 상대 유형, 11개 행동, 최대 다섯 번의 의사결정으로 구성된다. 변화하는 선호, 여러 이해관계자, 합의를 이행하는 제도적 과정은 모델링하지 않는다. 따라서 결과는 이 통제된 과제에 관한 것이며, 실제 외교 협상에서의 신뢰할 수 있는 성능을 입증하지 않는다.
+
+Language contribution and interpretation.
+All controllers use a fixed set of generated and interpreted utterances. In the matched evaluation, all 44 style-0 utterances have the same interpreted meanings as the canonical templates. Consequently, the utility comparison does not establish an advantage of language generation over templates. Generation and interpretation also use the same model, and automatic consistency checks are not independent human validation. The discourse cases reveal mismatches in commitment strength, including readiness being treated as ratification. The reported agreement rates follow the implemented interpretation. The selected cases illustrate such problems but do not estimate their prevalence. Generalization to unseen expressions and online dialogue remains untested.
+
+언어의 기여와 해석.
+모든 제어기는 미리 생성하고 해석한 고정 발화 집합을 사용한다. 동일 조건 평가에 사용한 스타일 0의 발화 44개는 모두 기본 템플릿과 해석된 의미가 같다. 따라서 효용 비교만으로는 언어 생성이 템플릿보다 낫다고 결론지을 수 없다. 생성과 해석에 같은 모델을 사용하므로 자동 일치도 검사도 독립적인 사람의 검증을 대신하지 않는다. 담화 사례에서는 비준 준비를 비준으로 처리하는 등 약속의 강도가 다르게 해석되는 문제가 나타난다. 보고된 합의율은 구현된 해석을 따른다. 선정한 사례는 이러한 문제를 보여주지만 발생 빈도를 추정하지는 않는다. 새로운 표현과 실시간 대화에 대한 일반화는 아직 검증하지 않았다.
+
+Model knowledge and comparison resources.
+The planner knows the response rules and the complete fixed interpretation mapping. It receives no true opponent type, but its model knowledge is a substantial resource. Distillation also adds teacher computation and supervision beyond base PPO's interaction budget. We therefore do not claim equal-resource superiority over model-free learning. We have not tested robustness when the planner's assumptions differ from the actual response process. Luna was tested for direct action selection with reasoning set to none; Sol was tested with none and medium. These comparisons do not isolate model size from reasoning configuration.
+
+모형 지식과 비교 자원.
+계획기는 반응 규칙과 고정 발화의 전체 해석 결과를 알고 있다. 상대방의 실제 유형을 입력받지는 않지만, 이러한 모형 지식은 상당한 추가 자원이다. 증류에도 기본 PPO의 상호작용 예산 외에 교사의 계산과 지도가 추가된다. 따라서 같은 자원으로 모형 없는 학습보다 우수하다고 주장하지 않는다. 계획기가 가정한 규칙과 실제 반응 과정이 다를 때의 견고성은 검증하지 않았다. 직접 행동 선택에서 Luna는 none 설정으로, Sol은 none과 medium 설정으로 평가했다. 이 비교는 모델 크기의 효과와 추론 설정의 효과를 분리하지 않는다.
+
+Evaluation coverage.
+The test set contains four document contexts from two event groups. Additional numerical configurations expand coverage of the simulator, not the number of independent historical cases. The follow-up reuses the same documents and language set after inspection of the initial results. Three training seeds quantify optimization variability, while direct models use one cached response per public state. These evaluations do not capture uncertainty across historical settings or repeated language model outputs.
+
+평가 범위.
+평가 집합은 두 사건군의 문서 맥락 네 개로 구성된다. 수치 설정을 추가하면 시뮬레이터의 평가 범위는 넓어지지만, 독립적인 역사적 사례가 늘어나는 것은 아니다. 후속 평가는 최초 결과를 확인한 뒤 같은 문서와 발화 집합을 다시 사용한다. 세 학습 시드는 학습 과정의 변동성을 측정하며, 직접 선택 모델은 공개 상태마다 저장된 응답 하나를 사용한다. 따라서 이 평가는 역사적 맥락의 차이나 언어 모델의 반복 출력에 따른 불확실성을 포괄하지 않는다.
+
+Cost accounting.
+The efficiency comparison covers language model calls for action selection. It excludes utterance generation and interpretation, teacher computation, offline training, and local controller computation. Avoiding model calls at this stage does not imply zero system cost. End-to-end cost and latency require a separate evaluation.
+
+비용 산정.
+효율성 비교는 행동 선택을 위한 언어 모델 호출을 대상으로 한다. 발화 생성과 해석, 교사의 계산, 사전 학습, 로컬 제어기의 계산 비용은 제외한다. 이 단계에서 모델 호출을 없앴다고 해서 전체 시스템 비용이 없는 것은 아니다. 전체 처리 과정의 비용과 지연 시간은 별도로 평가해야 한다.

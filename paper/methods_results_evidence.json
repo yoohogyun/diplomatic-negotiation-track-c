@@ -1,0 +1,15 @@
+{
+  "purpose": "Prose and tables from stored completed experiments; no new training or paid calls.",
+  "initial": "study_results/summary.csv",
+  "matched_direct": "sol_results/direct_comparison.csv",
+  "matched_controls": "sol_results/matched_policy_controls.csv",
+  "follow_up": "improvement_results/summary.csv",
+  "follow_up_sd": "improvement_results/seed_metrics.csv",
+  "costs": "small_model_results/findings.json",
+  "discourse": [
+    "small_model_results/outline_matched_discourse.json",
+    "study_results/discourse_cases.json"
+  ],
+  "source_manifest": "study_results/contexts.json",
+  "status": "Draft. Abstract, conclusion, and limitations not yet written. No human review or teammate reproduction claimed."
+}

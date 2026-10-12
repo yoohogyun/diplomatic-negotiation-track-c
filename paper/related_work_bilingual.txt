@@ -1,0 +1,25 @@
+Related Work — English / Korean draft
+
+1. Negotiation agents / 협상 에이전트
+
+Early neural negotiation research studies how agents reach agreements when their rewards are private. Lewis et al. (2017) train agents on human bargaining dialogues and improve decisions by simulating possible dialogue continuations. More recent benchmarks evaluate LLMs across resource allocation, trading, and negotiations involving multiple stakeholders (Bianchi et al., 2024; Abdelnabi et al., 2024). CICERO combines language and strategic reasoning in the board game Diplomacy (FAIR, 2022). Our task draws its contexts and examples of reciprocal conditions from real diplomatic documents. Within a controlled simulation, we examine how agents manage information, conditional offers, and commitments, and connect these choices to negotiation outcomes.
+
+초기 신경망 기반 협상 연구는 각자의 보상이 상대에게 공개되지 않은 상황에서 에이전트가 어떻게 합의에 도달하는지 연구했다. Lewis et al. (2017)은 사람 간 협상 대화로 에이전트를 학습시키고, 이후에 이어질 대화를 모의 실행하여 의사결정을 개선했다. 최근 벤치마크는 자원 배분, 거래, 여러 이해관계자가 참여하는 협상에서 LLM을 평가한다(Bianchi et al., 2024; Abdelnabi et al., 2024). CICERO는 보드게임 Diplomacy에서 언어와 전략적 추론을 결합한다(FAIR, 2022). 본 연구는 실제 외교 문서에서 협상 맥락과 상호 조건의 사례를 가져온다. 통제된 시뮬레이션에서 에이전트가 정보, 조건부 제안, 약속을 다루는 방식을 살펴보고, 이러한 선택을 협상 결과와 연결한다.
+
+2. Strategy planning and language generation / 전략 계획과 언어 생성
+
+He et al. (2018) separate strategic dialogue acts from their linguistic realization. Later work develops several ways to guide language models toward dialogue goals. GDP-Zero uses a language model to simulate dialogue and guide tree search (Yu et al., 2023). PPDPP trains a separate policy planner through supervised learning and reinforcement learning, including for negotiation (Deng et al., 2024). The Dual-Mind framework combines strategy planning with a separate process that refines expression (Liu et al., 2025). These studies motivate our use of explicit strategic control. We hold the generated utterances and their interpreted meanings fixed across controllers. This design lets us compare belief-state planning, learned policies, and direct model decisions under the same language conditions. Matched dialogue traces then show how their use of information and commitments differs.
+
+He et al. (2018)은 전략적 대화 행위의 선택과 이를 언어로 표현하는 과정을 분리했다. 후속 연구는 언어 모델이 대화 목표를 달성하도록 돕는 여러 방법을 제시했다. GDP-Zero는 언어 모델로 대화를 모의 실행하고 탐색을 이끈다(Yu et al., 2023). PPDPP는 지도학습과 강화학습으로 별도의 전략 계획기를 학습시키고, 이를 협상을 포함한 여러 대화 과제에 적용한다(Deng et al., 2024). Dual-Mind는 전략 계획과 표현을 다듬는 별도의 과정을 결합한다(Liu et al., 2025). 이러한 연구를 바탕으로 본 연구는 명시적인 전략 제어를 활용한다. 제어기를 비교할 때 생성된 발화와 그 해석된 의미를 동일하게 유지한다. 따라서 같은 언어 조건에서 믿음 상태에 기반한 계획, 학습된 정책, 모델의 직접적인 의사결정을 비교할 수 있다. 이어서 동일 조건의 대화 경로를 통해 각 방법이 정보와 약속을 어떻게 다르게 활용하는지 살펴본다.
+
+3. Efficient negotiation with smaller models / 작은 모델을 활용한 효율적인 협상
+
+Kapoor et al. (2024) recommend evaluating agents through both task performance and computational cost. Belcak et al. (2025) argue that smaller models can serve specialized roles within agent systems. Recent negotiation studies pursue this direction through model training. SocialRL combines reinforcement learning with teacher distillation (Hua et al., 2026), while Tabacof and Joglekar (2026) examine reinforcement learning across seller models of different sizes. We study a complementary route that keeps language model weights fixed and places strategic decisions in a separate controller. Our comparisons measure negotiation utility and the model calls required for action selection. Interventions and discourse analysis further examine whether gains depend on updated beliefs, information-seeking questions, or signals that change the counterpart's incentive to accept.
+
+Kapoor et al. (2024)은 에이전트를 평가할 때 과제 성능과 계산 비용을 함께 고려할 것을 권고한다. Belcak et al. (2025)은 작은 모델이 에이전트 시스템 안에서 특정 역할을 맡을 수 있다고 주장한다. 최근 협상 연구는 모델 학습을 통해 이 방향을 탐구한다. SocialRL은 강화학습과 교사 모델의 지식 증류를 결합하고(Hua et al., 2026), Tabacof and Joglekar (2026)는 크기가 다른 판매자 모델에서 강화학습을 비교한다. 본 연구는 언어 모델의 가중치를 유지하면서 별도의 제어기에 전략적 의사결정을 맡기는 상호 보완적인 접근을 다룬다. 협상 효용과 행동 선택에 필요한 모델 호출을 함께 비교한다. 또한 개입 실험과 담화 분석을 통해 성능 향상이 갱신된 믿음, 정보를 얻기 위한 질문, 상대방의 수락 유인을 바꾸는 신호 중 무엇에 의존하는지 살펴본다.
+
+Primary sources added for this section:
+Lewis et al. (2017): https://aclanthology.org/D17-1259/
+Yu et al. (2023): https://aclanthology.org/2023.emnlp-main.439/
+Deng et al. (2024): https://arxiv.org/abs/2311.00262
+Liu et al. (2025): https://aclanthology.org/2025.acl-long.1161/

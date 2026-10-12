@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-12",
+  "paper_main_pages": 4,
+  "paper_total_pages": 12,
+  "source_zip_compiled_independently": true,
+  "overleaf_service_itself_used": false,
+  "experimental_results_changed": false,
+  "new_paid_experiment_calls": 0,
+  "core_requirement_assessment": "Core technical content and required experiment artifacts present; final personal/submission steps remain.",
+  "remaining_user_actions": [
+    "Author names/student IDs/affiliation in authors.tex; switch review to final for named PDF",
+    "Actual contributions and teammate execution record in TEAM_RECORD.txt",
+    "Private GitHub evaluator access",
+    "Submit final PDF and repository URL to course destination"
+  ],
+  "guides": [
+    "Common guide pp.9,17–24,31–32",
+    "Track C sections 4–7 and Task 14"
+  ],
+  "not_required": [
+    "Conference acceptance",
+    "Additional model family",
+    "PPO outperforming heuristic",
+    "62-example independent annotation study"
+  ]
+}

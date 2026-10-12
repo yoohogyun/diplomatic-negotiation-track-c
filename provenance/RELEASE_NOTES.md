@@ -1,3 +1,7 @@
+# Paper and submission update — 2026-10-12
+
+The current release adds paper/main.pdf (four main-text pages; twelve total), editable sources and native teaser PPTX, source-data citation, explicit reward, ethics, and assignment diagnostics reaggregated from existing logs. submission/overleaf_upload.zip contains a minimal project and has been independently compiled outside the original paper directory. No experimental policy, checkpoint, raw trajectory, or scientific outcome is changed. The initial release notes below are historical; the paper and discourse analysis are now written. Team identity, actual teammate reproduction, access grants, and LMS submission remain user tasks.
+
 # Release notes — 2026-10-12
 
 This export preserves the original experiment code/data/results in their relative paths, with explicit packaging-only edits. Original artifact hashes are in `source_export.json`; the final package hashes are in `../RELEASE_MANIFEST.json`. `RELEASE_CHANGES.json` distinguishes modified, omitted and added files. Original workspace files were not edited.

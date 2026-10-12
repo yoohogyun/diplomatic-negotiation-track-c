@@ -13,4 +13,9 @@ tmp/
 *.tmp
 *.pem
 *.key
+paper/build/
+paper/drafts/
+paper/template_original/
+submission/overleaf_source/build/
+submission/overleaf_source/main.pdf
 

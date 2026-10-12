@@ -1,0 +1,71 @@
+"""Package only the files needed to compile the manuscript on Overleaf."""
+import hashlib
+import json
+from pathlib import Path
+import shutil
+import zipfile
+
+ROOT=Path(__file__).resolve().parents[1]
+PAPER=ROOT/'paper'
+DEST=ROOT/'submission/overleaf_source'
+FILES=[
+ 'main.tex','authors.tex','methods_results.tex','discussion_conclusion.tex',
+ 'limitations.tex','ethics.tex','appendix_experiments.tex','appendix_assignment.tex',
+ 'assignment_metrics_table.tex','assignment_sensitivity_table.tex',
+ 'references.bib','acl.sty','acl_natbib.bst',
+ 'figures/teaser.pdf','figures/intervention_losses.pdf','figures/discourse_paths.pdf',
+ 'figures/assignment_transitions.pdf','figures/assignment_learning.pdf',
+]
+
+def main():
+    DEST.mkdir(parents=True,exist_ok=True)
+    for name in FILES:
+        target=DEST/name
+        target.parent.mkdir(parents=True,exist_ok=True)
+        shutil.copy2(PAPER/name,target)
+    readme='''Overleaf 공동작업용 최소 프로젝트
+
+업로드
+- 새 프로젝트: Overleaf의 New Project → Upload Project에서 overleaf_upload.zip을 선택합니다.
+- 기존 공동 프로젝트: overleaf_source 폴더 안 파일과 figures 하위폴더를 프로젝트 최상위에 올립니다. 폴더 구조를 유지하고 같은 이름의 예전 파일은 교체합니다.
+- Main document: main.tex / Compiler: pdfLaTeX / bibliography: BibTeX (자동 처리).
+- main.pdf, 코드, raw 로그, 체크포인트, .env, PPTX는 업로드할 필요가 없습니다. figures/*.pdf는 본문에 들어가는 그림이므로 꼭 올립니다.
+
+사용자가 작성할 곳
+1. authors.tex: 실제 이름/소속/학번. pdfLaTeX에서는 영문 표기를 사용합니다.
+2. main.tex 2행: 실명 과제 제출 시 [review]를 [final]로 변경합니다. 익명 검토 초안은 review를 유지합니다.
+3. 역할·실제 팀원 재현 기록은 별도 제출 폴더의 TEAM_RECORD.txt에 작성합니다. 논문 본문에 억지로 넣을 필요는 없습니다.
+4. 이름/내용 수정 후 결론까지4쪽인지 다시 확인합니다. 원본 ACL 여백/폰트를 줄이지 마세요.
+
+편집 위치
+main.tex: 제목, 초록, Introduction, Related Work
+methods_results.tex: Method, Experimental Setup, Results, 본문 담화분석
+discussion_conclusion.tex: Discussion, Conclusion
+limitations.tex / ethics.tex: 별도 한계 / 윤리
+appendix_experiments.tex: 환경·학습·담화6사례
+appendix_assignment.tex: 필수 과제 실험 진단과 해석
+assignment_*_table.tex: 저장결과에서 생성한 표
+references.bib: 참고문헌
+figures/: 컴파일용 벡터 PDF 그림5개
+
+티저 수정: 별도 제공 teaser_editable_v2.pptx를 PowerPoint에서 편집한 후 PDF로 내보내 figures/teaser.pdf만 교체합니다.
+논문용 수치 수정은 반드시 저장 실험 결과와 대조하세요.
+
+공식 사용법
+https://www.overleaf.com/learn/latex/Kb/Uploading_a_project
+https://docs.overleaf.com/managing-projects-and-files/adding-files-to-a-project/uploading-files-to-a-project
+https://docs.overleaf.com/getting-started/recompiling-your-project/the-main-document
+'''
+    (DEST/'README_OVERLEAF.txt').write_text(readme,encoding='utf-8')
+    included=FILES+['README_OVERLEAF.txt']
+    metadata={'main_document':'main.tex','compiler':'pdfLaTeX','files':[{'path':n,'sha256':hashlib.sha256((DEST/n).read_bytes()).hexdigest()} for n in included]}
+    (DEST/'PACKAGE_MANIFEST.json').write_text(json.dumps(metadata,indent=2)+'\n',encoding='utf-8')
+    zip_path=ROOT/'submission/overleaf_upload.zip'
+    with zipfile.ZipFile(zip_path,'w',zipfile.ZIP_DEFLATED) as z:
+        for name in included+['PACKAGE_MANIFEST.json']:
+            info=zipfile.ZipInfo(name,date_time=(2026,10,12,0,0,0))
+            info.compress_type=zipfile.ZIP_DEFLATED
+            z.writestr(info,(DEST/name).read_bytes())
+    print(json.dumps({'zip':str(zip_path),'file_count':len(included)+1,'bytes':zip_path.stat().st_size}))
+
+if __name__=='__main__':main()

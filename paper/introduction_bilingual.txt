@@ -1,0 +1,41 @@
+Full Introduction — draft for feedback, 2026-10-12
+
+Paragraph 1
+
+English
+Large language model (LLM) agents create opportunities for systems that act and negotiate on behalf of users (Yao et al., 2023; Bianchi et al., 2024). A negotiation agent must pursue its user's goals while responding to parties with different interests and incomplete information. Existing benchmarks show that strategic behavior affects outcomes and that complex negotiations remain challenging (Abdelnabi et al., 2024). Repeated decisions also make inference cost relevant to practical use (Kapoor et al., 2024). If every turn requires an expensive model call, costs accumulate across negotiations. Arguments for using smaller models in specialized agent roles therefore motivate studying how system design can improve a lower-cost negotiator (Belcak et al., 2025).
+
+한국어
+대규모 언어 모델(LLM) 에이전트는 사용자를 대신해 행동하고 협상하는 시스템의 가능성을 열고 있다(Yao et al., 2023; Bianchi et al., 2024). 협상 에이전트는 이해관계가 다르고 정보가 불완전한 상대방에게 대응하면서 사용자의 목표를 추구해야 한다. 기존 벤치마크는 전략적 행동이 결과에 영향을 주며, 복잡한 협상은 여전히 어렵다는 점을 보여준다(Abdelnabi et al., 2024). 의사결정이 반복되므로 실제 활용에서는 추론 비용도 중요하다(Kapoor et al., 2024). 매 턴 고가 모델을 호출해야 한다면 협상이 반복될수록 비용이 누적된다. 따라서 특정 역할에 작은 모델을 활용하자는 논의는 시스템 설계를 통해 저비용 협상 에이전트를 개선할 수 있는지 연구할 동기를 제공한다(Belcak et al., 2025).
+
+Paragraph 2
+
+English
+Several established approaches inform this question. He et al. (2018) separate negotiation strategy from language generation, and CICERO combines dialogue with strategic planning in the board game Diplomacy (FAIR, 2022). Recent studies also improve small-model negotiation through reinforcement learning and distillation (Hua et al., 2026; Tabacof and Joglekar, 2026). Building on these approaches, we examine a controlled comparison: with language realization held fixed, how do explicit strategic controllers affect negotiation outcomes and the cost of choosing actions? We also examine the dialogue paths behind these outcomes, distinguishing actions that reveal information from actions that change the counterpart's incentive to accept.
+
+한국어
+이 질문에는 이미 여러 접근이 존재한다. He et al. (2018)은 협상 전략과 언어 생성을 분리했으며, CICERO는 보드게임 Diplomacy에서 대화와 전략 계획을 결합했다(FAIR, 2022). 최근에는 강화학습과 증류를 통해 작은 모델의 협상 능력을 개선하는 연구도 제시되었다(Hua et al., 2026; Tabacof and Joglekar, 2026). 우리는 이러한 접근을 바탕으로 통제된 비교를 수행한다. 언어 표현을 생성하는 부분을 고정했을 때, 명시적인 전략 제어기는 협상 결과와 행동 선택 비용에 어떤 영향을 주는가? 또한 결과를 만들어 낸 대화 경로를 살펴보고, 정보를 드러내는 행동과 상대방의 수락 유인을 바꾸는 행동을 구분한다.
+
+Paragraph 3
+
+English
+We construct a controlled diplomatic negotiation task using 12 real diplomatic documents from six event groups. The documents provide contexts and examples of reciprocal conditions; utilities, private opponent types, and response rules are explicitly synthetic. We use GPT-5.6 Luna (hereafter Luna) to generate and separately interpret a fixed set of 396 utterances. These cover six communicative functions: ambiguity, costly signals, conditional offers, private inquiries, ratification, and withdrawal. Interpreted meanings determine state transitions. We compare Random, Heuristic, Bandit, and PPO policies with direct LLM action selection and an exact public-belief planner. We also distill the planner into a policy and refine it with PPO. The planner knows the declared simulation rules but never observes the opponent's hidden type.
+
+한국어
+우리는 여섯 사건군에 속한 실제 외교 문서 12개를 활용해 통제된 외교 협상 과제를 구성한다. 문서는 협상의 맥락과 상호 조건의 사례를 제공하며, 효용, 상대방의 비공개 유형, 반응 규칙은 명시적으로 합성하여 정의한다. GPT-5.6 Luna(이하 Luna)를 사용해 발화 396개를 생성하고 별도로 해석한 뒤, 이를 고정된 발화 집합으로 사용한다. 발화는 모호성, 비용이 드는 신호, 조건부 제안, 비공개 질문, 비준, 철회의 여섯 담화 기능을 나타낸다. 해석된 의미에 따라 환경의 상태가 변한다. Random, Heuristic, Bandit, PPO 정책을 LLM의 직접 행동 선택 및 공개 정보에 기반한 정확한 믿음 상태 계획기와 비교한다. 계획기를 정책에 증류한 뒤 PPO로 추가 학습하는 방식도 평가한다. 계획기는 명시된 시뮬레이션 규칙을 알지만, 상대방의 숨은 유형을 직접 관측하지는 않는다.
+
+Paragraph 4
+
+English
+Across 64 matched document–parameter conditions, the belief-state planner paired with Luna's fixed utterances achieves mean net utility of 0.533, compared with 0.514 for direct action selection by GPT-5.6 Sol (hereafter Sol) with medium reasoning. The distilled PPO policy achieves 0.475, while the heuristic achieves 0.470. These results highlight strategic control as a way to improve negotiation decisions with a lower-cost language model. The local controllers choose actions without further language model calls for strategy selection.
+
+한국어
+동일한 64개 문서·수치 조건에서 Luna의 고정 발화와 믿음 상태 계획기를 결합한 시스템의 평균 순효용은 0.533이며, medium 추론 설정의 GPT-5.6 Sol(이하 Sol)이 직접 행동을 선택할 때는 0.514이다. 증류 후 PPO 정책은 0.475, 휴리스틱은 0.470을 기록한다. 이 결과는 명시적인 전략 제어가 저비용 언어 모델을 활용한 협상 의사결정을 개선하는 방법이 될 수 있음을 보여준다. 로컬 제어기는 전략 선택을 위해 언어 모델을 추가로 호출하지 않고 행동을 결정한다.
+
+Paragraph 5
+
+English
+Our discourse analysis links performance differences to how agents use information and commitments. In separate interventions on the learned controller, removing costly signals or masking updated beliefs reduces utility more than removing questions. Matched dialogue traces show how questions update beliefs and how signals change the simulated counterpart's incentive to accept. We also examine whether the actions taken in the negotiation preserve the conditions and commitments expressed in the dialogue. Together, the controlled comparisons and discourse analysis connect negotiation outcomes, the cost of choosing actions, and the meaning of commitments. They provide a concrete account of how explicit strategic control supports a lower-cost language model in diplomatic negotiation simulations.
+
+한국어
+담화 분석은 에이전트가 정보와 약속을 활용하는 방식으로 성능 차이를 설명한다. 학습된 제어기에 대한 별도 개입 실험에서는 질문을 제거할 때보다 비용이 드는 신호를 제거하거나 갱신된 믿음 상태를 가릴 때 효용이 더 크게 감소한다. 동일 조건의 대화 경로는 질문이 믿음을 갱신하고, 신호가 모의 상대방의 수락 유인을 바꾸는 과정을 보여준다. 또한 대화에서 제시한 조건과 약속이 실제 협상 행동에 반영되는지 살펴본다. 통제된 비교와 담화 분석을 통해 협상 결과, 행동 선택 비용, 약속의 의미를 연결한다. 이를 통해 외교 협상 시뮬레이션에서 명시적인 전략 제어가 저비용 언어 모델을 지원하는 방식을 구체적으로 설명한다.
