@@ -1,0 +1,61 @@
+{
+  "model": "openai/gpt-5.6-luna",
+  "service_tier": "default",
+  "provider": {
+    "only": [
+      "openai"
+    ],
+    "order": [
+      "openai"
+    ],
+    "allow_fallbacks": false,
+    "require_parameters": true,
+    "max_price": {
+      "prompt": 0.2,
+      "completion": 1.2
+    }
+  },
+  "stream": false,
+  "max_tokens": 512,
+  "reasoning": {
+    "effort": "none",
+    "exclude": true,
+    "context": "current_turn",
+    "mode": "standard"
+  },
+  "verbosity": "low",
+  "tool_choice": "none",
+  "prompt_cache_options": {
+    "mode": "explicit"
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "study_record",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "utterance": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "utterance"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "Write one SYNTHETIC diplomatic utterance, not a quotation or reconstruction. Preserve ALL required conditions, numbers, actor roles, channel and commitment strength. Use generic we/you, not actual country names. A historical source only supplies discourse context. Do not copy unsupported historical details. Return an utterance under 65 words in a concise statement with a fronted condition or reordered clauses style."
+    },
+    {
+      "role": "user",
+      "content": "{\"source\": \"China welcomes the direct meeting and signing of ceasefire agreement between President Salva Kiir and opposition leader Riek Machar, and appreciates the relentless efforts made by Intergovernmental Authority on Development (IGAD) and other relevant parties in this regard.\", \"synthetic_required_meaning\": \"State that our next proposal is provisional and makes no new binding public commitment. Do not erase earlier commitments.\"}"
+    }
+  ],
+  "seed": 74000212
+}

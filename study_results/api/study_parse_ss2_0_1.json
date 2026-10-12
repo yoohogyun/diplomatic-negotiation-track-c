@@ -1,0 +1,11 @@
+{
+  "parsed": {
+    "kind": "ambiguity",
+    "x": null,
+    "y": null,
+    "cost": null,
+    "conditional": "not_applicable"
+  },
+  "response_id": "gen-1791766025-DeXn3eG8uC3vcuwl2C3B",
+  "cost": 9.5e-05
+}

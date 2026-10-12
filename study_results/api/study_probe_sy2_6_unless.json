@@ -1,0 +1,11 @@
+{
+  "parsed": {
+    "kind": "invalid",
+    "x": null,
+    "y": null,
+    "cost": null,
+    "conditional": "not_applicable"
+  },
+  "response_id": "gen-1791766328-sGuXrA8L6eleflW7snKp",
+  "cost": 9.42e-05
+}

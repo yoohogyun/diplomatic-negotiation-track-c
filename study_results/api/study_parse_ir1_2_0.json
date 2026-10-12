@@ -1,0 +1,11 @@
+{
+  "parsed": {
+    "kind": "query",
+    "x": null,
+    "y": null,
+    "cost": null,
+    "conditional": "not_applicable"
+  },
+  "response_id": "gen-1791766215-hbPRCua3o25l3A0cuuCl",
+  "cost": 9.56e-05
+}

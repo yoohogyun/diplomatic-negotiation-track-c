@@ -1,0 +1,214 @@
+[
+  {
+    "id": "ga1_10_2",
+    "utterance": "If no agreement can immediately secure a sustained ceasefire of at least six weeks, hostage releases, and essential additional humanitarian assistance, we will withdraw from these negotiations without proposing or ratifying any agreement.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Generation changed an unconditional exit into a conditional statement; invalid interpretation is plausible. Fronted-condition style can conflict with preserving the requested speech act.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "ga2_10_2",
+    "utterance": "If an immediate ceasefire remains linked to hostage issues, we will withdraw from these negotiations without proposing or ratifying any agreement.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Generation changed an unconditional exit into a conditional statement; invalid interpretation is plausible. Fronted-condition style can conflict with preserving the requested speech act.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "ip1_10_2",
+    "utterance": "If these negotiations cannot proceed without an agreement, we will withdraw rather than propose or ratify one.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Generation changed an unconditional exit into a conditional statement; invalid interpretation is plausible. Fronted-condition style can conflict with preserving the requested speech act.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "ip1_7_2",
+    "utterance": "If you halt firing along the Line of Control for one week, we will halt firing there for three weeks; our commitment depends on yours.",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Inspect for interpreter false rejection versus changed terms/actor roles. Exact roundtrip mismatch alone cannot attribute the error to generator or interpreter.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "ir1_10_2",
+    "utterance": "If you cannot propose and ratify an agreement, we will withdraw from these negotiations.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Generation changed an unconditional exit into a conditional statement; invalid interpretation is plausible. Fronted-condition style can conflict with preserving the requested speech act.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "ir2_10_2",
+    "utterance": "If you cannot accept a proper resolution through dialogue and negotiation, we will withdraw from these negotiations without proposing or ratifying an agreement.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Generation changed an unconditional exit into a conditional statement; invalid interpretation is plausible. Fronted-condition style can conflict with preserving the requested speech act.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "kr1_10_2",
+    "utterance": "If these negotiations cannot address our concerns, we will withdraw without proposing or ratifying any agreement.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Generation changed an unconditional exit into a conditional statement; invalid interpretation is plausible. Fronted-condition style can conflict with preserving the requested speech act.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "kr2_10_2",
+    "utterance": "Unless you can address our legitimate concerns through synchronized, reciprocal steps consistent with the stated principles, we will withdraw from these negotiations without proposing or ratifying an agreement.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Requires semantic review; no claim of a gold label.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "ss1_10_2",
+    "utterance": "If no agreement is proposed or ratified, we will withdraw from these negotiations.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Generation changed an unconditional exit into a conditional statement; invalid interpretation is plausible. Fronted-condition style can conflict with preserving the requested speech act.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "ss1_7_2",
+    "utterance": "If you maintain a cessation of hostilities for 1 week, we will maintain a cessation of hostilities for 3 weeks; our commitment depends on yours.",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Inspect for interpreter false rejection versus changed terms/actor roles. Exact roundtrip mismatch alone cannot attribute the error to generator or interpreter.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "ss2_10_2",
+    "utterance": "If these negotiations cannot produce an agreement, we will withdraw without proposing or ratifying one.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Generation changed an unconditional exit into a conditional statement; invalid interpretation is plausible. Fronted-condition style can conflict with preserving the requested speech act.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "ss2_8_2",
+    "utterance": "If you halt offensive military operations for two weeks, we will halt ours for three weeks; our commitment depends on yours.",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Inspect for interpreter false rejection versus changed terms/actor roles. Exact roundtrip mismatch alone cannot attribute the error to generator or interpreter.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "ss3_10_2",
+    "utterance": "If no agreement is proposed or ratified, we will withdraw from these negotiations.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Generation changed an unconditional exit into a conditional statement; invalid interpretation is plausible. Fronted-condition style can conflict with preserving the requested speech act.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "ss3_9_2",
+    "utterance": "Subject to the recorded bilateral conditions, we commit to ratifying the currently accepted agreement and to respecting its requirement that we withdraw our military and police forces from the demilitarized zone.",
+    "intended": {
+      "kind": "ratify"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Requires semantic review; no claim of a gold label.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "sy1_10_2",
+    "utterance": "If these negotiations cannot advance without compromising our principles, we will withdraw without proposing or ratifying any agreement.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Generation changed an unconditional exit into a conditional statement; invalid interpretation is plausible. Fronted-condition style can conflict with preserving the requested speech act.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "sy2_10_2",
+    "utterance": "If you cannot withdraw from these negotiations without proposing or ratifying an agreement, we will withdraw instead.",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Generation changed an unconditional exit into a conditional statement; invalid interpretation is plausible. Fronted-condition style can conflict with preserving the requested speech act.",
+    "review_status": "Codex analysis; not independent human annotation"
+  },
+  {
+    "id": "sy2_7_2",
+    "utterance": "If you keep your forces outside the agreed observation areas for 1 week, we will keep ours outside the disputed positions for 3 weeks; our commitment depends on yours.",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "interpreted": {
+      "kind": "invalid"
+    },
+    "agent_review": "Inspect for interpreter false rejection versus changed terms/actor roles. Exact roundtrip mismatch alone cannot attribute the error to generator or interpreter.",
+    "review_status": "Codex analysis; not independent human annotation"
+  }
+]

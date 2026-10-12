@@ -1,0 +1,1162 @@
+[
+  {
+    "policy": "Direct_Luna",
+    "context": "ir2",
+    "event_group": "iran",
+    "condition": 12,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.6,
+      "query_cost": 0.02,
+      "rejection_cost": 0.04,
+      "signal_effect": 0.25,
+      "signal_cost": 0.06,
+      "hard_cost": 0.4,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.2,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "net_utility": -0.40499999999999997,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.5249999999999999,
+    "breakdown": 1.0,
+    "length": 5,
+    "queries": 0,
+    "signals": 0,
+    "max_escalation": 5,
+    "mean_escalation": 3.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "exhausted",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.055,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.02,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 1,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.07,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.045,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 2,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "after": {
+          "t": 3,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 3
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.095,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.08,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 3,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 3
+        },
+        "after": {
+          "t": 4,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 4
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.13,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.125,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "exhausted",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 4,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 4
+        },
+        "after": {
+          "t": 5,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 5
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.05499999999999999,
+        "context": "ir2"
+      }
+    ]
+  },
+  {
+    "policy": "Direct_Luna",
+    "context": "ir2",
+    "event_group": "iran",
+    "condition": 12,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.6,
+      "query_cost": 0.02,
+      "rejection_cost": 0.04,
+      "signal_effect": 0.25,
+      "signal_cost": 0.06,
+      "hard_cost": 0.4,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.3,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.999999
+    },
+    "net_utility": -0.40499999999999997,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.5249999999999999,
+    "breakdown": 1.0,
+    "length": 5,
+    "queries": 0,
+    "signals": 0,
+    "max_escalation": 5,
+    "mean_escalation": 3.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "exhausted",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.055,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.02,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 1,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.07,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.045,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 2,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "after": {
+          "t": 3,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 3
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.095,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.08,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 3,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 3
+        },
+        "after": {
+          "t": 4,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 4
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.13,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.125,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "exhausted",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 4,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 4
+        },
+        "after": {
+          "t": 5,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 5
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.05499999999999999,
+        "context": "ir2"
+      }
+    ]
+  },
+  {
+    "policy": "Direct_Luna",
+    "context": "ir2",
+    "event_group": "iran",
+    "condition": 12,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.6,
+      "query_cost": 0.02,
+      "rejection_cost": 0.04,
+      "signal_effect": 0.25,
+      "signal_cost": 0.06,
+      "hard_cost": 0.4,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.3,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "net_utility": -0.40499999999999997,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.5249999999999999,
+    "breakdown": 1.0,
+    "length": 5,
+    "queries": 0,
+    "signals": 0,
+    "max_escalation": 5,
+    "mean_escalation": 3.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "exhausted",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.055,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.02,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 1,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.07,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.045,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 2,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "after": {
+          "t": 3,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 3
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.095,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.08,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 3,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 3
+        },
+        "after": {
+          "t": 4,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 4
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.13,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.125,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "exhausted",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 4,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 4
+        },
+        "after": {
+          "t": 5,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 5
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.05499999999999999,
+        "context": "ir2"
+      }
+    ]
+  },
+  {
+    "policy": "Direct_Luna",
+    "context": "ir2",
+    "event_group": "iran",
+    "condition": 12,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.6,
+      "query_cost": 0.02,
+      "rejection_cost": 0.04,
+      "signal_effect": 0.25,
+      "signal_cost": 0.06,
+      "hard_cost": 0.4,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.2,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.999999
+    },
+    "net_utility": -0.40499999999999997,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.5249999999999999,
+    "breakdown": 1.0,
+    "length": 5,
+    "queries": 0,
+    "signals": 0,
+    "max_escalation": 5,
+    "mean_escalation": 3.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "exhausted",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.055,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.02,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 1,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.07,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.045,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 2,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "after": {
+          "t": 3,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 3
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.095,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.08,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 3,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 3
+        },
+        "after": {
+          "t": 4,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 4
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.13,
+        "context": "ir2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.04,
+          "escalation": 0.125,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "exhausted",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for one week if you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 4,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 4
+        },
+        "after": {
+          "t": 5,
+          "b": 0.5,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 5
+        },
+        "action": 4,
+        "bank_id": "ir2_4_0",
+        "common_reward": -0.05499999999999999,
+        "context": "ir2"
+      }
+    ]
+  }
+]

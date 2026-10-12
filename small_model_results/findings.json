@@ -1,0 +1,23 @@
+{
+  "matched_cases": 64,
+  "freshly_replayed_planning_paths": 200,
+  "planning": {
+    "net_utility": 0.533428125,
+    "agreement": 1.0,
+    "queries": 0.4375,
+    "signals": 0.7234375,
+    "length": 3.3275
+  },
+  "learned_luna_utility": 0.4753177083333333,
+  "sol_medium_utility": 0.51401171875,
+  "learned_retention_ratio": 0.9247215403750624,
+  "planning_minus_sol": 0.019416406250000073,
+  "sol_strategic_calls_per_episode": 3.4292968750000004,
+  "sol_strategic_api_usd_per_episode": 0.023627629687500002,
+  "sol_strategic_tokens_per_episode": 4184.82265625,
+  "planning_local_seconds_total": 6.089839798863977,
+  "local_timing_scope": "64 complete enumerations of hidden/query branches, clearing planning cache before each cell; not a latency comparison with API.",
+  "strategy_api_calls_for_controller": 0,
+  "new_api_calls_for_this_audit": 0,
+  "cost_scope": "Only strategy-selection API eliminated; cached language realization/interpretation and offline teacher/training costs are excluded. No end-to-end cost reduction percentage claim."
+}

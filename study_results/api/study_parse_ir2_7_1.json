@@ -1,0 +1,11 @@
+{
+  "parsed": {
+    "kind": "offer",
+    "x": 3,
+    "y": 1,
+    "cost": null,
+    "conditional": "yes"
+  },
+  "response_id": "gen-1791766259-MRv9el3jC0KdgyiJHPP9",
+  "cost": 9.22e-05
+}

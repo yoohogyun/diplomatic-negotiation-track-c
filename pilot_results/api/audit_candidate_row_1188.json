@@ -1,0 +1,10 @@
+{
+  "parsed": {
+    "function": "background",
+    "evidence": "We were able to negotiate the ceasefire for Manbij",
+    "condition": "NONE",
+    "limitation": "Does not establish negotiation details, motives, implementation, or outcome beyond the stated ceasefire arrangement."
+  },
+  "response_id": "gen-1791765226-L1hZIcZ7Yxo9qlGBOi6V",
+  "cost": 0.0001092
+}

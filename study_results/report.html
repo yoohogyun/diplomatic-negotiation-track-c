@@ -1,0 +1,384 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Luna 실험 결과</title><style>body{max-width:1120px;margin:32px auto;padding:0 24px;font:16px/1.6 system-ui;color:#18313b}img{max-width:100%}table{border-collapse:collapse;font-size:14px}td,th{padding:7px 10px;border-bottom:1px solid #ddd}pre{white-space:pre-wrap;font:13px/1.6 system-ui;background:#f1f5f6;padding:18px}.note{padding:16px;background:#edf4f5;border-left:4px solid #40818a}</style><h1>Luna 본 실험 결과</h1><p class="note">논문 작성은 보류. 실제 자료 12개 문서·6개 사건군을 맥락으로 사용한 합성 외교 협상 실험입니다. 학습 6개 문서 / 개발 2개 / 평가 4개 문서. 평가의 역사적 사건군은 2개뿐이며, 256개 수치 사례를 독립적인 실제 협상으로 세지 않습니다.</p><h2>관측된 결과</h2><p>14회 학습, 총 1,433,600회 환경 상호작용을 완료했습니다. PPO 3개 seed 평균 순효용은 0.3581 (SD 0.0181), 합의율은 73.0%입니다. 강한 규칙 정책보다 낮으며 기본 PPO는 질문과 신호를 사용하지 않았습니다. 공개 규칙·발화 bank를 아는 계획기의 질문 허용 이득은 0.01116였습니다. 계획기는 학습 효율의 동등한 비교 대상이 아닌 모형 기반 상한입니다.</p><p>동일한 64개 조건·스타일에서 직접 Luna 순효용은 -0.3677, PPO 3-seed 평균은 0.3782였습니다. 직접 Luna 경로 중 확률 가중 60.7%에서 바로 앞에 거절된 제안을 그대로 반복했습니다. 단일 프롬프트와 상태별 한 번의 표본으로 얻은 결과이며, Luna 전반의 능력이나 프롬프트 변경 후 성능으로 일반화하지 않습니다.</p><p>그래프 오차막대는 학습 seed 또는 Random 평가 RNG의 표준편차입니다. 역사적 사건 모집단의 신뢰구간이 아닙니다. 보조 ablation은 seed 17 하나를 사용하므로 해당 seed의 기본 정책과만 비교합니다. 민감도 분석은 학습 후 공개 규칙 한 가지씩을 바꾼 평가입니다. 고정된 합성 효용과 원문 기반의 가상 상황에서 관측한 결과이며 실제 외교 성과는 검증하지 않았습니다.</p><h2>정책 비교</h2><img src="main_results.png"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>policy</th>
+      <th>runs</th>
+      <th>net_utility</th>
+      <th>agreement</th>
+      <th>cost</th>
+      <th>queries</th>
+      <th>length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Heuristic</td>
+      <td>1</td>
+      <td>0.4190</td>
+      <td>0.9477</td>
+      <td>0.1125</td>
+      <td>0.0000</td>
+      <td>3.1479</td>
+    </tr>
+    <tr>
+      <td>Planner</td>
+      <td>1</td>
+      <td>0.4882</td>
+      <td>0.9331</td>
+      <td>0.0822</td>
+      <td>0.2500</td>
+      <td>3.0299</td>
+    </tr>
+    <tr>
+      <td>Planner_no_query</td>
+      <td>1</td>
+      <td>0.4770</td>
+      <td>0.9276</td>
+      <td>0.0805</td>
+      <td>0.0000</td>
+      <td>2.8599</td>
+    </tr>
+    <tr>
+      <td>Random</td>
+      <td>3</td>
+      <td>-0.1457</td>
+      <td>0.1101</td>
+      <td>0.2924</td>
+      <td>0.3865</td>
+      <td>4.2879</td>
+    </tr>
+    <tr>
+      <td>Bandit</td>
+      <td>3</td>
+      <td>0.1183</td>
+      <td>0.2379</td>
+      <td>0.0217</td>
+      <td>0.0446</td>
+      <td>1.7727</td>
+    </tr>
+    <tr>
+      <td>PPO_base</td>
+      <td>3</td>
+      <td>0.3581</td>
+      <td>0.7295</td>
+      <td>0.0546</td>
+      <td>0.0000</td>
+      <td>2.4588</td>
+    </tr>
+    <tr>
+      <td>PPO_eval_belief_mask</td>
+      <td>3</td>
+      <td>0.3550</td>
+      <td>0.7295</td>
+      <td>0.0577</td>
+      <td>0.0000</td>
+      <td>2.4827</td>
+    </tr>
+    <tr>
+      <td>PPO_gamma08</td>
+      <td>1</td>
+      <td>0.3456</td>
+      <td>0.7664</td>
+      <td>0.0507</td>
+      <td>0.0000</td>
+      <td>2.2570</td>
+    </tr>
+    <tr>
+      <td>PPO_gamma099</td>
+      <td>1</td>
+      <td>0.3267</td>
+      <td>0.7599</td>
+      <td>0.0517</td>
+      <td>0.0000</td>
+      <td>2.7203</td>
+    </tr>
+    <tr>
+      <td>PPO_entropy0</td>
+      <td>1</td>
+      <td>0.3663</td>
+      <td>0.7398</td>
+      <td>0.0560</td>
+      <td>0.0000</td>
+      <td>2.7805</td>
+    </tr>
+    <tr>
+      <td>PPO_entropy01</td>
+      <td>1</td>
+      <td>0.3921</td>
+      <td>0.7695</td>
+      <td>0.0583</td>
+      <td>0.0781</td>
+      <td>2.3668</td>
+    </tr>
+    <tr>
+      <td>PPO_no_rejection_penalty</td>
+      <td>1</td>
+      <td>0.3770</td>
+      <td>0.7781</td>
+      <td>0.0796</td>
+      <td>0.0000</td>
+      <td>2.9062</td>
+    </tr>
+    <tr>
+      <td>PPO_no_reversal_penalty</td>
+      <td>1</td>
+      <td>0.3707</td>
+      <td>0.7193</td>
+      <td>0.0543</td>
+      <td>0.0000</td>
+      <td>2.2799</td>
+    </tr>
+    <tr>
+      <td>PPO_belief_mask</td>
+      <td>1</td>
+      <td>0.3758</td>
+      <td>0.7685</td>
+      <td>0.0599</td>
+      <td>0.0000</td>
+      <td>2.7922</td>
+    </tr>
+    <tr>
+      <td>PPO_query_disabled</td>
+      <td>1</td>
+      <td>0.3467</td>
+      <td>0.7667</td>
+      <td>0.0475</td>
+      <td>0.0000</td>
+      <td>2.2495</td>
+    </tr>
+  </tbody>
+</table><h2>Luna 직접 전략 선택: 동일 64개 조건·발화 스타일 비교</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>policy</th>
+      <th>seed</th>
+      <th>net_utility</th>
+      <th>agreement</th>
+      <th>queries</th>
+      <th>length</th>
+      <th>cost</th>
+      <th>acceptance_violations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bandit</td>
+      <td>17.0</td>
+      <td>0.1100</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>1.0000</td>
+      <td>0.0100</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Bandit</td>
+      <td>29.0</td>
+      <td>0.1100</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>1.0000</td>
+      <td>0.0100</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Bandit</td>
+      <td>43.0</td>
+      <td>0.1100</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>1.0000</td>
+      <td>0.0100</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Direct_Luna</td>
+      <td>NaN</td>
+      <td>-0.3677</td>
+      <td>0.2427</td>
+      <td>0.2164</td>
+      <td>3.9486</td>
+      <td>0.5387</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Heuristic</td>
+      <td>NaN</td>
+      <td>0.4697</td>
+      <td>1.0000</td>
+      <td>0.0000</td>
+      <td>3.0562</td>
+      <td>0.0960</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>PPO_base</td>
+      <td>17.0</td>
+      <td>0.3646</td>
+      <td>0.8562</td>
+      <td>0.0000</td>
+      <td>2.4312</td>
+      <td>0.0465</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>PPO_base</td>
+      <td>29.0</td>
+      <td>0.3850</td>
+      <td>0.8000</td>
+      <td>0.0000</td>
+      <td>2.0000</td>
+      <td>0.0453</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>PPO_base</td>
+      <td>43.0</td>
+      <td>0.3850</td>
+      <td>0.8000</td>
+      <td>0.0000</td>
+      <td>2.0000</td>
+      <td>0.0453</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Planner</td>
+      <td>NaN</td>
+      <td>0.5334</td>
+      <td>1.0000</td>
+      <td>0.4375</td>
+      <td>3.3275</td>
+      <td>0.1000</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Planner_no_query</td>
+      <td>NaN</td>
+      <td>0.5166</td>
+      <td>1.0000</td>
+      <td>0.0000</td>
+      <td>2.9750</td>
+      <td>0.0925</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table><p>직접 Luna는 공개 규칙을 프롬프트로 받습니다. PPO는 동일한 상태·보상으로 학습한 별도 선택기입니다. Luna 가중치를 미세조정한 실험이 아닙니다.</p><h2>필수 ablation 및 정보·규칙 민감도</h2><img src="ablations.png"><img src="sensitivity.png"><img src="learning_curves.png"><h2>언어 검사</h2><pre>{
+  &quot;bank_n&quot;: 396,
+  &quot;bank_match&quot;: 379,
+  &quot;probes_n&quot;: 180,
+  &quot;probes_match&quot;: 180,
+  &quot;note&quot;: &quot;Same-model generation/interpretation consistency, not human gold accuracy.&quot;
+}</pre><p>불일치를 수정하거나 의도한 행동으로 대체하지 않았습니다. 사람 정답 기반 정확도는 아닙니다. 조건을 앞에 배치하는 스타일에서 즉시 철회를 조건부 철회로 바꾸는 문제가 나타났습니다.</p><h2>담화 경로</h2><img src="action_transitions.png"><pre>Case 1: signal_then_agreement | Heuristic | context sy1 | synthetic condition 0
+Source: CMFA PressCon dyad 12850 (Hong Lei) (2016-03-01); candidate CSV row 3628
+Source reference: doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20160310051413/http://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1344375.shtml
+Real source anchor: We hope that relevant parties can truly bear in mind the future of their state and the fundamental interests of their people, strictly follow Resolution 2254 of the UN Security Council and the outcomes of the 4th foreign ministers&#x27; meeting of the International Syria Support Group, and seriously implement ceasefire and cessation of violence.
+Outcome agreement; net utility 0.3700; agreement 1.0; source context is not an observed trajectory.
+Turn 1: We commit resources at a cost of 0.06 utility units to a monitored confidence-building measure, to be implemented transparently and in accordance with applicable understandings.
+  Meaning: {&#x27;kind&#x27;: &#x27;signal&#x27;, &#x27;cost&#x27;: 0.06}; response: We acknowledge your statement.
+  Belief 0.650 -&gt; 0.650; reward -0.0700; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.06, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 2: We will maintain a cessation of hostilities for three weeks, provided that you maintain a cessation of hostilities for two weeks; our commitment is expressly contingent upon yours.
+  Meaning: {&#x27;kind&#x27;: &#x27;offer&#x27;, &#x27;x&#x27;: 3, &#x27;y&#x27;: 2}; response: We accept the proposal subject to its stated reciprocal terms.
+  Belief 0.650 -&gt; 0.650; reward -0.0100; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 3: We call upon you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and to implement it in full; no additional terms are proposed or implied.
+  Meaning: {&#x27;kind&#x27;: &#x27;ratify&#x27;}; response: We acknowledge your statement.
+  Belief 0.650 -&gt; 0.650; reward 0.4500; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}</pre><pre>Case 2: appropriate_withdrawal | Heuristic | context sy1 | synthetic condition 25
+Source: CMFA PressCon dyad 12850 (Hong Lei) (2016-03-01); candidate CSV row 3628
+Source reference: doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20160310051413/http://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1344375.shtml
+Real source anchor: We hope that relevant parties can truly bear in mind the future of their state and the fundamental interests of their people, strictly follow Resolution 2254 of the UN Security Council and the outcomes of the 4th foreign ministers&#x27; meeting of the International Syria Support Group, and seriously implement ceasefire and cessation of violence.
+Outcome withdrawal; net utility -0.1400; agreement 0.0; source context is not an observed trajectory.
+Turn 1: We commit resources at a cost of 0.06 utility units to a monitored confidence-building measure, to be implemented transparently and in accordance with applicable understandings.
+  Meaning: {&#x27;kind&#x27;: &#x27;signal&#x27;, &#x27;cost&#x27;: 0.06}; response: We acknowledge your statement.
+  Belief 0.350 -&gt; 0.350; reward -0.0700; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.06, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 2: We will maintain the cessation of hostilities for two weeks, provided that you likewise maintain it for two weeks; our commitment is expressly contingent upon yours.
+  Meaning: {&#x27;kind&#x27;: &#x27;offer&#x27;, &#x27;x&#x27;: 2, &#x27;y&#x27;: 2}; response: We do not accept those reciprocal terms.
+  Belief 0.350 -&gt; 1.000; reward -0.1750; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.16, &#x27;escalation&#x27;: 0.005, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 3: We hereby withdraw from these negotiations, without proposing or ratifying any agreement, while urging all relevant parties to uphold Resolution 2254, honor the cessation of violence, and safeguard their people’s fundamental interests.
+  Meaning: {&#x27;kind&#x27;: &#x27;withdraw&#x27;}; response: We acknowledge your statement.
+  Belief 1.000 -&gt; 1.000; reward 0.1050; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.005, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}</pre><pre>Case 3: opportunity_exhaustion | Heuristic | context sy1 | synthetic condition 25
+Source: CMFA PressCon dyad 12850 (Hong Lei) (2016-03-01); candidate CSV row 3628
+Source reference: doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20160310051413/http://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1344375.shtml
+Real source anchor: We hope that relevant parties can truly bear in mind the future of their state and the fundamental interests of their people, strictly follow Resolution 2254 of the UN Security Council and the outcomes of the 4th foreign ministers&#x27; meeting of the International Syria Support Group, and seriously implement ceasefire and cessation of violence.
+Outcome exhausted; net utility -0.4700; agreement 0.0; source context is not an observed trajectory.
+Turn 1: Provided that the relevant parties uphold the agreed framework and implement the ceasefire under monitoring, we now commit resources costing 0.06 utility units to a monitored confidence-building measure.
+  Meaning: {&#x27;kind&#x27;: &#x27;signal&#x27;, &#x27;cost&#x27;: 0.06}; response: We acknowledge your statement.
+  Belief 0.350 -&gt; 0.350; reward -0.0700; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.06, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 2: If you maintain the cessation of hostilities for two weeks, we will likewise maintain it for two weeks; our commitment depends on yours.
+  Meaning: {&#x27;kind&#x27;: &#x27;offer&#x27;, &#x27;x&#x27;: 2, &#x27;y&#x27;: 2}; response: We do not accept those reciprocal terms.
+  Belief 0.350 -&gt; 1.000; reward -0.1750; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.16, &#x27;escalation&#x27;: 0.005, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 3: If these negotiations cannot advance without compromising our principles, we will withdraw without proposing or ratifying any agreement.
+  Meaning: {&#x27;kind&#x27;: &#x27;invalid&#x27;}; response: We acknowledge your statement.
+  Belief 1.000 -&gt; 1.000; reward -0.1150; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.005, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.1}
+Turn 4: If these negotiations cannot advance without compromising our principles, we will withdraw without proposing or ratifying any agreement.
+  Meaning: {&#x27;kind&#x27;: &#x27;invalid&#x27;}; response: We acknowledge your statement.
+  Belief 1.000 -&gt; 1.000; reward -0.1150; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.005, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.1}
+Turn 5: If these negotiations cannot advance without compromising our principles, we will withdraw without proposing or ratifying any agreement.
+  Meaning: {&#x27;kind&#x27;: &#x27;invalid&#x27;}; response: We acknowledge your statement.
+  Belief 1.000 -&gt; 1.000; reward 0.0050; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.005, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.1}</pre><pre>Case 4: other_breakdown | Heuristic | context sy1 | synthetic condition 29
+Source: CMFA PressCon dyad 12850 (Hong Lei) (2016-03-01); candidate CSV row 3628
+Source reference: doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20160310051413/http://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1344375.shtml
+Real source anchor: We hope that relevant parties can truly bear in mind the future of their state and the fundamental interests of their people, strictly follow Resolution 2254 of the UN Security Council and the outcomes of the 4th foreign ministers&#x27; meeting of the International Syria Support Group, and seriously implement ceasefire and cessation of violence.
+Outcome withdrawal; net utility 0.0400; agreement 0.0; source context is not an observed trajectory.
+Turn 1: We commit resources at a cost of 0.06 utility units to a monitored confidence-building measure, to be implemented transparently and in accordance with applicable understandings.
+  Meaning: {&#x27;kind&#x27;: &#x27;signal&#x27;, &#x27;cost&#x27;: 0.06}; response: We acknowledge your statement.
+  Belief 0.650 -&gt; 0.650; reward -0.0700; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.06, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 2: We hereby withdraw from these negotiations, without proposing or ratifying any agreement, while urging all relevant parties to uphold Resolution 2254, honor the cessation of violence, and safeguard their people’s fundamental interests.
+  Meaning: {&#x27;kind&#x27;: &#x27;withdraw&#x27;}; response: We acknowledge your statement.
+  Belief 0.650 -&gt; 0.650; reward 0.1100; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}</pre><pre>Case 5: question_then_agreement | Planner | context sy1 | synthetic condition 0
+Source: CMFA PressCon dyad 12850 (Hong Lei) (2016-03-01); candidate CSV row 3628
+Source reference: doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20160310051413/http://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1344375.shtml
+Real source anchor: We hope that relevant parties can truly bear in mind the future of their state and the fundamental interests of their people, strictly follow Resolution 2254 of the UN Security Council and the outcomes of the 4th foreign ministers&#x27; meeting of the International Syria Support Group, and seriously implement ceasefire and cessation of violence.
+Outcome agreement; net utility 0.7000; agreement 1.0; source context is not an observed trajectory.
+Turn 1: We respectfully inquire, through private channels, whether you would require a larger reciprocal concession to accept the proposed understanding. This inquiry constitutes neither an offer nor a public commitment; we remain guided by the relevant Security Council resolution and the need to advance a durable cessation of violence.
+  Meaning: {&#x27;kind&#x27;: &#x27;query&#x27;}; response: Privately, a more limited reciprocal concession may meet our acceptance conditions.
+  Belief 0.650 -&gt; 0.000; reward -0.0300; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.02, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 2: We commit resources at a cost of 0.06 utility units to a monitored confidence-building measure, to be implemented transparently and in accordance with applicable understandings.
+  Meaning: {&#x27;kind&#x27;: &#x27;signal&#x27;, &#x27;cost&#x27;: 0.06}; response: We acknowledge your statement.
+  Belief 0.000 -&gt; 0.000; reward -0.0700; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.06, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 3: We will maintain a cessation of hostilities for one week, provided that you maintain a cessation of hostilities for two weeks; our commitment is expressly contingent upon yours.
+  Meaning: {&#x27;kind&#x27;: &#x27;offer&#x27;, &#x27;x&#x27;: 1, &#x27;y&#x27;: 2}; response: We accept the proposal subject to its stated reciprocal terms.
+  Belief 0.000 -&gt; 0.000; reward -0.0100; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 4: We call upon you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and to implement it in full; no additional terms are proposed or implied.
+  Meaning: {&#x27;kind&#x27;: &#x27;ratify&#x27;}; response: We acknowledge your statement.
+  Belief 0.000 -&gt; 0.000; reward 0.8100; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}</pre><pre>Case 6: direct_agreement | Planner | context sy1 | synthetic condition 1
+Source: CMFA PressCon dyad 12850 (Hong Lei) (2016-03-01); candidate CSV row 3628
+Source reference: doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20160310051413/http://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1344375.shtml
+Real source anchor: We hope that relevant parties can truly bear in mind the future of their state and the fundamental interests of their people, strictly follow Resolution 2254 of the UN Security Council and the outcomes of the 4th foreign ministers&#x27; meeting of the International Syria Support Group, and seriously implement ceasefire and cessation of violence.
+Outcome agreement; net utility 0.6200; agreement 1.0; source context is not an observed trajectory.
+Turn 1: We will maintain the cessation of hostilities for two weeks, provided that you likewise maintain it for two weeks; our commitment is expressly contingent upon yours.
+  Meaning: {&#x27;kind&#x27;: &#x27;offer&#x27;, &#x27;x&#x27;: 2, &#x27;y&#x27;: 2}; response: We accept the proposal subject to its stated reciprocal terms.
+  Belief 0.350 -&gt; 0.000; reward -0.0100; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 2: We call upon you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and to implement it in full; no additional terms are proposed or implied.
+  Meaning: {&#x27;kind&#x27;: &#x27;ratify&#x27;}; response: We acknowledge your statement.
+  Belief 0.000 -&gt; 0.000; reward 0.6300; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.0, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}</pre><pre>Case 7: costly_agreement | Planner | context sy1 | synthetic condition 17
+Source: CMFA PressCon dyad 12850 (Hong Lei) (2016-03-01); candidate CSV row 3628
+Source reference: doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20160310051413/http://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1344375.shtml
+Real source anchor: We hope that relevant parties can truly bear in mind the future of their state and the fundamental interests of their people, strictly follow Resolution 2254 of the UN Security Council and the outcomes of the 4th foreign ministers&#x27; meeting of the International Syria Support Group, and seriously implement ceasefire and cessation of violence.
+Outcome agreement; net utility -0.2250; agreement 1.0; source context is not an observed trajectory.
+Turn 1: We will maintain the cessation of hostilities for two weeks, provided that you likewise maintain it for two weeks; our commitment is expressly contingent upon yours.
+  Meaning: {&#x27;kind&#x27;: &#x27;offer&#x27;, &#x27;x&#x27;: 2, &#x27;y&#x27;: 2}; response: We do not accept those reciprocal terms.
+  Belief 0.200 -&gt; 1.000; reward -0.3350; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.32, &#x27;escalation&#x27;: 0.005, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 2: We will maintain the cessation of hostilities for two weeks, provided that you maintain it for one week; our commitment is expressly contingent upon yours.
+  Meaning: {&#x27;kind&#x27;: &#x27;offer&#x27;, &#x27;x&#x27;: 2, &#x27;y&#x27;: 1}; response: We accept the proposal subject to its stated reciprocal terms.
+  Belief 1.000 -&gt; 1.000; reward -0.0150; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.005, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 3: We call upon you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and to implement it in full; no additional terms are proposed or implied.
+  Meaning: {&#x27;kind&#x27;: &#x27;ratify&#x27;}; response: We acknowledge your statement.
+  Belief 1.000 -&gt; 1.000; reward 0.1250; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.005, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}</pre><pre>Case 8: direct_luna_repeated_rejection | Direct_Luna | context ir1 | synthetic condition 0
+Source: S/2020/644 — Halimah DeShong (Saint Vincent And The Grenadines) (2020-06-30); candidate CSV row 6149
+Source reference: doi:10.7910/DVN/KGVSYH; UNSC_2020_S_2020_644_spch0014.txt
+Real source anchor: We take note that Iran has indicated that those steps are reversible, having undertaken them subsequent to the withdrawal of the United States from the agreement.
+Outcome withdrawal; net utility -0.8000; agreement 0.0; source context is not an observed trajectory.
+Turn 1: We will suspend the specified sanctions for 1 week, conditional upon your suspension of the specified nuclear activities for 2 weeks; our commitment is contingent upon yours.
+  Meaning: {&#x27;kind&#x27;: &#x27;offer&#x27;, &#x27;x&#x27;: 1, &#x27;y&#x27;: 2}; response: We do not accept those reciprocal terms.
+  Belief 0.650 -&gt; 0.650; reward -0.1750; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.16, &#x27;escalation&#x27;: 0.005, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 2: We will suspend the specified sanctions for 1 week, conditional upon your suspension of the specified nuclear activities for 2 weeks; our commitment is contingent upon yours.
+  Meaning: {&#x27;kind&#x27;: &#x27;offer&#x27;, &#x27;x&#x27;: 1, &#x27;y&#x27;: 2}; response: We do not accept those reciprocal terms.
+  Belief 0.650 -&gt; 0.650; reward -0.1900; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.16, &#x27;escalation&#x27;: 0.02, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 3: We will suspend the specified sanctions for 1 week, conditional upon your suspension of the specified nuclear activities for 2 weeks; our commitment is contingent upon yours.
+  Meaning: {&#x27;kind&#x27;: &#x27;offer&#x27;, &#x27;x&#x27;: 1, &#x27;y&#x27;: 2}; response: We do not accept those reciprocal terms.
+  Belief 0.650 -&gt; 0.650; reward -0.2150; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.16, &#x27;escalation&#x27;: 0.045, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 4: We will suspend the specified sanctions for 1 week, conditional upon your suspension of the specified nuclear activities for 2 weeks; our commitment is contingent upon yours.
+  Meaning: {&#x27;kind&#x27;: &#x27;offer&#x27;, &#x27;x&#x27;: 1, &#x27;y&#x27;: 2}; response: We do not accept those reciprocal terms.
+  Belief 0.650 -&gt; 0.650; reward -0.2500; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.16, &#x27;escalation&#x27;: 0.08, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}
+Turn 5: We hereby withdraw from these negotiations and will not propose or ratify any agreement arising from them.
+  Meaning: {&#x27;kind&#x27;: &#x27;withdraw&#x27;}; response: We acknowledge your statement.
+  Belief 0.650 -&gt; 0.650; reward 0.0300; costs {&#x27;turn&#x27;: 0.01, &#x27;query&#x27;: 0.0, &#x27;signal&#x27;: 0.0, &#x27;rejection&#x27;: 0.0, &#x27;escalation&#x27;: 0.08, &#x27;reversal&#x27;: 0.0, &#x27;invalid&#x27;: 0.0}</pre><h2>재현·비용·남은 확인</h2><p>누적 추가 API 응답 비용 $0.145626; 미확정 예약 $0.000000. 원시 로그, 모델, 실행 설정, 요청·응답 및 비용 원장은 보존했습니다. 인간 담화 검토와 실제 팀원 재현은 미완료이며 별도 검토표를 제공합니다. 모델 확장은 이 결과를 검토한 다음 결정합니다.</p></html>

@@ -1,0 +1,2810 @@
+[
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will suspend large-scale military exercises for 1 weeks UNLESS you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will suspend large-scale military exercises for 1 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not suspend large-scale military exercises for 1 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 4,
+    "mode": "number",
+    "text": "We will suspend large-scale military exercises for 1 weeks IF you suspend nuclear and missile tests for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will suspend large-scale military exercises for 2 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will suspend large-scale military exercises for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 6,
+    "mode": "number",
+    "text": "We will suspend large-scale military exercises for 2 weeks IF you suspend nuclear and missile tests for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not suspend large-scale military exercises for 2 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will suspend large-scale military exercises for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will suspend large-scale military exercises for 2 weeks UNLESS you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will suspend large-scale military exercises for 3 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 8,
+    "mode": "number",
+    "text": "We will suspend large-scale military exercises for 3 weeks IF you suspend nuclear and missile tests for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will suspend large-scale military exercises for 3 weeks UNLESS you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will suspend large-scale military exercises for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr1",
+    "split": "train",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not suspend large-scale military exercises for 3 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will suspend large-scale military exercises for 1 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not suspend large-scale military exercises for 1 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 4,
+    "mode": "number",
+    "text": "We will suspend large-scale military exercises for 1 weeks IF you suspend nuclear and missile tests for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will suspend large-scale military exercises for 1 weeks UNLESS you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will suspend large-scale military exercises for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will suspend large-scale military exercises for 2 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 6,
+    "mode": "number",
+    "text": "We will suspend large-scale military exercises for 2 weeks IF you suspend nuclear and missile tests for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not suspend large-scale military exercises for 2 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will suspend large-scale military exercises for 2 weeks UNLESS you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will suspend large-scale military exercises for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will suspend large-scale military exercises for 3 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 8,
+    "mode": "number",
+    "text": "We will suspend large-scale military exercises for 3 weeks IF you suspend nuclear and missile tests for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not suspend large-scale military exercises for 3 weeks IF you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will suspend large-scale military exercises for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "kr2",
+    "split": "train",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will suspend large-scale military exercises for 3 weeks UNLESS you suspend nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will maintain a cessation of hostilities for 1 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 4,
+    "mode": "number",
+    "text": "We will maintain a cessation of hostilities for 1 weeks IF you maintain a cessation of hostilities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not maintain a cessation of hostilities for 1 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will maintain a cessation of hostilities for 1 weeks UNLESS you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will maintain a cessation of hostilities for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 6,
+    "mode": "number",
+    "text": "We will maintain a cessation of hostilities for 2 weeks IF you maintain a cessation of hostilities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not maintain a cessation of hostilities for 2 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will maintain a cessation of hostilities for 2 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will maintain a cessation of hostilities for 2 weeks UNLESS you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will maintain a cessation of hostilities for 3 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 8,
+    "mode": "number",
+    "text": "We will maintain a cessation of hostilities for 3 weeks IF you maintain a cessation of hostilities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will maintain a cessation of hostilities for 3 weeks UNLESS you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not maintain a cessation of hostilities for 3 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss1",
+    "split": "train",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will maintain a cessation of hostilities for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will halt offensive military operations for 1 weeks IF you halt offensive military operations for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 4,
+    "mode": "number",
+    "text": "We will halt offensive military operations for 1 weeks IF you halt offensive military operations for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not halt offensive military operations for 1 weeks IF you halt offensive military operations for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will halt offensive military operations for 1 weeks UNLESS you halt offensive military operations for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will halt offensive military operations for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will halt offensive military operations for 2 weeks IF you halt offensive military operations for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not halt offensive military operations for 2 weeks IF you halt offensive military operations for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 6,
+    "mode": "number",
+    "text": "We will halt offensive military operations for 2 weeks IF you halt offensive military operations for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will halt offensive military operations for 2 weeks UNLESS you halt offensive military operations for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will halt offensive military operations for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will halt offensive military operations for 3 weeks IF you halt offensive military operations for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 8,
+    "mode": "number",
+    "text": "We will halt offensive military operations for 3 weeks IF you halt offensive military operations for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not halt offensive military operations for 3 weeks IF you halt offensive military operations for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will halt offensive military operations for 3 weeks UNLESS you halt offensive military operations for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will keep military forces outside the demilitarized zone for 1 weeks IF you keep police forces outside the demilitarized zone for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ss2",
+    "split": "train",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will halt offensive military operations for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 4,
+    "mode": "number",
+    "text": "We will keep military forces outside the demilitarized zone for 1 weeks IF you keep police forces outside the demilitarized zone for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will keep military forces outside the demilitarized zone for 1 weeks UNLESS you keep police forces outside the demilitarized zone for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not keep military forces outside the demilitarized zone for 1 weeks IF you keep police forces outside the demilitarized zone for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will keep military forces outside the demilitarized zone for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will keep military forces outside the demilitarized zone for 2 weeks IF you keep police forces outside the demilitarized zone for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 6,
+    "mode": "number",
+    "text": "We will keep military forces outside the demilitarized zone for 2 weeks IF you keep police forces outside the demilitarized zone for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not keep military forces outside the demilitarized zone for 2 weeks IF you keep police forces outside the demilitarized zone for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will keep military forces outside the demilitarized zone for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will keep military forces outside the demilitarized zone for 2 weeks UNLESS you keep police forces outside the demilitarized zone for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not keep military forces outside the demilitarized zone for 3 weeks IF you keep police forces outside the demilitarized zone for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will keep military forces outside the demilitarized zone for 3 weeks IF you keep police forces outside the demilitarized zone for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 8,
+    "mode": "number",
+    "text": "We will keep military forces outside the demilitarized zone for 3 weeks IF you keep police forces outside the demilitarized zone for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will keep military forces outside the demilitarized zone for 3 weeks UNLESS you keep police forces outside the demilitarized zone for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ss3",
+    "split": "train",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will keep military forces outside the demilitarized zone for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 4,
+    "mode": "number",
+    "text": "We will halt firing along the line of control for 1 weeks IF you halt firing along the line of control for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will halt firing along the line of control for 1 weeks IF you halt firing along the line of control for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not halt firing along the line of control for 1 weeks IF you halt firing along the line of control for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will halt firing along the line of control for 1 weeks UNLESS you halt firing along the line of control for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 6,
+    "mode": "number",
+    "text": "We will halt firing along the line of control for 2 weeks IF you halt firing along the line of control for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will halt firing along the line of control for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will halt firing along the line of control for 2 weeks IF you halt firing along the line of control for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not halt firing along the line of control for 2 weeks IF you halt firing along the line of control for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will halt firing along the line of control for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will halt firing along the line of control for 2 weeks UNLESS you halt firing along the line of control for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 8,
+    "mode": "number",
+    "text": "We will halt firing along the line of control for 3 weeks IF you halt firing along the line of control for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will halt firing along the line of control for 3 weeks IF you halt firing along the line of control for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will halt firing along the line of control for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will halt firing along the line of control for 3 weeks UNLESS you halt firing along the line of control for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ip1",
+    "split": "train",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not halt firing along the line of control for 3 weeks IF you halt firing along the line of control for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will maintain a ceasefire for 1 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not maintain a ceasefire for 1 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will maintain a ceasefire for 1 weeks UNLESS you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will maintain a ceasefire for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 4,
+    "mode": "number",
+    "text": "We will maintain a ceasefire for 1 weeks IF you maintain humanitarian access for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will maintain a ceasefire for 2 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not maintain a ceasefire for 2 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will maintain a ceasefire for 2 weeks UNLESS you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 6,
+    "mode": "number",
+    "text": "We will maintain a ceasefire for 2 weeks IF you maintain humanitarian access for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will maintain a ceasefire for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will maintain a ceasefire for 3 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 8,
+    "mode": "number",
+    "text": "We will maintain a ceasefire for 3 weeks IF you maintain humanitarian access for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will maintain a ceasefire for 3 weeks UNLESS you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not maintain a ceasefire for 3 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga1",
+    "split": "dev",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will maintain a ceasefire for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will maintain a ceasefire for 1 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 4,
+    "mode": "number",
+    "text": "We will maintain a ceasefire for 1 weeks IF you maintain humanitarian access for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not maintain a ceasefire for 1 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will maintain a ceasefire for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will maintain a ceasefire for 1 weeks UNLESS you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will maintain a ceasefire for 2 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 6,
+    "mode": "number",
+    "text": "We will maintain a ceasefire for 2 weeks IF you maintain humanitarian access for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not maintain a ceasefire for 2 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will maintain a ceasefire for 2 weeks UNLESS you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will maintain a ceasefire for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will maintain a ceasefire for 3 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 8,
+    "mode": "number",
+    "text": "We will maintain a ceasefire for 3 weeks IF you maintain humanitarian access for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not maintain a ceasefire for 3 weeks IF you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will maintain a ceasefire for 3 weeks UNLESS you maintain humanitarian access for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ga2",
+    "split": "dev",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will maintain a ceasefire for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will maintain a cessation of hostilities for 1 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 4,
+    "mode": "number",
+    "text": "We will maintain a cessation of hostilities for 1 weeks IF you maintain a cessation of hostilities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not maintain a cessation of hostilities for 1 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will maintain a cessation of hostilities for 1 weeks UNLESS you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will maintain a cessation of hostilities for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not maintain a cessation of hostilities for 2 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 6,
+    "mode": "number",
+    "text": "We will maintain a cessation of hostilities for 2 weeks IF you maintain a cessation of hostilities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will maintain a cessation of hostilities for 2 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will maintain a cessation of hostilities for 2 weeks UNLESS you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will maintain a cessation of hostilities for 3 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 8,
+    "mode": "number",
+    "text": "We will maintain a cessation of hostilities for 3 weeks IF you maintain a cessation of hostilities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not maintain a cessation of hostilities for 3 weeks IF you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will maintain a cessation of hostilities for 3 weeks UNLESS you maintain a cessation of hostilities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy1",
+    "split": "test",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will maintain a cessation of hostilities for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 4,
+    "mode": "number",
+    "text": "We will keep forces outside disputed positions for 1 weeks IF you keep forces outside agreed observation areas for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not keep forces outside disputed positions for 1 weeks IF you keep forces outside agreed observation areas for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will keep forces outside disputed positions for 1 weeks IF you keep forces outside agreed observation areas for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will keep forces outside disputed positions for 1 weeks UNLESS you keep forces outside agreed observation areas for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will keep forces outside disputed positions for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will keep forces outside disputed positions for 2 weeks IF you keep forces outside agreed observation areas for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 6,
+    "mode": "number",
+    "text": "We will keep forces outside disputed positions for 2 weeks IF you keep forces outside agreed observation areas for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not keep forces outside disputed positions for 2 weeks IF you keep forces outside agreed observation areas for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will keep forces outside disputed positions for 2 weeks UNLESS you keep forces outside agreed observation areas for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will keep forces outside disputed positions for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will keep forces outside disputed positions for 3 weeks IF you keep forces outside agreed observation areas for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 8,
+    "mode": "number",
+    "text": "We will keep forces outside disputed positions for 3 weeks IF you keep forces outside agreed observation areas for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will keep forces outside disputed positions for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will keep forces outside disputed positions for 3 weeks UNLESS you keep forces outside agreed observation areas for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will suspend the specified sanctions for 1 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "sy2",
+    "split": "test",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not keep forces outside disputed positions for 3 weeks IF you keep forces outside agreed observation areas for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 4,
+    "mode": "number",
+    "text": "We will suspend the specified sanctions for 1 weeks IF you suspend the specified nuclear activities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will suspend the specified sanctions for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will suspend the specified sanctions for 1 weeks UNLESS you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not suspend the specified sanctions for 1 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will suspend the specified sanctions for 2 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 6,
+    "mode": "number",
+    "text": "We will suspend the specified sanctions for 2 weeks IF you suspend the specified nuclear activities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not suspend the specified sanctions for 2 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will suspend the specified sanctions for 2 weeks UNLESS you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will suspend the specified sanctions for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will suspend the specified sanctions for 3 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 8,
+    "mode": "number",
+    "text": "We will suspend the specified sanctions for 3 weeks IF you suspend the specified nuclear activities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not suspend the specified sanctions for 3 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will suspend the specified sanctions for 3 weeks UNLESS you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir1",
+    "split": "test",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will suspend the specified sanctions for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 4,
+    "mode": "valid",
+    "text": "We will suspend the specified sanctions for 1 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 4,
+    "mode": "number",
+    "text": "We will suspend the specified sanctions for 1 weeks IF you suspend the specified nuclear activities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not suspend the specified sanctions for 1 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 6,
+    "mode": "valid",
+    "text": "We will suspend the specified sanctions for 2 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 4,
+    "mode": "unless",
+    "text": "We will suspend the specified sanctions for 1 weeks UNLESS you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 6,
+    "mode": "number",
+    "text": "We will suspend the specified sanctions for 2 weeks IF you suspend the specified nuclear activities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will suspend the specified sanctions for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will suspend the specified sanctions for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 6,
+    "mode": "unless",
+    "text": "We will suspend the specified sanctions for 2 weeks UNLESS you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not suspend the specified sanctions for 2 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 8,
+    "mode": "valid",
+    "text": "We will suspend the specified sanctions for 3 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 8,
+    "mode": "number",
+    "text": "We will suspend the specified sanctions for 3 weeks IF you suspend the specified nuclear activities for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 8,
+    "mode": "unless",
+    "text": "We will suspend the specified sanctions for 3 weeks UNLESS you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will suspend the specified sanctions for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "context": "ir2",
+    "split": "test",
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not suspend the specified sanctions for 3 weeks IF you suspend the specified nuclear activities for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  }
+]

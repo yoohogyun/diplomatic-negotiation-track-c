@@ -1,0 +1,68 @@
+{
+  "id": "gen-1791768822-vlWVpEF83XYeINk5nKrg",
+  "object": "chat.completion",
+  "created": 1791768822,
+  "model": "openai/gpt-5.6-sol",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"action\":1}",
+        "refusal": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0760e5952d06b824016acc38f6fcbc87d18e7bf5ffac5357bf",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0760e5952d06b824016acc38fe833087d186c9ab3d9dfb1bb9",
+            "index": 1
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0760e5952d06b824016acc39065ae487d1baabfd4e521e2f0e",
+            "index": 2
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 1118,
+    "total_tokens": 1770,
+    "cost": 0.012484,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012484,
+      "upstream_inference_prompt_cost": 0.001304,
+      "upstream_inference_completions_cost": 0.01118
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1103,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

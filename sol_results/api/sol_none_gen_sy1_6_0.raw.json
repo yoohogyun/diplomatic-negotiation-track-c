@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791768524-xJowfStyc7HGTSnZa3lT",
+  "object": "chat.completion",
+  "created": 1791768524,
+  "model": "openai/gpt-5.6-sol",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"We will maintain a cessation of hostilities for 2 weeks, provided that you likewise maintain a cessation of hostilities for 2 weeks. Our commitment is expressly conditional upon yours.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 49,
+    "total_tokens": 262,
+    "cost": 0.000916,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000916,
+      "upstream_inference_prompt_cost": 0.000426,
+      "upstream_inference_completions_cost": 0.00049
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

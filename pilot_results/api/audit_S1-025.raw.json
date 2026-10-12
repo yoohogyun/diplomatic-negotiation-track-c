@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791765217-3GEgQyXsEExwCLMA2ytw",
+  "object": "chat.completion",
+  "created": 1791765217,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"function\":\"commitment\",\"evidence\":\"committing to continue strong support\",\"condition\":\"in accordance with their respective mandates\",\"limitation\":\"This states a public cooperative commitment; it does not establish implementation, outcomes, or private motives.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 248,
+    "completion_tokens": 56,
+    "total_tokens": 304,
+    "cost": 0.0001168,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001168,
+      "upstream_inference_prompt_cost": 4.96e-05,
+      "upstream_inference_completions_cost": 6.72e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791766064-NLbwEqdfaOJdTnevuOts",
+  "object": "chat.completion",
+  "created": 1791766064,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"If you keep police forces outside the demilitarized zone for 1 week, we will keep military forces outside it for 2 weeks; our commitment depends on yours.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 192,
+    "completion_tokens": 48,
+    "total_tokens": 240,
+    "cost": 9.6e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 9.6e-05,
+      "upstream_inference_prompt_cost": 3.84e-05,
+      "upstream_inference_completions_cost": 5.76e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

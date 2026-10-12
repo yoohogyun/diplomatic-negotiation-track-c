@@ -1,0 +1,5 @@
+method,net_utility,agreement,queries,signals,length,strategic_api_calls_per_episode,strategy_compute
+Luna alone (none),-0.3677453125,0.242734375,0.21640625,0.0515625,3.94859375,3.94859375,API
+Luna + learned strategy (3 seeds),0.4753177083333333,0.9833333333333334,0.0,0.7083333333333334,2.998958333333333,0.0,local neural policy
+Luna + public-belief planning,0.533428125,1.0,0.4375,0.7234375,3.3275,0.0,local known-rule planning
+Sol medium,0.51401171875,1.0,0.421875,0.716796875,3.4292968750000004,3.4292968750000004,API

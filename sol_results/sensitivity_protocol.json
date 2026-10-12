@@ -1,0 +1,98 @@
+{
+  "type": "paired evaluation-only changes; no retraining",
+  "reference": {
+    "prior": 0.5,
+    "reliability": 0.9,
+    "query_cost": 0.02,
+    "rejection_cost": 0.08,
+    "signal_effect": 0.1,
+    "signal_cost": 0.06,
+    "hard_cost": 0.45,
+    "outside": 0.12,
+    "turn_cost": 0.01,
+    "escalation_weight": 0.005,
+    "reversal_cost": 0.08,
+    "horizon": 5
+  },
+  "changes": [
+    [
+      "reliability",
+      0.5
+    ],
+    [
+      "reliability",
+      0.7
+    ],
+    [
+      "reliability",
+      0.9
+    ],
+    [
+      "reliability",
+      1.0
+    ],
+    [
+      "signal_effect",
+      0.0
+    ],
+    [
+      "signal_effect",
+      0.1
+    ],
+    [
+      "signal_effect",
+      0.25
+    ],
+    [
+      "hard_cost",
+      0.4
+    ],
+    [
+      "hard_cost",
+      0.55
+    ],
+    [
+      "hard_cost",
+      0.9
+    ],
+    [
+      "rejection_cost",
+      0.0
+    ],
+    [
+      "rejection_cost",
+      0.04
+    ],
+    [
+      "rejection_cost",
+      0.08
+    ],
+    [
+      "rejection_cost",
+      0.16
+    ],
+    [
+      "rejection_cost",
+      0.32
+    ],
+    [
+      "query_cost",
+      0.01
+    ],
+    [
+      "query_cost",
+      0.02
+    ],
+    [
+      "query_cost",
+      0.08
+    ]
+  ],
+  "model_seeds": [
+    17,
+    29,
+    43
+  ],
+  "contexts": "same four test contexts",
+  "all_other_parameters_fixed": true
+}

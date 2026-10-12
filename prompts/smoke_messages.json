@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are the spokesperson of fictional diplomatic delegation A. Render only the supplied meaning as one short utterance. Preserve the reciprocal condition. Do not invent countries, historical events or private information. Return the utterance JSON."
+  },
+  {
+    "role": "user",
+    "content": "Synthetic meaning for a future connectivity check only: A offers B 0.4 of a resource, only if B reciprocally de-escalates. This is not a historical quotation or a frozen research scenario."
+  }
+]

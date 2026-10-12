@@ -1,0 +1,11 @@
+{
+  "parsed": {
+    "kind": "signal",
+    "x": null,
+    "y": null,
+    "cost": 0.06,
+    "conditional": "not_applicable"
+  },
+  "response_id": "gen-1791766133-yhlHdd0J9GEuwCJSc9wF",
+  "cost": 9.6e-05
+}

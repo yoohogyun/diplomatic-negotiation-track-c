@@ -1,0 +1,10 @@
+{
+  "parsed": {
+    "function": "conditional_exchange",
+    "evidence": "If Russia and Ukraine would like to come together and work out",
+    "condition": "Russia and Ukraine choose to negotiate their own agreement through a separate channel.",
+    "limitation": "Does not establish that they agreed, that talks occurred, or what the separate channel was."
+  },
+  "response_id": "gen-1791765216-ml5xPvbpQPEI1WE85tbv",
+  "cost": 0.0001256
+}

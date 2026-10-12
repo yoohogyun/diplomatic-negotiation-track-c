@@ -1,0 +1,6 @@
+{
+  "time": 1791770568.720526,
+  "additional_comparator": "initial_sol: invoke Sol only at t=0, then use the same fixed cheap policy.",
+  "reason": "Test whether a trivial one-call rule already explains the gain; specified before test execution, not used for gate selection. Reuses always-Sol initial prompt cache.",
+  "original_protocol_unchanged": true
+}

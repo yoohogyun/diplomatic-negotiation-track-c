@@ -1,0 +1,10 @@
+{
+  "parsed": {
+    "function": "conditional_exchange",
+    "evidence": "want to see an immediate ceasefire, but linked to hostages",
+    "condition": "immediate ceasefire linked to hostages",
+    "limitation": "Does not establish private terms, motives, or negotiation outcomes."
+  },
+  "response_id": "gen-1791765229-tvFwQkgaLFdoqhF1RDxn",
+  "cost": 0.0001136
+}

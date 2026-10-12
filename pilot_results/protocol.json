@@ -1,0 +1,491 @@
+{
+  "status": "exploratory; no untouched test set",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "steps_per_base_run": 20480,
+  "conditions": [
+    [
+      "grid_r0_q0.5",
+      {
+        "prior": 0.5,
+        "reliability": 0.5,
+        "query_cost": 0.02,
+        "rejection_cost": 0,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0_q0.7",
+      {
+        "prior": 0.5,
+        "reliability": 0.7,
+        "query_cost": 0.02,
+        "rejection_cost": 0,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0_q0.9",
+      {
+        "prior": 0.5,
+        "reliability": 0.9,
+        "query_cost": 0.02,
+        "rejection_cost": 0,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0_q1.0",
+      {
+        "prior": 0.5,
+        "reliability": 1.0,
+        "query_cost": 0.02,
+        "rejection_cost": 0,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.04_q0.5",
+      {
+        "prior": 0.5,
+        "reliability": 0.5,
+        "query_cost": 0.02,
+        "rejection_cost": 0.04,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.04_q0.7",
+      {
+        "prior": 0.5,
+        "reliability": 0.7,
+        "query_cost": 0.02,
+        "rejection_cost": 0.04,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.04_q0.9",
+      {
+        "prior": 0.5,
+        "reliability": 0.9,
+        "query_cost": 0.02,
+        "rejection_cost": 0.04,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.04_q1.0",
+      {
+        "prior": 0.5,
+        "reliability": 1.0,
+        "query_cost": 0.02,
+        "rejection_cost": 0.04,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.08_q0.5",
+      {
+        "prior": 0.5,
+        "reliability": 0.5,
+        "query_cost": 0.02,
+        "rejection_cost": 0.08,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.08_q0.7",
+      {
+        "prior": 0.5,
+        "reliability": 0.7,
+        "query_cost": 0.02,
+        "rejection_cost": 0.08,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.08_q0.9",
+      {
+        "prior": 0.5,
+        "reliability": 0.9,
+        "query_cost": 0.02,
+        "rejection_cost": 0.08,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.08_q1.0",
+      {
+        "prior": 0.5,
+        "reliability": 1.0,
+        "query_cost": 0.02,
+        "rejection_cost": 0.08,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.16_q0.5",
+      {
+        "prior": 0.5,
+        "reliability": 0.5,
+        "query_cost": 0.02,
+        "rejection_cost": 0.16,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.16_q0.7",
+      {
+        "prior": 0.5,
+        "reliability": 0.7,
+        "query_cost": 0.02,
+        "rejection_cost": 0.16,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.16_q0.9",
+      {
+        "prior": 0.5,
+        "reliability": 0.9,
+        "query_cost": 0.02,
+        "rejection_cost": 0.16,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.16_q1.0",
+      {
+        "prior": 0.5,
+        "reliability": 1.0,
+        "query_cost": 0.02,
+        "rejection_cost": 0.16,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.32_q0.5",
+      {
+        "prior": 0.5,
+        "reliability": 0.5,
+        "query_cost": 0.02,
+        "rejection_cost": 0.32,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.32_q0.7",
+      {
+        "prior": 0.5,
+        "reliability": 0.7,
+        "query_cost": 0.02,
+        "rejection_cost": 0.32,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.32_q0.9",
+      {
+        "prior": 0.5,
+        "reliability": 0.9,
+        "query_cost": 0.02,
+        "rejection_cost": 0.32,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "grid_r0.32_q1.0",
+      {
+        "prior": 0.5,
+        "reliability": 1.0,
+        "query_cost": 0.02,
+        "rejection_cost": 0.32,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "base",
+      {
+        "prior": 0.5,
+        "reliability": 0.9,
+        "query_cost": 0.02,
+        "rejection_cost": 0.08,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "cheap_query",
+      {
+        "prior": 0.5,
+        "reliability": 0.9,
+        "query_cost": 0.005,
+        "rejection_cost": 0.08,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "expensive_query",
+      {
+        "prior": 0.5,
+        "reliability": 0.9,
+        "query_cost": 0.08,
+        "rejection_cost": 0.08,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "no_signal_effect",
+      {
+        "prior": 0.5,
+        "reliability": 0.9,
+        "query_cost": 0.02,
+        "rejection_cost": 0.08,
+        "signal_effect": 0,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "strong_signal",
+      {
+        "prior": 0.5,
+        "reliability": 0.9,
+        "query_cost": 0.02,
+        "rejection_cost": 0.08,
+        "signal_effect": 0.25,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "no_agreement_hard",
+      {
+        "prior": 0.5,
+        "reliability": 0.9,
+        "query_cost": 0.02,
+        "rejection_cost": 0.08,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.9,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "low_prior",
+      {
+        "prior": 0.2,
+        "reliability": 0.9,
+        "query_cost": 0.02,
+        "rejection_cost": 0.08,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ],
+    [
+      "high_prior",
+      {
+        "prior": 0.8,
+        "reliability": 0.9,
+        "query_cost": 0.02,
+        "rejection_cost": 0.08,
+        "signal_effect": 0.1,
+        "signal_cost": 0.06,
+        "hard_cost": 0.45,
+        "outside": 0.12,
+        "turn_cost": 0.01,
+        "escalation_weight": 0.005,
+        "reversal_cost": 0.08,
+        "horizon": 5
+      }
+    ]
+  ],
+  "hypothesis": "Queries may have zero value when offers cheaply reveal type; value depends on rejection cost, reliability and signal effect.",
+  "freeze_time": 1791765125.4122531,
+  "source_context": "C-012 reciprocal suspension; additional source functions audited separately",
+  "evaluation": "Exact weighted enumeration of hidden type and one informative query response. Public offer responses deterministic."
+}

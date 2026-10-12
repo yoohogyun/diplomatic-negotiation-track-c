@@ -1,0 +1,200 @@
+[
+  {
+    "source_id": "C-012",
+    "annotation": {
+      "function": "conditional_exchange",
+      "evidence": "called on the DPRK to suspend its nuclear and missile programs in exchange for a halt of the large-scale US-ROK exercises",
+      "condition": "DPRK suspension in exchange for a halt of US-ROK exercises",
+      "limitation": "Does not establish acceptance, implementation, outcome, or private negotiations."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "S1-019",
+    "annotation": {
+      "function": "commitment",
+      "evidence": "We affirm the imperative of realizing an immediate and sustained ceasefire in Gaza",
+      "condition": "as part of a deal that would release hostages held by Hamas and allow for delivery of essential additional humanitarian assistance",
+      "limitation": "Does not establish agreement by other parties, implementation, or negotiation outcome."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "C-006",
+    "annotation": {
+      "function": "noncommitment",
+      "evidence": "they may be looking at that, they may not",
+      "condition": "if they were to be sanctioned",
+      "limitation": "Does not establish whether Treasury is investigating, will sanction, or has made any decision."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "C-007",
+    "annotation": {
+      "function": "conditional_exchange",
+      "evidence": "if that engagement can help constrain Iran’s activities",
+      "condition": "Engagement can help constrain Iran’s activities",
+      "limitation": "Does not establish a commitment, outcome, or hidden motive."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "C-011",
+    "annotation": {
+      "function": "conditional_exchange",
+      "evidence": "If and when conditions allow",
+      "condition": "conditions allow refugee return",
+      "limitation": "Does not establish that conditions currently allow return or imply any negotiation outcome."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "C-023",
+    "annotation": {
+      "function": "background",
+      "evidence": "the delays experienced in agreeing on a final text",
+      "condition": "if negotiations could have been held through direct exchanges",
+      "limitation": "Does not establish that direct exchanges would actually have produced a quicker Council response."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "S3-043",
+    "annotation": {
+      "function": "conditional_exchange",
+      "evidence": "If Russia and Ukraine would like to come together and work out",
+      "condition": "Russia and Ukraine choose to negotiate their own agreement through a separate channel.",
+      "limitation": "Does not establish that they agreed, that talks occurred, or what the separate channel was."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "S1-025",
+    "annotation": {
+      "function": "commitment",
+      "evidence": "committing to continue strong support",
+      "condition": "in accordance with their respective mandates",
+      "limitation": "This states a public cooperative commitment; it does not establish implementation, outcomes, or private motives."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "S3-009",
+    "annotation": {
+      "function": "background",
+      "evidence": "he has no interest in negotiating with Ukraine right now",
+      "condition": "because he’s seeing the ammunitions shortages that they are suffering",
+      "limitation": "This reports attributed motivations and a current position; it does not establish private dialogue, intent, or negotiation outcomes."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "S4-018",
+    "annotation": {
+      "function": "background",
+      "evidence": "This round of talks offers a new opportunity",
+      "condition": "NONE",
+      "limitation": "Does not establish an outcome, commitment, or hidden motive."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "S4-040",
+    "annotation": {
+      "function": "commitment",
+      "evidence": "China is committed to upholding regional and international peace and stability",
+      "condition": "NONE",
+      "limitation": "States a commitment and support; does not establish outcomes, motives, or private negotiations."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "S5-015",
+    "annotation": {
+      "function": "background",
+      "evidence": "We welcome his intensive diplomatic efforts",
+      "condition": "NONE",
+      "limitation": "Does not establish the efforts’ outcome, effectiveness, or any negotiated agreement."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "candidate_row_1188",
+    "annotation": {
+      "function": "background",
+      "evidence": "We were able to negotiate the ceasefire for Manbij",
+      "condition": "NONE",
+      "limitation": "Does not establish negotiation details, motives, implementation, or outcome beyond the stated ceasefire arrangement."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "candidate_row_1775",
+    "annotation": {
+      "function": "noncommitment",
+      "evidence": "which is not something that we supported",
+      "condition": "NONE",
+      "limitation": "Shows opposition to that draft’s permanent-ceasefire provision; does not establish broader policy, motives, or negotiation outcome."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "candidate_row_1776",
+    "annotation": {
+      "function": "conditional_exchange",
+      "evidence": "want to see an immediate ceasefire, but linked to hostages",
+      "condition": "immediate ceasefire linked to hostages",
+      "limitation": "Does not establish private terms, motives, or negotiation outcomes."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "candidate_row_1787",
+    "annotation": {
+      "function": "condition",
+      "evidence": "\"not calling for Hamas to agree to a ceasefire where they would release hostages\"",
+      "condition": "A ceasefire is presented as requiring Hamas’s agreement and release of hostages.",
+      "limitation": "Does not establish actual negotiations, motives, or outcomes."
+    },
+    "evidence_is_exact_substring": false,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "candidate_row_1795",
+    "annotation": {
+      "function": "condition",
+      "evidence": "the ceasefire and release of hostages that the resolution calls for",
+      "condition": "NONE",
+      "limitation": "Does not establish a binding commitment, negotiation outcome, or private agreement."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  },
+  {
+    "source_id": "candidate_row_1875",
+    "annotation": {
+      "function": "private_channel_mention",
+      "evidence": "our private conversations with officials from the Government of Israel",
+      "condition": "NONE",
+      "limitation": "Does not establish the conversations’ content, motives, or outcomes."
+    },
+    "evidence_is_exact_substring": true,
+    "label_status": "model proposed; no human gold"
+  }
+]

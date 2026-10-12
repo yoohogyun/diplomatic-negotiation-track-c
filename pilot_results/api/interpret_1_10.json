@@ -1,0 +1,11 @@
+{
+  "parsed": {
+    "kind": "withdraw",
+    "x": null,
+    "y": null,
+    "cost": null,
+    "conditional": "not_applicable"
+  },
+  "response_id": "gen-1791765300-n9WJ01sWE8CA3Eg8f3GR",
+  "cost": 8.26e-05
+}

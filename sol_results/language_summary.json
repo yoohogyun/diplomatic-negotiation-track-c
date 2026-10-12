@@ -1,0 +1,7 @@
+{
+  "bank_n": 396,
+  "bank_match": 396,
+  "probes_n": 180,
+  "probes_match": 180,
+  "note": "Same-model generation/interpretation consistency, not human gold accuracy."
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-12",
+  "scope": "Professor assignment compliance only, not conference acceptance readiness. Luna none retained. No new model or paid experiment.",
+  "sources": ["requirements/EMNLP_Capstone_Guide.pdf", "requirements/Track_C_Guide.md"],
+  "conclusion": "Core implementation and required experiment matrix are present and checked. Full assignment submission is incomplete: discourse interpretation must be finalized, paper/repository packaging and actual teammate reproduction/contributions remain.",
+  "items": [
+    {"requirement":"MDP/POMDP specification, private-type boundary, bilateral acceptance, finite horizon and costs","status":"implemented_and_checked","evidence":["pilot/env.py","study/env.py","tests/test_pilot.py","tests/test_study.py"]},
+    {"requirement":"Six Track C utterance functions with meaning-dependent transitions","status":"implemented_and_checked","evidence":["study_results/language_bank.json","study_results/semantic_probes.json"],"detail":"396 generated/interpreted utterances; 180 semantic probes. Templates and cached execution are permitted by Track C section3.1 and common guide page8. Model agreement is not human gold accuracy."},
+    {"requirement":"Actual diplomatic sources, grouped split and at least 10 real-data environment cases","status":"implemented_and_checked","evidence":["study_results/contexts.json","study_results/source_case_validation.json"],"detail":"12 source contexts in 6 event groups; 24 type-specific validation paths. Numeric assumptions and generated trajectories explicitly synthetic."},
+    {"requirement":"Random, strong Heuristic, immediate-reward Bandit and PPO under common conditions","status":"completed","evidence":["study/train.py","study/evaluate.py","study_results/summary.csv"],"detail":"All use the same frozen Luna execution module. Direct Luna and Sol are supplemental; planner cannot replace mandatory learned comparisons."},
+    {"requirement":"At least 3 base training seeds for Bandit and PPO","status":"completed","detail":"Seeds17,29,43; 102400 interactions each; saved checkpoints and seed-level statistics."},
+    {"requirement":"Discount, entropy, major reward ablations; information/rule sensitivity","status":"completed","evidence":["study_results/protocol.json","study_results/ablations.png","study_results/sensitivity_metrics.json"],"detail":"Discount .8/.95/.99; entropy0/.01/.1; rejection/reversal cost omissions; belief and query interventions; question reliability, signal effect, feasibility, rejection/query cost sweeps. Single-seed supplementary runs disclosed as exploratory."},
+    {"requirement":"Metrics, losses, learning curves, transition counts/probabilities/heatmaps","status":"completed","evidence":["study_results/summary.csv","study_results/training_logs/base_17/progress.csv","study_results/learning_curves.png","study_results/transition_matrices.json","study_results/action_transitions.png"]},
+    {"requirement":"At least 6 source-grounded discourse episodes with interpretation and comparisons","status":"materials_present_interpretation_partial","detail":"8 episodes/27 turns, 7 sy1 and 1 ir1; current selected policies are Heuristic, Planner and Direct_Luna. Walkthroughs give text/state/cost but mostly read as logs. Final submission should explain turning points and matched-policy alternatives, including learned-policy behavior; inspect conditional withdrawal and ratification speech-act errors.","evidence":["study_results/discourse_cases.json","study_results/discourse_walkthroughs.txt","study_results/language_error_review.json"]},
+    {"requirement":"Executable GitHub repository, data access, installation and reproduction instructions","status":"local_materials_present_release_incomplete","detail":"Code, model/runtime records and execution commands exist locally. No .git in current workspace; no final GitHub submission artifact verified. A portable dependency setup, included result/model files or access instructions, and source usage terms need final packaging."},
+    {"requirement":"Paper <=4 main-text pages plus Limitations and editable source","status":"not_written_by_user_instruction","detail":"paper directory contains acl.sty only. Actual conference submission or acceptance is not required by the class guide page22."},
+    {"requirement":"Another team member executes declared reproduction and actual contributions recorded","status":"not_verified","detail":"Saved-model replay in a new Python process is completed but is not another-member reproduction. Common guide pages21/24 and Track C Task14 explicitly require it."}
+  ],
+  "fresh_checks":{"stable_baselines3_env_checker":"passed","unittest_count":31,"failures":0,"errors":0},
+  "clarifications": {
+    "luna_reasoning_none":"No required reasoning effort or additional model count in the assignment.",
+    "planner":"Allowed optional known-model comparator; must retain Random/Heuristic/Bandit/PPO in the class submission.",
+    "ppo_winning":"Not required; common guide page9 explicitly permits PPO underperforming heuristics.",
+    "twenty_turns":"Recommended, not a mandatory separate human annotation quota.",
+    "sixty_two_blind_labels":"A locally proposed extra review sheet, not a professor-mandated sample size or compulsory inter-annotator agreement study.",
+    "conference":"Actual COLING submission/acceptance not required for the class; the user's conference objective is separate."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "gen-1791769081-QoscLIdtHOY2w76bSoQh",
+  "object": "chat.completion",
+  "created": 1791769081,
+  "model": "openai/gpt-5.6-sol",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"action\":4}",
+        "refusal": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0bf67a7dda791649016acc39fa7af487d199a2fa72e8089f76",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0bf67a7dda791649016acc3a0257dc87d1b82f62beccfcad63",
+            "index": 1
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0bf67a7dda791649016acc3a0a290087d1a8d11a84b4a31722",
+            "index": 2
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 658,
+    "completion_tokens": 1290,
+    "total_tokens": 1948,
+    "cost": 0.014216,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.014216,
+      "upstream_inference_prompt_cost": 0.001316,
+      "upstream_inference_completions_cost": 0.0129
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1275,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

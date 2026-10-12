@@ -1,0 +1,588 @@
+[
+  {
+    "review_id": "U001",
+    "bank_id": "ga1_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U002",
+    "bank_id": "ga2_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U003",
+    "bank_id": "ip1_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U004",
+    "bank_id": "ip1_7_2",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U005",
+    "bank_id": "ir1_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U006",
+    "bank_id": "ir2_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U007",
+    "bank_id": "kr1_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U008",
+    "bank_id": "kr2_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U009",
+    "bank_id": "ss1_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U010",
+    "bank_id": "ss1_7_2",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U011",
+    "bank_id": "ss2_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U012",
+    "bank_id": "ss2_8_2",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U013",
+    "bank_id": "ss3_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U014",
+    "bank_id": "ss3_9_2",
+    "intended": {
+      "kind": "ratify"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U015",
+    "bank_id": "sy1_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U016",
+    "bank_id": "sy2_10_2",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U017",
+    "bank_id": "sy2_7_2",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "invalid"
+    }
+  },
+  {
+    "review_id": "U018",
+    "bank_id": "ga1_0_0",
+    "intended": {
+      "kind": "ambiguity"
+    },
+    "model_interpretation": {
+      "kind": "ambiguity"
+    }
+  },
+  {
+    "review_id": "U019",
+    "bank_id": "ga1_0_1",
+    "intended": {
+      "kind": "ambiguity"
+    },
+    "model_interpretation": {
+      "kind": "ambiguity"
+    }
+  },
+  {
+    "review_id": "U020",
+    "bank_id": "ga1_0_2",
+    "intended": {
+      "kind": "ambiguity"
+    },
+    "model_interpretation": {
+      "kind": "ambiguity"
+    }
+  },
+  {
+    "review_id": "U021",
+    "bank_id": "ga1_10_0",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "withdraw"
+    }
+  },
+  {
+    "review_id": "U022",
+    "bank_id": "ga1_10_1",
+    "intended": {
+      "kind": "withdraw"
+    },
+    "model_interpretation": {
+      "kind": "withdraw"
+    }
+  },
+  {
+    "review_id": "U023",
+    "bank_id": "ga1_1_0",
+    "intended": {
+      "kind": "signal",
+      "cost": 0.06
+    },
+    "model_interpretation": {
+      "kind": "signal",
+      "cost": 0.06
+    }
+  },
+  {
+    "review_id": "U024",
+    "bank_id": "ga1_1_1",
+    "intended": {
+      "kind": "signal",
+      "cost": 0.06
+    },
+    "model_interpretation": {
+      "kind": "signal",
+      "cost": 0.06
+    }
+  },
+  {
+    "review_id": "U025",
+    "bank_id": "ga1_1_2",
+    "intended": {
+      "kind": "signal",
+      "cost": 0.06
+    },
+    "model_interpretation": {
+      "kind": "signal",
+      "cost": 0.06
+    }
+  },
+  {
+    "review_id": "U026",
+    "bank_id": "ga1_2_0",
+    "intended": {
+      "kind": "query"
+    },
+    "model_interpretation": {
+      "kind": "query"
+    }
+  },
+  {
+    "review_id": "U027",
+    "bank_id": "ga1_2_1",
+    "intended": {
+      "kind": "query"
+    },
+    "model_interpretation": {
+      "kind": "query"
+    }
+  },
+  {
+    "review_id": "U028",
+    "bank_id": "ga1_2_2",
+    "intended": {
+      "kind": "query"
+    },
+    "model_interpretation": {
+      "kind": "query"
+    }
+  },
+  {
+    "review_id": "U029",
+    "bank_id": "ga1_3_0",
+    "intended": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "review_id": "U030",
+    "bank_id": "ga1_3_1",
+    "intended": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "review_id": "U031",
+    "bank_id": "ga1_3_2",
+    "intended": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    }
+  },
+  {
+    "review_id": "U032",
+    "bank_id": "ga1_4_0",
+    "intended": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    }
+  },
+  {
+    "review_id": "U033",
+    "bank_id": "ga1_4_1",
+    "intended": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    }
+  },
+  {
+    "review_id": "U034",
+    "bank_id": "ga1_4_2",
+    "intended": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    }
+  },
+  {
+    "review_id": "U035",
+    "bank_id": "ga1_5_0",
+    "intended": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    }
+  },
+  {
+    "review_id": "U036",
+    "bank_id": "ga1_5_1",
+    "intended": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    }
+  },
+  {
+    "review_id": "U037",
+    "bank_id": "ga1_5_2",
+    "intended": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    }
+  },
+  {
+    "review_id": "U038",
+    "bank_id": "ga1_6_0",
+    "intended": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    }
+  },
+  {
+    "review_id": "U039",
+    "bank_id": "ga1_6_1",
+    "intended": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    }
+  },
+  {
+    "review_id": "U040",
+    "bank_id": "ga1_6_2",
+    "intended": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    }
+  },
+  {
+    "review_id": "U041",
+    "bank_id": "ga1_7_0",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    }
+  },
+  {
+    "review_id": "U042",
+    "bank_id": "ga1_7_1",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    }
+  },
+  {
+    "review_id": "U043",
+    "bank_id": "ga1_7_2",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    }
+  },
+  {
+    "review_id": "U044",
+    "bank_id": "ga1_8_0",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    }
+  },
+  {
+    "review_id": "U045",
+    "bank_id": "ga1_8_1",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    }
+  },
+  {
+    "review_id": "U046",
+    "bank_id": "ga1_8_2",
+    "intended": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "model_interpretation": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    }
+  },
+  {
+    "review_id": "U047",
+    "bank_id": "ga1_9_0",
+    "intended": {
+      "kind": "ratify"
+    },
+    "model_interpretation": {
+      "kind": "ratify"
+    }
+  },
+  {
+    "review_id": "U048",
+    "bank_id": "ga1_9_1",
+    "intended": {
+      "kind": "ratify"
+    },
+    "model_interpretation": {
+      "kind": "ratify"
+    }
+  },
+  {
+    "review_id": "U049",
+    "bank_id": "ga1_9_2",
+    "intended": {
+      "kind": "ratify"
+    },
+    "model_interpretation": {
+      "kind": "ratify"
+    }
+  },
+  {
+    "review_id": "U050",
+    "bank_id": "ga2_0_0",
+    "intended": {
+      "kind": "ambiguity"
+    },
+    "model_interpretation": {
+      "kind": "ambiguity"
+    }
+  }
+]

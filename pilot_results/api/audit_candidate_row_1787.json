@@ -1,0 +1,10 @@
+{
+  "parsed": {
+    "function": "condition",
+    "evidence": "\"not calling for Hamas to agree to a ceasefire where they would release hostages\"",
+    "condition": "A ceasefire is presented as requiring Hamas’s agreement and release of hostages.",
+    "limitation": "Does not establish actual negotiations, motives, or outcomes."
+  },
+  "response_id": "gen-1791765231-29MRgpm0W3dsZnZFIafU",
+  "cost": 0.000133
+}

@@ -1,0 +1,7 @@
+{
+  "time": 1791770470.945471,
+  "replacements": {
+    "routing_73ed9686e9e76a81ea204847": "routing_recovery1_73ed9686e9e76a81ea204847"
+  },
+  "reason": "One requests read timeout after 180 seconds. Original request and full USD .048328 reservation retained; manually inspected and one separately billed replacement authorized within existing budget. No policy response was available to select or discard."
+}

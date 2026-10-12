@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791766076-0oqQ0bpL0gYDiBWyxa0j",
+  "object": "chat.completion",
+  "created": 1791766076,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"We welcome the efforts made by you and your counterpart toward a ceasefire along the Line of Control. Our next proposal is provisional and creates no new binding public commitment; it does not alter or supersede any commitments previously undertaken.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 159,
+    "completion_tokens": 58,
+    "total_tokens": 217,
+    "cost": 0.0001014,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001014,
+      "upstream_inference_prompt_cost": 3.18e-05,
+      "upstream_inference_completions_cost": 6.96e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

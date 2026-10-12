@@ -1,0 +1,242 @@
+[
+  {
+    "id": "kr1",
+    "event_group": "peninsula",
+    "split": "train",
+    "source": {
+      "source": "S4",
+      "doc_title": "CMFA PressCon dyad 14733 (Hua Chunying)",
+      "date": "2017-04-05",
+      "url_or_doi": "doi:10.7910/DVN/BAKGET; https://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1451507.shtml",
+      "speaker_role": "spokesperson (answer)",
+      "source_type": "official English version",
+      "sentence": "With different parties' concerns and the crux of the Korean Peninsula issue in mind, we proposed to pursue in parallel tracks denuclearization and the replacement of the Korean armistice with a peace agreement, and called on the DPRK to suspend its nuclear and missile programs in exchange for a halt of the large-scale US-ROK exercises.",
+      "has_cue": "True",
+      "csv_row": 5131
+    },
+    "our_measure": "suspend large-scale military exercises",
+    "their_measure": "suspend nuclear and missile tests",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  },
+  {
+    "id": "kr2",
+    "event_group": "peninsula",
+    "split": "train",
+    "source": {
+      "source": "S4",
+      "doc_title": "CMFA PressCon dyad 16629 (Lu Kang)",
+      "date": "2018-03-28",
+      "url_or_doi": "doi:10.7910/DVN/BAKGET; https://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1546242.shtml",
+      "speaker_role": "spokesperson (answer)",
+      "source_type": "official English version",
+      "sentence": "We hope that all relevant parties can follow the principles and spirit of the September 19 Joint Statement to address each other's legitimate concerns in a synchronized and reciprocal manner and make concerted efforts to politically resolve the Korean Peninsula issue and achieve long-lasting stability and security of the Peninsula.",
+      "has_cue": "True",
+      "csv_row": 3030
+    },
+    "our_measure": "suspend large-scale military exercises",
+    "their_measure": "suspend nuclear and missile tests",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  },
+  {
+    "id": "ss1",
+    "event_group": "south_sudan",
+    "split": "train",
+    "source": {
+      "source": "S4",
+      "doc_title": "CMFA PressCon dyad 10890 (Hua Chunying)",
+      "date": "2014-05-12",
+      "url_or_doi": "doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20140517021310/http://www.fmprc.gov.cn:80/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1155154.shtml",
+      "speaker_role": "spokesperson (answer)",
+      "source_type": "official English version",
+      "sentence": "China welcomes the direct meeting and signing of ceasefire agreement between President Salva Kiir and opposition leader Riek Machar, and appreciates the relentless efforts made by Intergovernmental Authority on Development (IGAD) and other relevant parties in this regard.",
+      "has_cue": "True",
+      "csv_row": 5517
+    },
+    "our_measure": "maintain a cessation of hostilities",
+    "their_measure": "maintain a cessation of hostilities",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  },
+  {
+    "id": "ss2",
+    "event_group": "south_sudan",
+    "split": "train",
+    "source": {
+      "source": "S4",
+      "doc_title": "CMFA PressCon dyad 13454 (Lu Kang)",
+      "date": "2016-07-12",
+      "url_or_doi": "doi:10.7910/DVN/BAKGET; https://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1380374.shtml",
+      "speaker_role": "spokesperson (answer)",
+      "source_type": "official English version",
+      "sentence": "China hopes that the conflicting parties in South Sudan can earnestly enforce and stick to the ceasefire and cessation of violence, faithfully implement the peace agreement, and restore peace and stability to South Sudan at an early date.",
+      "has_cue": "True",
+      "csv_row": 3881
+    },
+    "our_measure": "halt offensive military operations",
+    "their_measure": "halt offensive military operations",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  },
+  {
+    "id": "ss3",
+    "event_group": "south_sudan",
+    "split": "train",
+    "source": {
+      "source": "S5",
+      "doc_title": "S/PV.9467 — Mr. Spasse (Albania)",
+      "date": "2023-11-06",
+      "url_or_doi": "doi:10.7910/DVN/KGVSYH; UNSC_2023_SPV.9467_spch0008.txt",
+      "speaker_role": "delegate",
+      "source_type": "source text",
+      "sentence": "The Sudan and South Sudan should also respect the 2011 agreement and withdraw their military and police troops from the demilitarized zone.",
+      "has_cue": "True",
+      "csv_row": 7106
+    },
+    "our_measure": "keep military forces outside the demilitarized zone",
+    "their_measure": "keep police forces outside the demilitarized zone",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  },
+  {
+    "id": "ip1",
+    "event_group": "kashmir",
+    "split": "train",
+    "source": {
+      "source": "S4",
+      "doc_title": "CMFA PressCon dyad 10527 (Hua Chunying)",
+      "date": "2013-12-18",
+      "url_or_doi": "doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20140111063518/http://www.fmprc.gov.cn:80/eng/xwfw/s2510/2511/t1110094.shtml",
+      "speaker_role": "spokesperson (answer)",
+      "source_type": "official English version",
+      "sentence": "We welcome the efforts made by Pakistan and India for ceasefire at Line of Control in Kashmir.",
+      "has_cue": "False",
+      "csv_row": 5243
+    },
+    "our_measure": "halt firing along the line of control",
+    "their_measure": "halt firing along the line of control",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  },
+  {
+    "id": "ga1",
+    "event_group": "gaza",
+    "split": "dev",
+    "source": {
+      "source": "S1",
+      "doc_title": "Joint Statement by President Biden and Prime Minister Fumio Kishida of Japan—Global Partners for the Future",
+      "date": "April 10, 2024",
+      "url_or_doi": "https://www.presidency.ucsb.edu/documents/joint-statement-president-biden-and-prime-minister-fumio-kishida-japan-global-partners-for",
+      "speaker_role": "joint (leaders/governments)",
+      "source_type": "source text",
+      "sentence": "We affirm the imperative of realizing an immediate and sustained ceasefire in Gaza over a period of at least six weeks as part of a deal that would release hostages held by Hamas and allow for delivery of essential additional humanitarian assistance to Palestinians in need.",
+      "has_cue": "False",
+      "csv_row": 317
+    },
+    "our_measure": "maintain a ceasefire",
+    "their_measure": "maintain humanitarian access",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  },
+  {
+    "id": "ga2",
+    "event_group": "gaza",
+    "split": "dev",
+    "source": {
+      "source": "S3",
+      "doc_title": "Department Press Briefing March 25 2024",
+      "date": "march-25-2024",
+      "url_or_doi": "https://2021-2025.state.gov/briefings/department-press-briefing-march-25-2024/",
+      "speaker_role": "spokesperson (answer)",
+      "source_type": "source text",
+      "sentence": "We, as you know, want to see an immediate ceasefire, but linked to hostages, and then we want to build that into something more enduring.",
+      "has_cue": "False",
+      "csv_row": 1776
+    },
+    "our_measure": "maintain a ceasefire",
+    "their_measure": "maintain humanitarian access",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  },
+  {
+    "id": "sy1",
+    "event_group": "syria",
+    "split": "test",
+    "source": {
+      "source": "S4",
+      "doc_title": "CMFA PressCon dyad 12850 (Hong Lei)",
+      "date": "2016-03-01",
+      "url_or_doi": "doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20160310051413/http://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1344375.shtml",
+      "speaker_role": "spokesperson (answer)",
+      "source_type": "official English version",
+      "sentence": "We hope that relevant parties can truly bear in mind the future of their state and the fundamental interests of their people, strictly follow Resolution 2254 of the UN Security Council and the outcomes of the 4th foreign ministers' meeting of the International Syria Support Group, and seriously implement ceasefire and cessation of violence.",
+      "has_cue": "True",
+      "csv_row": 3628
+    },
+    "our_measure": "maintain a cessation of hostilities",
+    "their_measure": "maintain a cessation of hostilities",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  },
+  {
+    "id": "sy2",
+    "event_group": "syria",
+    "split": "test",
+    "source": {
+      "source": "S5",
+      "doc_title": "S/PV.8727 — Mr. Sinirlioğlu (Turkey)",
+      "date": "2020-02-19",
+      "url_or_doi": "doi:10.7910/DVN/KGVSYH; UNSC_2020_SPV.8727_spch0025.txt",
+      "speaker_role": "delegate",
+      "source_type": "source text",
+      "sentence": "In our talks, Turkey reaffirmed its commitment to ensuring the regime’s withdrawal to the Sochi memorandum line.",
+      "has_cue": "True",
+      "csv_row": 6091
+    },
+    "our_measure": "keep forces outside disputed positions",
+    "their_measure": "keep forces outside agreed observation areas",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  },
+  {
+    "id": "ir1",
+    "event_group": "iran",
+    "split": "test",
+    "source": {
+      "source": "S5",
+      "doc_title": "S/2020/644 — Halimah DeShong (Saint Vincent And The Grenadines)",
+      "date": "2020-06-30",
+      "url_or_doi": "doi:10.7910/DVN/KGVSYH; UNSC_2020_S_2020_644_spch0014.txt",
+      "speaker_role": "delegate",
+      "source_type": "source text",
+      "sentence": "We take note that Iran has indicated that those steps are reversible, having undertaken them subsequent to the withdrawal of the United States from the agreement.",
+      "has_cue": "True",
+      "csv_row": 6149
+    },
+    "our_measure": "suspend the specified sanctions",
+    "their_measure": "suspend the specified nuclear activities",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  },
+  {
+    "id": "ir2",
+    "event_group": "iran",
+    "split": "test",
+    "source": {
+      "source": "S4",
+      "doc_title": "CMFA PressCon dyad 10285 (Hua Chunying)",
+      "date": "2013-10-17",
+      "url_or_doi": "doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20140406061603/http://www.fmprc.gov.cn:80/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1090530.shtml",
+      "speaker_role": "spokesperson (answer)",
+      "source_type": "official English version",
+      "sentence": "This round of talks offers a new opportunity to the proper resolution of the Iranian nuclear issue through dialogue and negotiation.",
+      "has_cue": "True",
+      "csv_row": 3526
+    },
+    "our_measure": "suspend the specified sanctions",
+    "their_measure": "suspend the specified nuclear activities",
+    "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+    "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+  }
+]

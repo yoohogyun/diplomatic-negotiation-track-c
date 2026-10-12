@@ -1,0 +1,4095 @@
+[
+  {
+    "condition": "grid_r0_q0.9",
+    "policy": "Planner",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.7200000000000001,
+    "agreement": 1.0,
+    "own_utility": 0.8200000000000001,
+    "opponent_utility": 0.04999999999999996,
+    "total_utility": 0.87,
+    "cost": 0.09999999999999998,
+    "turns": 4,
+    "query": 0,
+    "signal": 1,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 3,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We commit resources at cost 0.06 to a monitored confidence-building measure.",
+        "meaning": {
+          "kind": "signal",
+          "cost": 0.06
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": true,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 1,
+        "reward": -0.06999999999999999
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": true,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 4,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.8200000000000001,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 4,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.81
+      }
+    ]
+  },
+  {
+    "condition": "grid_r0_q0.9",
+    "policy": "Planner",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": 0.4149999999999999,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.1499999999999998,
+    "total_utility": 0.6099999999999998,
+    "cost": 0.04500000000000004,
+    "turns": 3,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 1,
+    "mean_escalation": 1.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 3,
+        "reward": -0.015
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 8,
+        "reward": -0.015
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "after": {
+          "t": 3,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 9,
+        "reward": 0.44499999999999995
+      }
+    ]
+  },
+  {
+    "condition": "grid_r0_q0.9",
+    "policy": "probe_then_offer",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.61,
+    "agreement": 1.0,
+    "own_utility": 0.64,
+    "opponent_utility": 0.29999999999999993,
+    "total_utility": 0.94,
+    "cost": 0.030000000000000027,
+    "turns": 3,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 3,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 2,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 6,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.64,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.63
+      }
+    ]
+  },
+  {
+    "condition": "grid_r0_q0.9",
+    "policy": "probe_then_offer",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": 0.4149999999999999,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.1499999999999998,
+    "total_utility": 0.6099999999999998,
+    "cost": 0.04500000000000004,
+    "turns": 3,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 1,
+    "mean_escalation": 1.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 3,
+        "reward": -0.015
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 8,
+        "reward": -0.015
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "after": {
+          "t": 3,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 9,
+        "reward": 0.44499999999999995
+      }
+    ]
+  },
+  {
+    "condition": "grid_r0_q0.9",
+    "policy": "PPO_long_17",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.43999999999999995,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.6499999999999998,
+    "total_utility": 1.1099999999999999,
+    "cost": 0.020000000000000018,
+    "turns": 2,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.44999999999999996
+      }
+    ]
+  },
+  {
+    "condition": "grid_r0_q0.9",
+    "policy": "PPO_long_17",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": 0.43999999999999995,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.1499999999999998,
+    "total_utility": 0.6099999999999998,
+    "cost": 0.020000000000000018,
+    "turns": 2,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.44999999999999996
+      }
+    ]
+  },
+  {
+    "condition": "grid_r0.32_q0.9",
+    "policy": "Planner",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.41,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.6499999999999998,
+    "total_utility": 1.1099999999999999,
+    "cost": 0.04999999999999999,
+    "turns": 3,
+    "query": 1,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, do you require a larger reciprocal suspension to accept our proposal?",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "reward": -0.03
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.44999999999999996
+      }
+    ]
+  },
+  {
+    "condition": "grid_r0.32_q0.9",
+    "policy": "Planner",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": 0.41,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.1499999999999998,
+    "total_utility": 0.6099999999999998,
+    "cost": 0.04999999999999999,
+    "turns": 3,
+    "query": 1,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, do you require a larger reciprocal suspension to accept our proposal?",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "reward": -0.03
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.44999999999999996
+      }
+    ]
+  },
+  {
+    "condition": "grid_r0.32_q0.9",
+    "policy": "probe_then_offer",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.61,
+    "agreement": 1.0,
+    "own_utility": 0.64,
+    "opponent_utility": 0.29999999999999993,
+    "total_utility": 0.94,
+    "cost": 0.030000000000000027,
+    "turns": 3,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 3,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 2,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 6,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.64,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.63
+      }
+    ]
+  },
+  {
+    "condition": "grid_r0.32_q0.9",
+    "policy": "probe_then_offer",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": 0.09499999999999992,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.1499999999999998,
+    "total_utility": 0.6099999999999998,
+    "cost": 0.36500000000000005,
+    "turns": 3,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 1,
+    "mean_escalation": 1.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.32,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 3,
+        "reward": -0.335
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 8,
+        "reward": -0.015
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "after": {
+          "t": 3,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 9,
+        "reward": 0.44499999999999995
+      }
+    ]
+  },
+  {
+    "condition": "grid_r0.32_q0.9",
+    "policy": "PPO_long_17",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.43999999999999995,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.6499999999999998,
+    "total_utility": 1.1099999999999999,
+    "cost": 0.020000000000000018,
+    "turns": 2,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.44999999999999996
+      }
+    ]
+  },
+  {
+    "condition": "grid_r0.32_q0.9",
+    "policy": "PPO_long_17",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": 0.43999999999999995,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.1499999999999998,
+    "total_utility": 0.6099999999999998,
+    "cost": 0.020000000000000018,
+    "turns": 2,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.44999999999999996
+      }
+    ]
+  },
+  {
+    "condition": "base",
+    "policy": "Planner",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.41,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.6499999999999998,
+    "total_utility": 1.1099999999999999,
+    "cost": 0.04999999999999999,
+    "turns": 3,
+    "query": 1,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, do you require a larger reciprocal suspension to accept our proposal?",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "reward": -0.03
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.44999999999999996
+      }
+    ]
+  },
+  {
+    "condition": "base",
+    "policy": "Planner",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": 0.41,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.1499999999999998,
+    "total_utility": 0.6099999999999998,
+    "cost": 0.04999999999999999,
+    "turns": 3,
+    "query": 1,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, do you require a larger reciprocal suspension to accept our proposal?",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "reward": -0.03
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.44999999999999996
+      }
+    ]
+  },
+  {
+    "condition": "base",
+    "policy": "probe_then_offer",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.61,
+    "agreement": 1.0,
+    "own_utility": 0.64,
+    "opponent_utility": 0.29999999999999993,
+    "total_utility": 0.94,
+    "cost": 0.030000000000000027,
+    "turns": 3,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 3,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 2,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 6,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.64,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.63
+      }
+    ]
+  },
+  {
+    "condition": "base",
+    "policy": "probe_then_offer",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": 0.33499999999999996,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.1499999999999998,
+    "total_utility": 0.6099999999999998,
+    "cost": 0.125,
+    "turns": 3,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 1,
+    "mean_escalation": 1.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 3,
+        "reward": -0.095
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 8,
+        "reward": -0.015
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "after": {
+          "t": 3,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 9,
+        "reward": 0.44499999999999995
+      }
+    ]
+  },
+  {
+    "condition": "base",
+    "policy": "PPO_long_17",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.43999999999999995,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.6499999999999998,
+    "total_utility": 1.1099999999999999,
+    "cost": 0.020000000000000018,
+    "turns": 2,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.44999999999999996
+      }
+    ]
+  },
+  {
+    "condition": "base",
+    "policy": "PPO_long_17",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.45,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": 0.43999999999999995,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.1499999999999998,
+    "total_utility": 0.6099999999999998,
+    "cost": 0.020000000000000018,
+    "turns": 2,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.5,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.44999999999999996
+      }
+    ]
+  },
+  {
+    "condition": "no_agreement_hard",
+    "policy": "Planner",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.7200000000000001,
+    "agreement": 1.0,
+    "own_utility": 0.8200000000000001,
+    "opponent_utility": 0.04999999999999996,
+    "total_utility": 0.87,
+    "cost": 0.09999999999999998,
+    "turns": 4,
+    "query": 0,
+    "signal": 1,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 3,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We commit resources at cost 0.06 to a monitored confidence-building measure.",
+        "meaning": {
+          "kind": "signal",
+          "cost": 0.06
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": true,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 1,
+        "reward": -0.06999999999999999
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": true,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 4,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.8200000000000001,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 4,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.81
+      }
+    ]
+  },
+  {
+    "condition": "no_agreement_hard",
+    "policy": "Planner",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": 0.009999999999999995,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.11,
+    "turns": 2,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 1,
+    "mean_escalation": 1.0,
+    "breakdown": 1.0,
+    "outcome": "withdrawal",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 3,
+        "reward": -0.095
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0,
+        "utterance": "We withdraw from these negotiations.",
+        "meaning": {
+          "kind": "withdraw"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 10,
+        "reward": 0.105
+      }
+    ]
+  },
+  {
+    "condition": "no_agreement_hard",
+    "policy": "probe_then_offer",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.61,
+    "agreement": 1.0,
+    "own_utility": 0.64,
+    "opponent_utility": 0.29999999999999993,
+    "total_utility": 0.94,
+    "cost": 0.030000000000000027,
+    "turns": 3,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 3,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 2,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 6,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.64,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.63
+      }
+    ]
+  },
+  {
+    "condition": "no_agreement_hard",
+    "policy": "probe_then_offer",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": 0.009999999999999995,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.11,
+    "turns": 2,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 1,
+    "mean_escalation": 1.0,
+    "breakdown": 1.0,
+    "outcome": "withdrawal",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 3,
+        "reward": -0.095
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0,
+        "utterance": "We withdraw from these negotiations.",
+        "meaning": {
+          "kind": "withdraw"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 10,
+        "reward": 0.105
+      }
+    ]
+  },
+  {
+    "condition": "no_agreement_hard",
+    "policy": "PPO_long_17",
+    "weight": 0.04999999999999999,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "return_": 0.43999999999999995,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.6499999999999998,
+    "total_utility": 1.1099999999999999,
+    "cost": 0.020000000000000018,
+    "turns": 2,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "breakdown": 0.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "reward": -0.01
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted reciprocal suspension agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "reward": 0.44999999999999996
+      }
+    ]
+  },
+  {
+    "condition": "no_agreement_hard",
+    "policy": "PPO_long_17",
+    "weight": 0.45,
+    "config": {
+      "prior": 0.5,
+      "reliability": 0.9,
+      "query_cost": 0.02,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "source_id": "C-012",
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "return_": -0.03500000000000002,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.15500000000000003,
+    "turns": 5,
+    "query": 0,
+    "signal": 0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "max_escalation": 1,
+    "mean_escalation": 1.0,
+    "breakdown": 1.0,
+    "outcome": "exhausted",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 8,
+        "reward": -0.095
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Our next proposal is provisional; we make no new public commitment.",
+        "meaning": {
+          "kind": "ambiguity"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": true,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 0,
+        "reward": -0.015
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Our next proposal is provisional; we make no new public commitment.",
+        "meaning": {
+          "kind": "ambiguity"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": true,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "after": {
+          "t": 3,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": true,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 0,
+        "reward": -0.015
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Our next proposal is provisional; we make no new public commitment.",
+        "meaning": {
+          "kind": "ambiguity"
+        },
+        "response": "ack",
+        "before": {
+          "t": 3,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": true,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "after": {
+          "t": 4,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": true,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 0,
+        "reward": -0.015
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "exhausted",
+        "reversal": 0,
+        "utterance": "Our next proposal is provisional; we make no new public commitment.",
+        "meaning": {
+          "kind": "ambiguity"
+        },
+        "response": "ack",
+        "before": {
+          "t": 4,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": true,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "after": {
+          "t": 5,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": true,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 0,
+        "reward": 0.105
+      }
+    ]
+  }
+]

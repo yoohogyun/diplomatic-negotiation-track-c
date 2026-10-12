@@ -1,0 +1,13 @@
+{
+  "roundtrip_matches": 22,
+  "roundtrip_total": 22,
+  "transition_matches": 44,
+  "transition_total": 44,
+  "counterfactual_matches": 15,
+  "counterfactual_total": 15,
+  "source_evidence_exact": 17,
+  "source_evidence_total": 18,
+  "billed_usd": 0.006923,
+  "unresolved_usd": 0,
+  "api_calls": 77
+}

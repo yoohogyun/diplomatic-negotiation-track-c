@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791765216-ml5xPvbpQPEI1WE85tbv",
+  "object": "chat.completion",
+  "created": 1791765216,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"function\":\"conditional_exchange\",\"evidence\":\"If Russia and Ukraine would like to come together and work out\",\"condition\":\"Russia and Ukraine choose to negotiate their own agreement through a separate channel.\",\"limitation\":\"Does not establish that they agreed, that talks occurred, or what the separate channel was.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 220,
+    "completion_tokens": 68,
+    "total_tokens": 288,
+    "cost": 0.0001256,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001256,
+      "upstream_inference_prompt_cost": 4.4e-05,
+      "upstream_inference_completions_cost": 8.16e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

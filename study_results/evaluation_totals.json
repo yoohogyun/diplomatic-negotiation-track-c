@@ -1,0 +1,6 @@
+{
+  "raw_logged_episodes": 87984,
+  "logged_turns": 278357,
+  "acceptance_violations": 0,
+  "interpretation": "Repeated synthetic rollouts; not independent historical cases. Includes random repetitions and evaluation sensitivity runs."
+}

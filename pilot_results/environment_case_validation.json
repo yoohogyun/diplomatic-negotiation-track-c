@@ -1,0 +1,198 @@
+[
+  {
+    "condition": "grid_r0_q0.5",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "grid_r0_q0.7",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "grid_r0_q0.9",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "grid_r0_q1.0",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "grid_r0.04_q0.5",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "grid_r0.04_q0.7",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "grid_r0.04_q0.9",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "grid_r0.04_q1.0",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 1.1102230246251565e-16
+  },
+  {
+    "condition": "grid_r0.08_q0.5",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "grid_r0.08_q0.7",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": -1.1102230246251565e-16
+  },
+  {
+    "condition": "grid_r0.08_q0.9",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 1.1102230246251565e-16
+  },
+  {
+    "condition": "grid_r0.08_q1.0",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 1.1102230246251565e-16
+  },
+  {
+    "condition": "grid_r0.16_q0.5",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 5.551115123125783e-17
+  },
+  {
+    "condition": "grid_r0.16_q0.7",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "grid_r0.16_q0.9",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 1.1102230246251565e-16
+  },
+  {
+    "condition": "grid_r0.16_q1.0",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 1.1102230246251565e-16
+  },
+  {
+    "condition": "grid_r0.32_q0.5",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "grid_r0.32_q0.7",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 5.551115123125783e-17
+  },
+  {
+    "condition": "grid_r0.32_q0.9",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 1.1102230246251565e-16
+  },
+  {
+    "condition": "grid_r0.32_q1.0",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 1.1102230246251565e-16
+  },
+  {
+    "condition": "base",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 1.1102230246251565e-16
+  },
+  {
+    "condition": "cheap_query",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": -1.1102230246251565e-16
+  },
+  {
+    "condition": "expensive_query",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "no_signal_effect",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 5.551115123125783e-17
+  },
+  {
+    "condition": "strong_signal",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "no_agreement_hard",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 0.0
+  },
+  {
+    "condition": "low_prior",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 1.1102230246251565e-16
+  },
+  {
+    "condition": "high_prior",
+    "source_id": "C-012",
+    "parameterized_case_not_independent_event": true,
+    "planner_matches_environment": true,
+    "difference": 7.699951787287773e-13
+  }
+]

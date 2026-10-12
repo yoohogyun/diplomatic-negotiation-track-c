@@ -1,0 +1,61 @@
+{
+  "model": "openai/gpt-5.6-luna",
+  "service_tier": "default",
+  "provider": {
+    "only": [
+      "openai"
+    ],
+    "order": [
+      "openai"
+    ],
+    "allow_fallbacks": false,
+    "require_parameters": true,
+    "max_price": {
+      "prompt": 0.2,
+      "completion": 1.2
+    }
+  },
+  "stream": false,
+  "max_tokens": 512,
+  "reasoning": {
+    "effort": "none",
+    "exclude": true,
+    "context": "current_turn",
+    "mode": "standard"
+  },
+  "verbosity": "low",
+  "tool_choice": "none",
+  "prompt_cache_options": {
+    "mode": "explicit"
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "study_record",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "utterance": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "utterance"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "Write one SYNTHETIC diplomatic utterance, not a quotation or reconstruction. Preserve ALL required conditions, numbers, actor roles, channel and commitment strength. Use generic we/you, not actual country names. A historical source only supplies discourse context. Do not copy unsupported historical details. Return an utterance under 65 words in a formal diplomatic communique style."
+    },
+    {
+      "role": "user",
+      "content": "{\"source\": \"We affirm the imperative of realizing an immediate and sustained ceasefire in Gaza over a period of at least six weeks as part of a deal that would release hostages held by Hamas and allow for delivery of essential additional humanitarian assistance to Palestinians in need.\", \"synthetic_required_meaning\": \"We will maintain a ceasefire for 2 weeks IF you maintain humanitarian access for 1 weeks. Our commitment depends on yours.\"}"
+    }
+  ],
+  "seed": 74000501
+}

@@ -1,0 +1,3 @@
+model,bank_n,bank_match,probes_n,probes_match,note
+Luna,396,379,180,180,"Same-model generation/interpretation consistency, not human gold accuracy."
+Sol,396,396,180,180,"Same-model generation/interpretation consistency, not human gold accuracy."

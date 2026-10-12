@@ -1,0 +1,100 @@
+{
+  "model": "openai/gpt-5.6-luna",
+  "service_tier": "default",
+  "provider": {
+    "only": [
+      "openai"
+    ],
+    "order": [
+      "openai"
+    ],
+    "allow_fallbacks": false,
+    "require_parameters": true,
+    "max_price": {
+      "prompt": 0.2,
+      "completion": 1.2
+    }
+  },
+  "stream": false,
+  "max_tokens": 512,
+  "reasoning": {
+    "effort": "none",
+    "exclude": true,
+    "context": "current_turn",
+    "mode": "standard"
+  },
+  "verbosity": "low",
+  "tool_choice": "none",
+  "prompt_cache_options": {
+    "mode": "explicit"
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "pilot_record",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "offer",
+              "query",
+              "signal",
+              "ambiguity",
+              "ratify",
+              "withdraw",
+              "invalid"
+            ]
+          },
+          "x": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "y": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "cost": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "conditional": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "not_applicable"
+            ]
+          }
+        },
+        "required": [
+          "kind",
+          "x",
+          "y",
+          "cost",
+          "conditional"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "Interpret only the supplied synthetic diplomatic utterance. x=our military exercise suspension duration in weeks, y=their nuclear/missile test suspension in weeks; cost=explicit signal resource cost. Use null for unspecified numbers. An offer is valid only when our suspension is conditional on their suspension. Negated commitments, unless, missing reciprocity, or numbers outside x=1,2,3 and y=1,2 must be invalid. Do not repair or infer missing terms. Signal is explicit resource expenditure; query asks privately about acceptance; ambiguity withholds commitment; ratify finalizes an accepted proposal; withdraw exits talks."
+    },
+    {
+      "role": "user",
+      "content": "Our next proposal is provisional, and we make no new public commitment."
+    }
+  ],
+  "seed": 74000041
+}

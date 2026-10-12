@@ -1,0 +1,2862 @@
+[
+  {
+    "id": "0_0",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": true,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": true,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_0",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": true,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": true,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_1",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": true,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.06999999999999999,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": true,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.06999999999999999,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_1",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": true,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.06999999999999999,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": true,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.06999999999999999,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_2",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.1,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": true,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.03,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.1,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": true,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.03,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_2",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.9,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": true,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.03,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.9,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": true,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.03,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_3",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.0,
+        "x": 1,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.0,
+        "x": 1,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "0_3",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 1.0,
+        "x": 1,
+        "y": 1,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 1.0,
+        "x": 1,
+        "y": 1,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "0_4",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 1,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 1,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "0_4",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 1,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 1,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "0_5",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 2,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 2,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "0_5",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 2,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 2,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "0_6",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.0,
+        "x": 2,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.0,
+        "x": 2,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "0_6",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 1.0,
+        "x": 2,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 1.0,
+        "x": 2,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "0_7",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_7",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_8",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_8",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_9",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.44999999999999996,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.44999999999999996,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_9",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.44999999999999996,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.44999999999999996,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_10",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.11,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.11,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "0_10",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.11,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.11,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_0",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": true,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": true,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_0",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": true,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": true,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_1",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": true,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.06999999999999999,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": true,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.06999999999999999,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_1",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": true,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.06999999999999999,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": true,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.06999999999999999,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_2",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.1,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": true,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.03,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.1,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": true,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.03,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_2",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.9,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": true,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.03,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.9,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": true,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.03,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_3",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.0,
+        "x": 1,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.0,
+        "x": 1,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "1_3",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 1.0,
+        "x": 1,
+        "y": 1,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 1.0,
+        "x": 1,
+        "y": 1,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "1_4",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 1,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 1,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "1_4",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 1,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 1,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 1,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "1_5",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 2,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 2,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "1_5",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 2,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 2,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "1_6",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.0,
+        "x": 2,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.0,
+        "x": 2,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 0
+      },
+      "reward": -0.09,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "1_6",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 1.0,
+        "x": 2,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 1.0,
+        "x": 2,
+        "y": 2,
+        "accepted": false,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 2,
+        "escalation": 1
+      },
+      "reward": -0.17500000000000002,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.08,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 1
+      }
+    }
+  },
+  {
+    "id": "1_7",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_7",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 1,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_8",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_8",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": -0.01,
+      "done": false,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_9",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.44999999999999996,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.44999999999999996,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_9",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.44999999999999996,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.44999999999999996,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_10",
+    "hard_evaluation_only": false,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.11,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.11,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0
+      }
+    }
+  },
+  {
+    "id": "1_10",
+    "hard_evaluation_only": true,
+    "match": true,
+    "intended_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.11,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0
+      }
+    },
+    "interpreted_transition": {
+      "state": {
+        "t": 2,
+        "b": 0.5,
+        "x": 3,
+        "y": 2,
+        "accepted": true,
+        "signaled": false,
+        "queried": false,
+        "provisional": false,
+        "commitment": 3,
+        "escalation": 0
+      },
+      "reward": 0.11,
+      "done": true,
+      "info": {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0
+      }
+    }
+  }
+]

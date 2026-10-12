@@ -1,0 +1,54 @@
+{
+  "id": "gen-1791768796-Q2PEnwbVDYXGIj0xJJH1",
+  "object": "chat.completion",
+  "created": 1791768796,
+  "model": "openai/gpt-5.6-sol",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"action\":8}",
+        "refusal": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0527f4f5f43c08f7016acc38dcf38487d1a2558118dd6d98cd",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 651,
+    "completion_tokens": 250,
+    "total_tokens": 901,
+    "cost": 0.003802,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003802,
+      "upstream_inference_prompt_cost": 0.001302,
+      "upstream_inference_completions_cost": 0.0025
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 235,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

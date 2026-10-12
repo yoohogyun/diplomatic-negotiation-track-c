@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791766124-8ADro7FYSNlT4cMhjocN",
+  "object": "chat.completion",
+  "created": 1791766124,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"Subject to the recorded bilateral conditions, we are prepared to ratify the currently accepted agreement, including an immediate, sustained ceasefire of at least six weeks, hostage releases, and delivery of essential additional humanitarian assistance.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 193,
+    "completion_tokens": 55,
+    "total_tokens": 248,
+    "cost": 0.0001046,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001046,
+      "upstream_inference_prompt_cost": 3.86e-05,
+      "upstream_inference_completions_cost": 6.6e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

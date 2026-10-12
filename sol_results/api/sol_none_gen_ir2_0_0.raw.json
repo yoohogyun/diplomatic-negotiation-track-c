@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791768604-8OxkNgUh1wJ6nqNLo8cx",
+  "object": "chat.completion",
+  "created": 1791768604,
+  "model": "openai/gpt-5.6-sol",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"We state that our forthcoming proposal is provisional and entails no new binding public commitment. All earlier commitments remain unchanged and fully in effect, as we continue to pursue resolution through dialogue and negotiation.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 162,
+    "completion_tokens": 50,
+    "total_tokens": 212,
+    "cost": 0.000824,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000824,
+      "upstream_inference_prompt_cost": 0.000324,
+      "upstream_inference_completions_cost": 0.0005
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

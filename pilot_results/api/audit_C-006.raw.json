@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791765206-JNu3nQ1p9kT45SNvUeRV",
+  "object": "chat.completion",
+  "created": 1791765206,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"function\":\"noncommitment\",\"evidence\":\"they may be looking at that, they may not\",\"condition\":\"if they were to be sanctioned\",\"limitation\":\"Does not establish whether Treasury is investigating, will sanction, or has made any decision.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 236,
+    "completion_tokens": 59,
+    "total_tokens": 295,
+    "cost": 0.000118,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000118,
+      "upstream_inference_prompt_cost": 4.72e-05,
+      "upstream_inference_completions_cost": 7.08e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

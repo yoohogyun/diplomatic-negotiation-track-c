@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791768492-6VAe2zMbLXq6miaPf2kP",
+  "object": "chat.completion",
+  "created": 1791768492,
+  "model": "openai/gpt-5.6-sol",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"We will maintain the ceasefire for two weeks, provided that you maintain humanitarian access for the same two-week period. Our commitment is expressly contingent upon your fulfillment of this condition.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 177,
+    "completion_tokens": 48,
+    "total_tokens": 225,
+    "cost": 0.000834,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000834,
+      "upstream_inference_prompt_cost": 0.000354,
+      "upstream_inference_completions_cost": 0.00048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

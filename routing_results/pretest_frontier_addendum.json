@@ -1,0 +1,15 @@
+{
+  "time": 1791770609.300367,
+  "primary": "Keep unchanged dev-selected threshold .06.",
+  "secondary": "Evaluate all originally frozen thresholds on test and report the full table; no selecting a new confirmatory winner.",
+  "reason": "The small dev set selected a zero-call gate; a prespecified secondary utility-cost curve is needed to assess whether intermediate routing budgets are promising. This adjustment uses dev results only, before any test execution.",
+  "candidate_thresholds": [
+    -1,
+    0.01,
+    0.03,
+    0.06,
+    0.1,
+    0.2
+  ],
+  "interpretation": "Exploratory frontier only; do not substitute the best test point for the selected result."
+}

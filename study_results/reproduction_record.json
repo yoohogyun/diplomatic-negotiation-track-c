@@ -1,0 +1,25 @@
+{
+  "process": "fresh Python invocation with reloaded saved model",
+  "reproduced_paths": 24,
+  "all_reproduced": true,
+  "raw_paths_reward_checked": 2592,
+  "acceptance_violations": 0,
+  "teammate_reproduction": false,
+  "hashes": {
+    "study\\api.py": "38b76b23b64911b783902c60d1aa920eb57bd2a46afe4b8840d5b90213bfce91",
+    "study\\audit.py": "8f751865ccc5c258c83121fb6c67669338d22aad95e5563c028c5a20991ea61d",
+    "study\\env.py": "30ea03f2f3274fea7020126b584b644b4e74048b210ba495749a25f5d6dbc814",
+    "study\\evaluate.py": "e1eb2919ba08ae3e9d900ecec860d46cdfba45e86d79ba00f7d58b74f406c0c0",
+    "study\\finalize.py": "8cb52eb59ec209c87f23ed19a1f31a7eeb65e78f1fd74cb9b555c22f4f8d6624",
+    "study\\language.py": "23679d2e5c08671aeb3193ae0eee7a3a13e7be240bdbe8993ea9f0496c6e456c",
+    "study\\luna_policy.py": "ac8ca0c98ef6be6493e5959158d1552c0807b0f78570dd071266e6170dd5906e",
+    "study\\prepare.py": "7e33ded9fa385696e751cf5ffe625776c7a5ca38bbdf90e594d58444cd7daacd",
+    "study\\reproduce.py": "09659e60af4ada476775a7d706a5622fb1c129756f6b1ca270f0d43a0cdd2c04",
+    "study\\review.py": "2d7e203e8d9ebaf01d0d6e52b71bda7ad06b5d6b6809bb5474f5e5ec00316d56",
+    "study\\sensitivity.py": "fe0ecb307b2ef2255d3a54b115975fdc2db28fca2fea67f1254d87bd31f5c103",
+    "study\\train.py": "24d634fc7b067d9ae519b3316ed0aac2b41e16041c6095401928205638d566f0",
+    "study\\__init__.py": "9b0ae75e93732a10f501be3361cc0bc2d7655b78da50f6ee8d20fbb571e271c6",
+    "study_results\\protocol.json": "92acd716cf574dba0fed35acb33ed3b86480f618217cb2b0c5a1e79f3dbfb923",
+    "study_results\\language_bank.json": "f9ee0150332e5c9a021e38212204d9fc52e7b8a50d771ccedb73e62927f10d9f"
+  }
+}

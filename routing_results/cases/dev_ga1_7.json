@@ -1,0 +1,3315 @@
+[
+  {
+    "policy": "always_sol",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.35,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.999999
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": true,
+        "api_tag": "sol_medium_routing_e7669795df7638035d597807",
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 6,
+        "predicted_regret": 0.03363889455795288,
+        "route_to_sol": true,
+        "api_tag": "sol_medium_routing_4810141644f39cf0fda4ff49",
+        "selected_action": 1
+      },
+      {
+        "public_state": {
+          "t": 2,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 4,
+        "predicted_regret": 0.0,
+        "route_to_sol": true,
+        "api_tag": "sol_medium_routing_1fb9a0d859a3cefc84f76f5d",
+        "selected_action": 4
+      },
+      {
+        "public_state": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "cheap_action": 9,
+        "predicted_regret": 0.0,
+        "route_to_sol": true,
+        "api_tag": "sol_medium_routing_0f66eae574c3aacd54ec34fd",
+        "selected_action": 9
+      }
+    ],
+    "sol_calls": 4.0,
+    "prompt_tokens": 2705.0,
+    "completion_tokens": 1229.0,
+    "reasoning_tokens": 1169.0,
+    "api_usd": 0.0177,
+    "net_utility": 0.68,
+    "agreement": 1.0,
+    "own_utility": 0.8200000000000001,
+    "opponent_utility": 0.04999999999999996,
+    "total_utility": 0.87,
+    "cost": 0.14,
+    "breakdown": 0.0,
+    "length": 4,
+    "queries": 1,
+    "signals": 1,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "soft",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, a more limited reciprocal concession may meet our acceptance conditions.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We hereby commit resources, at a cost of 0.06 utility units, to a monitored confidence-building measure.",
+        "meaning": {
+          "kind": "signal",
+          "cost": 0.06
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 1,
+        "bank_id": "ga1_1_0",
+        "common_reward": -0.06999999999999999,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a ceasefire for one week, provided that you maintain humanitarian access for two weeks. Our commitment is expressly conditional upon fulfillment of yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 4,
+        "bank_id": "ga1_4_0",
+        "common_reward": -0.01,
+        "context": "ga1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.8200000000000001,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject solely to the recorded bilateral conditions.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 4,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ga1_9_0",
+        "common_reward": 0.81,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "always_sol",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.65,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": true,
+        "api_tag": "sol_medium_routing_e7669795df7638035d597807",
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 10,
+        "predicted_regret": 0.0,
+        "route_to_sol": true,
+        "api_tag": "sol_medium_routing_97e0a04b60d1dba462b9cdde",
+        "selected_action": 10
+      }
+    ],
+    "sol_calls": 2.0,
+    "prompt_tokens": 1353.0,
+    "completion_tokens": 1058.0,
+    "reasoning_tokens": 1028.0,
+    "api_usd": 0.013286,
+    "net_utility": 0.06,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.06,
+    "breakdown": 1.0,
+    "length": 2,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 0.0,
+    "outcome": "withdrawal",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0,
+        "utterance": "We formally withdraw from these negotiations and will neither propose nor ratify any agreement arising from them.",
+        "meaning": {
+          "kind": "withdraw"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 10,
+        "bank_id": "ga1_10_0",
+        "common_reward": 0.11,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "cheap",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.35,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.999999
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 6,
+        "predicted_regret": 0.03363889455795288,
+        "route_to_sol": false,
+        "selected_action": 6
+      },
+      {
+        "public_state": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "cheap_action": 9,
+        "predicted_regret": 0.021640539169311523,
+        "route_to_sol": false,
+        "selected_action": 9
+      }
+    ],
+    "sol_calls": 0.0,
+    "prompt_tokens": 0.0,
+    "completion_tokens": 0.0,
+    "reasoning_tokens": 0.0,
+    "api_usd": 0.0,
+    "net_utility": 0.57,
+    "agreement": 1.0,
+    "own_utility": 0.64,
+    "opponent_utility": 0.29999999999999993,
+    "total_utility": 0.94,
+    "cost": 0.07000000000000006,
+    "breakdown": 0.0,
+    "length": 3,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "soft",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, a more limited reciprocal concession may meet our acceptance conditions.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a ceasefire for two weeks, provided that you maintain humanitarian access for the same two-week period. Our commitment is expressly conditional upon your continued fulfillment of this obligation.",
+        "meaning": {
+          "kind": "offer",
+          "x": 2,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 6,
+        "bank_id": "ga1_6_0",
+        "common_reward": -0.01,
+        "context": "ga1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.64,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject solely to the recorded bilateral conditions.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ga1_9_0",
+        "common_reward": 0.63,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "cheap",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.65,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 10,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 10
+      }
+    ],
+    "sol_calls": 0.0,
+    "prompt_tokens": 0.0,
+    "completion_tokens": 0.0,
+    "reasoning_tokens": 0.0,
+    "api_usd": 0.0,
+    "net_utility": 0.06,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.06,
+    "breakdown": 1.0,
+    "length": 2,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 0.0,
+    "outcome": "withdrawal",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0,
+        "utterance": "We formally withdraw from these negotiations and will neither propose nor ratify any agreement arising from them.",
+        "meaning": {
+          "kind": "withdraw"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 10,
+        "bank_id": "ga1_10_0",
+        "common_reward": 0.11,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "gate_0.01",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.35,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.999999
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 6,
+        "predicted_regret": 0.03363889455795288,
+        "route_to_sol": true,
+        "api_tag": "sol_medium_routing_4810141644f39cf0fda4ff49",
+        "selected_action": 1
+      },
+      {
+        "public_state": {
+          "t": 2,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 4,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 4
+      },
+      {
+        "public_state": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "cheap_action": 9,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 9
+      }
+    ],
+    "sol_calls": 1.0,
+    "prompt_tokens": 676.0,
+    "completion_tokens": 280.0,
+    "reasoning_tokens": 265.0,
+    "api_usd": 0.004152,
+    "net_utility": 0.68,
+    "agreement": 1.0,
+    "own_utility": 0.8200000000000001,
+    "opponent_utility": 0.04999999999999996,
+    "total_utility": 0.87,
+    "cost": 0.14,
+    "breakdown": 0.0,
+    "length": 4,
+    "queries": 1,
+    "signals": 1,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "soft",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, a more limited reciprocal concession may meet our acceptance conditions.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We hereby commit resources, at a cost of 0.06 utility units, to a monitored confidence-building measure.",
+        "meaning": {
+          "kind": "signal",
+          "cost": 0.06
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 1,
+        "bank_id": "ga1_1_0",
+        "common_reward": -0.06999999999999999,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a ceasefire for one week, provided that you maintain humanitarian access for two weeks. Our commitment is expressly conditional upon fulfillment of yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 4,
+        "bank_id": "ga1_4_0",
+        "common_reward": -0.01,
+        "context": "ga1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.8200000000000001,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject solely to the recorded bilateral conditions.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 4,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ga1_9_0",
+        "common_reward": 0.81,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "gate_0.01",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.65,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 10,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 10
+      }
+    ],
+    "sol_calls": 0.0,
+    "prompt_tokens": 0.0,
+    "completion_tokens": 0.0,
+    "reasoning_tokens": 0.0,
+    "api_usd": 0.0,
+    "net_utility": 0.06,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.06,
+    "breakdown": 1.0,
+    "length": 2,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 0.0,
+    "outcome": "withdrawal",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0,
+        "utterance": "We formally withdraw from these negotiations and will neither propose nor ratify any agreement arising from them.",
+        "meaning": {
+          "kind": "withdraw"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 10,
+        "bank_id": "ga1_10_0",
+        "common_reward": 0.11,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "gate_0.03",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.35,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.999999
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 6,
+        "predicted_regret": 0.03363889455795288,
+        "route_to_sol": true,
+        "api_tag": "sol_medium_routing_4810141644f39cf0fda4ff49",
+        "selected_action": 1
+      },
+      {
+        "public_state": {
+          "t": 2,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 4,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 4
+      },
+      {
+        "public_state": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "cheap_action": 9,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 9
+      }
+    ],
+    "sol_calls": 1.0,
+    "prompt_tokens": 676.0,
+    "completion_tokens": 280.0,
+    "reasoning_tokens": 265.0,
+    "api_usd": 0.004152,
+    "net_utility": 0.68,
+    "agreement": 1.0,
+    "own_utility": 0.8200000000000001,
+    "opponent_utility": 0.04999999999999996,
+    "total_utility": 0.87,
+    "cost": 0.14,
+    "breakdown": 0.0,
+    "length": 4,
+    "queries": 1,
+    "signals": 1,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "soft",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, a more limited reciprocal concession may meet our acceptance conditions.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We hereby commit resources, at a cost of 0.06 utility units, to a monitored confidence-building measure.",
+        "meaning": {
+          "kind": "signal",
+          "cost": 0.06
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 1,
+        "bank_id": "ga1_1_0",
+        "common_reward": -0.06999999999999999,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a ceasefire for one week, provided that you maintain humanitarian access for two weeks. Our commitment is expressly conditional upon fulfillment of yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 4,
+        "bank_id": "ga1_4_0",
+        "common_reward": -0.01,
+        "context": "ga1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.8200000000000001,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject solely to the recorded bilateral conditions.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 4,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ga1_9_0",
+        "common_reward": 0.81,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "gate_0.03",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.65,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 10,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 10
+      }
+    ],
+    "sol_calls": 0.0,
+    "prompt_tokens": 0.0,
+    "completion_tokens": 0.0,
+    "reasoning_tokens": 0.0,
+    "api_usd": 0.0,
+    "net_utility": 0.06,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.06,
+    "breakdown": 1.0,
+    "length": 2,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 0.0,
+    "outcome": "withdrawal",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0,
+        "utterance": "We formally withdraw from these negotiations and will neither propose nor ratify any agreement arising from them.",
+        "meaning": {
+          "kind": "withdraw"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 10,
+        "bank_id": "ga1_10_0",
+        "common_reward": 0.11,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "gate_0.06",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.35,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.999999
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 6,
+        "predicted_regret": 0.03363889455795288,
+        "route_to_sol": false,
+        "selected_action": 6
+      },
+      {
+        "public_state": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "cheap_action": 9,
+        "predicted_regret": 0.021640539169311523,
+        "route_to_sol": false,
+        "selected_action": 9
+      }
+    ],
+    "sol_calls": 0.0,
+    "prompt_tokens": 0.0,
+    "completion_tokens": 0.0,
+    "reasoning_tokens": 0.0,
+    "api_usd": 0.0,
+    "net_utility": 0.57,
+    "agreement": 1.0,
+    "own_utility": 0.64,
+    "opponent_utility": 0.29999999999999993,
+    "total_utility": 0.94,
+    "cost": 0.07000000000000006,
+    "breakdown": 0.0,
+    "length": 3,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "soft",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, a more limited reciprocal concession may meet our acceptance conditions.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a ceasefire for two weeks, provided that you maintain humanitarian access for the same two-week period. Our commitment is expressly conditional upon your continued fulfillment of this obligation.",
+        "meaning": {
+          "kind": "offer",
+          "x": 2,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 6,
+        "bank_id": "ga1_6_0",
+        "common_reward": -0.01,
+        "context": "ga1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.64,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject solely to the recorded bilateral conditions.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ga1_9_0",
+        "common_reward": 0.63,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "gate_0.06",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.65,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 10,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 10
+      }
+    ],
+    "sol_calls": 0.0,
+    "prompt_tokens": 0.0,
+    "completion_tokens": 0.0,
+    "reasoning_tokens": 0.0,
+    "api_usd": 0.0,
+    "net_utility": 0.06,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.06,
+    "breakdown": 1.0,
+    "length": 2,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 0.0,
+    "outcome": "withdrawal",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0,
+        "utterance": "We formally withdraw from these negotiations and will neither propose nor ratify any agreement arising from them.",
+        "meaning": {
+          "kind": "withdraw"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 10,
+        "bank_id": "ga1_10_0",
+        "common_reward": 0.11,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "gate_0.1",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.35,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.999999
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 6,
+        "predicted_regret": 0.03363889455795288,
+        "route_to_sol": false,
+        "selected_action": 6
+      },
+      {
+        "public_state": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "cheap_action": 9,
+        "predicted_regret": 0.021640539169311523,
+        "route_to_sol": false,
+        "selected_action": 9
+      }
+    ],
+    "sol_calls": 0.0,
+    "prompt_tokens": 0.0,
+    "completion_tokens": 0.0,
+    "reasoning_tokens": 0.0,
+    "api_usd": 0.0,
+    "net_utility": 0.57,
+    "agreement": 1.0,
+    "own_utility": 0.64,
+    "opponent_utility": 0.29999999999999993,
+    "total_utility": 0.94,
+    "cost": 0.07000000000000006,
+    "breakdown": 0.0,
+    "length": 3,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "soft",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, a more limited reciprocal concession may meet our acceptance conditions.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a ceasefire for two weeks, provided that you maintain humanitarian access for the same two-week period. Our commitment is expressly conditional upon your continued fulfillment of this obligation.",
+        "meaning": {
+          "kind": "offer",
+          "x": 2,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 6,
+        "bank_id": "ga1_6_0",
+        "common_reward": -0.01,
+        "context": "ga1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.64,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject solely to the recorded bilateral conditions.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ga1_9_0",
+        "common_reward": 0.63,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "gate_0.1",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.65,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 10,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 10
+      }
+    ],
+    "sol_calls": 0.0,
+    "prompt_tokens": 0.0,
+    "completion_tokens": 0.0,
+    "reasoning_tokens": 0.0,
+    "api_usd": 0.0,
+    "net_utility": 0.06,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.06,
+    "breakdown": 1.0,
+    "length": 2,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 0.0,
+    "outcome": "withdrawal",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0,
+        "utterance": "We formally withdraw from these negotiations and will neither propose nor ratify any agreement arising from them.",
+        "meaning": {
+          "kind": "withdraw"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 10,
+        "bank_id": "ga1_10_0",
+        "common_reward": 0.11,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "gate_0.2",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.35,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.999999
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 6,
+        "predicted_regret": 0.03363889455795288,
+        "route_to_sol": false,
+        "selected_action": 6
+      },
+      {
+        "public_state": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "cheap_action": 9,
+        "predicted_regret": 0.021640539169311523,
+        "route_to_sol": false,
+        "selected_action": 9
+      }
+    ],
+    "sol_calls": 0.0,
+    "prompt_tokens": 0.0,
+    "completion_tokens": 0.0,
+    "reasoning_tokens": 0.0,
+    "api_usd": 0.0,
+    "net_utility": 0.57,
+    "agreement": 1.0,
+    "own_utility": 0.64,
+    "opponent_utility": 0.29999999999999993,
+    "total_utility": 0.94,
+    "cost": 0.07000000000000006,
+    "breakdown": 0.0,
+    "length": 3,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "soft",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, a more limited reciprocal concession may meet our acceptance conditions.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a ceasefire for two weeks, provided that you maintain humanitarian access for the same two-week period. Our commitment is expressly conditional upon your continued fulfillment of this obligation.",
+        "meaning": {
+          "kind": "offer",
+          "x": 2,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 6,
+        "bank_id": "ga1_6_0",
+        "common_reward": -0.01,
+        "context": "ga1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.64,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject solely to the recorded bilateral conditions.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 2,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ga1_9_0",
+        "common_reward": 0.63,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "gate_0.2",
+    "split": "dev",
+    "context": "ga1",
+    "event_group": "gaza",
+    "condition": 7,
+    "config": {
+      "prior": 0.65,
+      "reliability": 1.0,
+      "query_cost": 0.04,
+      "rejection_cost": 0.32,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.9,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.65,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "decisions": [
+      {
+        "public_state": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 2,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 2
+      },
+      {
+        "public_state": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "cheap_action": 10,
+        "predicted_regret": 0.0,
+        "route_to_sol": false,
+        "selected_action": 10
+      }
+    ],
+    "sol_calls": 0.0,
+    "prompt_tokens": 0.0,
+    "completion_tokens": 0.0,
+    "reasoning_tokens": 0.0,
+    "api_usd": 0.0,
+    "net_utility": 0.06,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.06,
+    "breakdown": 1.0,
+    "length": 2,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 0.0,
+    "outcome": "withdrawal",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.04,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.65,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.05,
+        "context": "ga1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0,
+        "utterance": "We formally withdraw from these negotiations and will neither propose nor ratify any agreement arising from them.",
+        "meaning": {
+          "kind": "withdraw"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 10,
+        "bank_id": "ga1_10_0",
+        "common_reward": 0.11,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "dev_scores": {
+    "adaptive": 0.40007812499999995,
+    "query_first": 0.39759570312500003,
+    "signal_first": 0.417921875,
+    "robust": 0.20631249999999995,
+    "withdraw": 0.10999999999999999,
+    "probe_then_offer": 0.40681249999999997
+  },
+  "selected": "signal_first",
+  "time": 1791769244.8833401
+}

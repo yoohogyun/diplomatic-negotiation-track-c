@@ -1,0 +1,7 @@
+{
+  "episodes": 92144,
+  "turns": 289931,
+  "weighted_context_settings_checked": 6768,
+  "all_reward_and_weight_checks_passed": true,
+  "includes": "Development, main test, rule sensitivities and direct Luna. Repeated synthetic paths, not historical negotiations."
+}

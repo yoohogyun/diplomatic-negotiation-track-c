@@ -1,0 +1,18 @@
+{
+  "selected": "distilled_ppo",
+  "mean_gain_over_base": 0.19090390625000003,
+  "mean_gain_over_heuristic": 0.03002717013888888,
+  "selected_minus_no_query": 0.003663454861111112,
+  "selected_minus_no_signal": 0.09570095486111116,
+  "selected_minus_masked_belief": 0.056330555555555564,
+  "positive_query_value_cases": 64,
+  "all_context_settings": 256,
+  "query_removal_loss_on_positive_value_cases": 0.015351736111111115,
+  "query_removal_loss_on_other_cases": -0.000232638888888889,
+  "gap_to_planner": 0.02292087673611111,
+  "no_new_api_calls": true,
+  "main_results_unchanged": true,
+  "audited_episodes": 61416,
+  "audited_turns": 175310,
+  "integrity_checks_passed": true
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791766025-vVBARonEzMgDtYBJtCOR",
+  "object": "chat.completion",
+  "created": 1791766025,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"Provided earlier commitments remain in force, our next proposal is provisional and creates no new binding public commitment.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 189,
+    "completion_tokens": 33,
+    "total_tokens": 222,
+    "cost": 7.74e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.74e-05,
+      "upstream_inference_prompt_cost": 3.78e-05,
+      "upstream_inference_completions_cost": 3.96e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

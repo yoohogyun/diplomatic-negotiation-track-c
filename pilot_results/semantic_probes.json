@@ -1,0 +1,206 @@
+[
+  {
+    "action": 4,
+    "mode": "original",
+    "text": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "action": 4,
+    "mode": "negated",
+    "text": "We will not suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "action": 4,
+    "mode": "unless",
+    "text": "We will suspend our large-scale military exercises for 1 weeks unless you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "action": 4,
+    "mode": "unconditional",
+    "text": "We will suspend our large-scale military exercises for 1 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "action": 4,
+    "mode": "changed_number",
+    "text": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "action": 6,
+    "mode": "original",
+    "text": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "action": 6,
+    "mode": "negated",
+    "text": "We will not suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "action": 6,
+    "mode": "unless",
+    "text": "We will suspend our large-scale military exercises for 2 weeks unless you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "action": 6,
+    "mode": "unconditional",
+    "text": "We will suspend our large-scale military exercises for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "action": 6,
+    "mode": "changed_number",
+    "text": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "action": 8,
+    "mode": "original",
+    "text": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "action": 8,
+    "mode": "negated",
+    "text": "We will not suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "action": 8,
+    "mode": "unless",
+    "text": "We will suspend our large-scale military exercises for 3 weeks unless you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "action": 8,
+    "mode": "unconditional",
+    "text": "We will suspend our large-scale military exercises for 3 weeks.",
+    "expected": {
+      "kind": "invalid"
+    },
+    "actual": {
+      "kind": "invalid"
+    },
+    "match": true
+  },
+  {
+    "action": 8,
+    "mode": "changed_number",
+    "text": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "actual": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  }
+]

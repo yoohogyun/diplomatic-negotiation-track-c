@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791766106-aaNNGdH9rFroSw2jj3hv",
+  "object": "chat.completion",
+  "created": 1791766106,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"We request clarification on whether you require a larger reciprocal concession to accept an immediate and sustained ceasefire of at least six weeks, linked to the release of hostages held by Hamas and increased essential humanitarian assistance to Palestinians in need. This inquiry constitutes neither an offer nor a public commitment.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 189,
+    "completion_tokens": 69,
+    "total_tokens": 258,
+    "cost": 0.0001206,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001206,
+      "upstream_inference_prompt_cost": 3.78e-05,
+      "upstream_inference_completions_cost": 8.28e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

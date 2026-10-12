@@ -1,0 +1,24 @@
+{
+  "seconds": 60.38809609413147,
+  "action_counts": [
+    21596,
+    1073,
+    349,
+    302,
+    172,
+    983,
+    11831,
+    542,
+    28964,
+    28966,
+    7622
+  ],
+  "config": {
+    "name": "no_reversal_penalty",
+    "seeds": [
+      17
+    ],
+    "remove_reward": "reversal"
+  },
+  "seed": 17
+}

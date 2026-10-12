@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-12",
+  "command": "python -X utf8 -m tools.reproduce_release all",
+  "runtime": "Existing Windows/Python 3.13.9 experiment host with pinned libraries; not a clean-machine installation or teammate reproduction.",
+  "network": "HTTP and socket connections blocked in each child process; no OR_KEY required.",
+  "summary": {
+    "stage": "all",
+    "integrity": {
+      "release_files_verified": 11094,
+      "all_hashes_match": true,
+      "network_used": false
+    },
+    "checks": [
+      {
+        "stage": "tests",
+        "returncode": 0,
+        "log": "verification/tests.log"
+      },
+      {
+        "stage": "main_replay",
+        "returncode": 0,
+        "log": "verification/main_replay.log"
+      },
+      {
+        "stage": "main_audit",
+        "returncode": 0,
+        "log": "verification/main_audit.log"
+      },
+      {
+        "stage": "improved_replay",
+        "returncode": 0,
+        "log": "verification/improved_replay.log"
+      },
+      {
+        "stage": "sol_replay",
+        "returncode": 0,
+        "log": "verification/sol_replay.log"
+      },
+      {
+        "stage": "sol_improved_replay",
+        "returncode": 0,
+        "log": "verification/sol_improved_replay.log"
+      }
+    ],
+    "all_passed": true,
+    "paid_calls": 0,
+    "teammate_reproduction": false
+  },
+  "evidence": {
+    "unit_tests": {
+      "tests": 31,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": true,
+      "network_disabled": true
+    },
+    "luna_base": {
+      "process": "fresh Python invocation with reloaded saved model",
+      "reproduced_paths": 24,
+      "all_reproduced": true,
+      "raw_paths_reward_checked": 2592,
+      "acceptance_violations": 0,
+      "teammate_reproduction": false
+    },
+    "luna_raw_audit": {
+      "episodes": 92144,
+      "turns": 289931,
+      "weighted_context_settings_checked": 6768,
+      "all_reward_and_weight_checks_passed": true,
+      "includes": "Development, main test, rule sensitivities and direct Luna. Repeated synthetic paths, not historical negotiations."
+    },
+    "luna_improved": {
+      "selected": "distilled_ppo",
+      "seed": 17,
+      "reproduced_paths": 2736,
+      "query_turns_in_reproduced_paths": 0,
+      "signal_turns_in_reproduced_paths": 1596,
+      "all_match": true,
+      "new_process": true,
+      "model_sha256": "877b3b24ff352d661e545ebc8cb0d4371a80284305f59f236b86790f3bf18387"
+    },
+    "sol_base": {
+      "process": "fresh Python invocation with reloaded saved model",
+      "reproduced_paths": 24,
+      "all_reproduced": true,
+      "raw_paths_reward_checked": 2592,
+      "acceptance_violations": 0,
+      "teammate_reproduction": false
+    },
+    "sol_improved": {
+      "selected": "distilled_ppo",
+      "seed": 17,
+      "reproduced_paths": 2736,
+      "query_turns_in_reproduced_paths": 256,
+      "signal_turns_in_reproduced_paths": 1532,
+      "all_match": true,
+      "new_process": true,
+      "model_sha256": "657f35f6dfd3884abe4bb76df48c59772d966599d99176098f09e4313410dafa"
+    }
+  }
+}

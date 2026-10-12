@@ -1,0 +1,32 @@
+{
+  "time": 1791767463.3337429,
+  "reason": "User requested a policy that successfully uses information, beyond diagnosing failure.",
+  "methods": [
+    "distilled",
+    "distilled_ppo"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "distillation_updates": 2400,
+  "batch_size": 256,
+  "teacher": "Exact public-belief planner on TRAIN contexts and numerical settings only. No true-type input to teacher or student.",
+  "teacher_targets": "Action values distilled with softmax temperature .03; actor cross entropy plus .5 value MSE.",
+  "data": "One expert and one .35-random exploration path per train context/config/style/nonzero latent branch. Full labels at visited public states.",
+  "ppo_steps": 102400,
+  "ppo_config": "Same base PPO settings and architecture as original study, initialized with distillation.",
+  "selection": "Choose distilled versus distilled_ppo by 3-seed average ORIGINAL DEV net utility, final checkpoint only.",
+  "final_eval": "64 newly drawn unique numeric configurations on the same four test source contexts. Sources/language bank previously inspected; this is a follow-up numerical holdout, not new historical evidence.",
+  "ablations": "At final evaluation, remove query or signal by selecting next-highest permitted learned logit; mask posterior separately. These are deployment interventions, not retrained ablations.",
+  "comparators": [
+    "Original PPO 3 seeds",
+    "Dev-selected original heuristic",
+    "Public bank-aware planner",
+    "No-query planner"
+  ],
+  "resource_caveat": "Teacher uses known simulator and extra computation; gains do not imply equal-budget model-free RL superiority.",
+  "stop": "Report both candidates and all seeds, including failure. No final-test-driven tuning.",
+  "api": "No new paid requests: reuse frozen Luna language bank; do not change any interpretation."
+}

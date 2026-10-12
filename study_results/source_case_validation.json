@@ -1,0 +1,3842 @@
+[
+  {
+    "context": "kr1",
+    "source_row": 5131,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In private, we ask whether you require a larger reciprocal concession before accepting this approach. We are making no offer and undertaking no public commitment at this stage.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "kr1_2_0",
+        "common_reward": -0.03,
+        "context": "kr1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend large-scale military exercises for three weeks if you suspend nuclear and missile tests for two weeks; our commitment is expressly contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "kr1_8_0",
+        "common_reward": -0.01,
+        "context": "kr1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and affirm our commitment to implement it accordingly.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "kr1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "kr1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "kr1",
+    "source_row": 5131,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In private, we ask whether you require a larger reciprocal concession before accepting this approach. We are making no offer and undertaking no public commitment at this stage.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "kr1_2_0",
+        "common_reward": -0.03,
+        "context": "kr1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend large-scale military exercises for three weeks if you suspend nuclear and missile tests for two weeks; our commitment is expressly contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "kr1_8_0",
+        "common_reward": -0.01,
+        "context": "kr1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and affirm our commitment to implement it accordingly.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "kr1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "kr1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "kr2",
+    "source_row": 3030,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In our private channel, we ask whether you would require a larger reciprocal concession to accept this approach. We are not making an offer or undertaking any public commitment at this stage.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "kr2_2_0",
+        "common_reward": -0.03,
+        "context": "kr2",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend large-scale military exercises for three weeks, provided that you suspend nuclear and missile tests for two weeks; our commitment is contingent upon yours, in a synchronized and reciprocal arrangement intended to address legitimate concerns and promote lasting stability and security.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "kr2_8_0",
+        "common_reward": -0.01,
+        "context": "kr2",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We should ratify the currently accepted agreement, subject to the bilateral conditions recorded by both sides, and implement it in a synchronized and reciprocal manner to address legitimate concerns and promote lasting stability and security.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "kr2_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "kr2",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "kr2",
+    "source_row": 3030,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In our private channel, we ask whether you would require a larger reciprocal concession to accept this approach. We are not making an offer or undertaking any public commitment at this stage.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "kr2_2_0",
+        "common_reward": -0.03,
+        "context": "kr2",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend large-scale military exercises for three weeks, provided that you suspend nuclear and missile tests for two weeks; our commitment is contingent upon yours, in a synchronized and reciprocal arrangement intended to address legitimate concerns and promote lasting stability and security.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "kr2_8_0",
+        "common_reward": -0.01,
+        "context": "kr2",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We should ratify the currently accepted agreement, subject to the bilateral conditions recorded by both sides, and implement it in a synchronized and reciprocal manner to address legitimate concerns and promote lasting stability and security.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "kr2_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "kr2",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ss1",
+    "source_row": 5517,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In our private discussion, we ask whether you require a larger reciprocal concession before accepting this understanding. We are not making an offer or undertaking any public commitment at this stage.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ss1_2_0",
+        "common_reward": -0.03,
+        "context": "ss1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We undertake to maintain a cessation of hostilities for three weeks, conditional upon your maintaining a cessation of hostilities for two weeks. Our commitment is expressly dependent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ss1_8_0",
+        "common_reward": -0.01,
+        "context": "ss1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We welcome the direct meeting and signing of the currently accepted ceasefire agreement, and appreciate IGAD’s and other relevant parties’ relentless efforts. We call on you to ratify that agreement, subject to the recorded bilateral conditions, without adding terms.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ss1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ss1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ss1",
+    "source_row": 5517,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In our private discussion, we ask whether you require a larger reciprocal concession before accepting this understanding. We are not making an offer or undertaking any public commitment at this stage.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ss1_2_0",
+        "common_reward": -0.03,
+        "context": "ss1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We undertake to maintain a cessation of hostilities for three weeks, conditional upon your maintaining a cessation of hostilities for two weeks. Our commitment is expressly dependent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ss1_8_0",
+        "common_reward": -0.01,
+        "context": "ss1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We welcome the direct meeting and signing of the currently accepted ceasefire agreement, and appreciate IGAD’s and other relevant parties’ relentless efforts. We call on you to ratify that agreement, subject to the recorded bilateral conditions, without adding terms.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ss1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ss1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ss2",
+    "source_row": 3881,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We would appreciate your private assessment of whether you require a larger reciprocal concession before accepting this understanding. At this stage, we are not making an offer or undertaking any public commitment.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ss2_2_0",
+        "common_reward": -0.03,
+        "context": "ss2",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We are prepared to halt offensive military operations for three weeks, provided that you first halt such operations for two weeks. Our commitment is expressly contingent upon your compliance.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ss2_8_0",
+        "common_reward": -0.01,
+        "context": "ss2",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We urge you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and to uphold its provisions in good faith, thereby supporting an early restoration of peace and stability.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ss2_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ss2",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ss2",
+    "source_row": 3881,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We would appreciate your private assessment of whether you require a larger reciprocal concession before accepting this understanding. At this stage, we are not making an offer or undertaking any public commitment.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ss2_2_0",
+        "common_reward": -0.03,
+        "context": "ss2",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We are prepared to halt offensive military operations for three weeks, provided that you first halt such operations for two weeks. Our commitment is expressly contingent upon your compliance.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ss2_8_0",
+        "common_reward": -0.01,
+        "context": "ss2",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We urge you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and to uphold its provisions in good faith, thereby supporting an early restoration of peace and stability.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ss2_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ss2",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ss3",
+    "source_row": 7106,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Privately, we ask whether you require a larger reciprocal concession to accept this understanding; we are not making an offer or undertaking any public commitment.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ss3_2_0",
+        "common_reward": -0.03,
+        "context": "ss3",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will keep our military forces outside the demilitarized zone for three weeks, provided that you keep your police forces outside it for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ss3_8_0",
+        "common_reward": -0.01,
+        "context": "ss3",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We urge both parties to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and to implement its provisions accordingly.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ss3_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ss3",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ss3",
+    "source_row": 7106,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Privately, we ask whether you require a larger reciprocal concession to accept this understanding; we are not making an offer or undertaking any public commitment.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ss3_2_0",
+        "common_reward": -0.03,
+        "context": "ss3",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will keep our military forces outside the demilitarized zone for three weeks, provided that you keep your police forces outside it for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ss3_8_0",
+        "common_reward": -0.01,
+        "context": "ss3",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We urge both parties to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and to implement its provisions accordingly.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ss3_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ss3",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ip1",
+    "source_row": 5243,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In our private channel, we respectfully ask whether you would require a larger reciprocal concession to accept the proposed understanding. This inquiry conveys no offer and entails no public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ip1_2_0",
+        "common_reward": -0.03,
+        "context": "ip1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We are prepared to halt firing along the Line of Control for three weeks, provided that you first halt firing there for two weeks; our commitment is expressly contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ip1_8_0",
+        "common_reward": -0.01,
+        "context": "ip1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We welcome and ratify the currently accepted agreement, subject to the recorded bilateral conditions, and reaffirm our commitment to its implementation through the established channel.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ip1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ip1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ip1",
+    "source_row": 5243,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In our private channel, we respectfully ask whether you would require a larger reciprocal concession to accept the proposed understanding. This inquiry conveys no offer and entails no public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ip1_2_0",
+        "common_reward": -0.03,
+        "context": "ip1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We are prepared to halt firing along the Line of Control for three weeks, provided that you first halt firing there for two weeks; our commitment is expressly contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ip1_8_0",
+        "common_reward": -0.01,
+        "context": "ip1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We welcome and ratify the currently accepted agreement, subject to the recorded bilateral conditions, and reaffirm our commitment to its implementation through the established channel.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ip1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ip1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ga1",
+    "source_row": 317,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We request clarification on whether you require a larger reciprocal concession to accept an immediate and sustained ceasefire of at least six weeks, linked to the release of hostages held by Hamas and increased essential humanitarian assistance to Palestinians in need. This inquiry constitutes neither an offer nor a public commitment.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.03,
+        "context": "ga1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a ceasefire for three weeks, contingent upon your maintaining humanitarian access for two weeks; our commitment is expressly dependent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ga1_8_0",
+        "common_reward": -0.01,
+        "context": "ga1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted agreement, subject to the recorded bilateral conditions, including an immediate and sustained ceasefire in Gaza for at least six weeks, the release of hostages held by Hamas, and the delivery of essential additional humanitarian assistance to Palestinians in need.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ga1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ga1",
+    "source_row": 317,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We request clarification on whether you require a larger reciprocal concession to accept an immediate and sustained ceasefire of at least six weeks, linked to the release of hostages held by Hamas and increased essential humanitarian assistance to Palestinians in need. This inquiry constitutes neither an offer nor a public commitment.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga1_2_0",
+        "common_reward": -0.03,
+        "context": "ga1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a ceasefire for three weeks, contingent upon your maintaining humanitarian access for two weeks; our commitment is expressly dependent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ga1_8_0",
+        "common_reward": -0.01,
+        "context": "ga1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We ratify the currently accepted agreement, subject to the recorded bilateral conditions, including an immediate and sustained ceasefire in Gaza for at least six weeks, the release of hostages held by Hamas, and the delivery of essential additional humanitarian assistance to Palestinians in need.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ga1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ga1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ga2",
+    "source_row": 1776,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Privately, we seek to clarify whether you require a larger reciprocal concession before accepting an immediate ceasefire linked to the hostages and its transition into a more enduring arrangement. We are making no offer and undertaking no public commitment at this stage.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga2_2_0",
+        "common_reward": -0.03,
+        "context": "ga2",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a ceasefire for three weeks, provided that you maintain humanitarian access for two weeks; our commitment is expressly contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ga2_8_0",
+        "common_reward": -0.01,
+        "context": "ga2",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We urge you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, thereby enabling an immediate ceasefire linked to the hostages and providing a basis for a more enduring arrangement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ga2_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ga2",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ga2",
+    "source_row": 1776,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Privately, we seek to clarify whether you require a larger reciprocal concession before accepting an immediate ceasefire linked to the hostages and its transition into a more enduring arrangement. We are making no offer and undertaking no public commitment at this stage.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ga2_2_0",
+        "common_reward": -0.03,
+        "context": "ga2",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a ceasefire for three weeks, provided that you maintain humanitarian access for two weeks; our commitment is expressly contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ga2_8_0",
+        "common_reward": -0.01,
+        "context": "ga2",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We urge you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, thereby enabling an immediate ceasefire linked to the hostages and providing a basis for a more enduring arrangement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ga2_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ga2",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "sy1",
+    "source_row": 3628,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We respectfully inquire, through private channels, whether you would require a larger reciprocal concession to accept the proposed understanding. This inquiry constitutes neither an offer nor a public commitment; we remain guided by the relevant Security Council resolution and the need to advance a durable cessation of violence.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "sy1_2_0",
+        "common_reward": -0.03,
+        "context": "sy1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a cessation of hostilities for three weeks, provided that you maintain a cessation of hostilities for two weeks; our commitment is expressly contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "sy1_8_0",
+        "common_reward": -0.01,
+        "context": "sy1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and to implement it in full; no additional terms are proposed or implied.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "sy1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "sy1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "sy1",
+    "source_row": 3628,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We respectfully inquire, through private channels, whether you would require a larger reciprocal concession to accept the proposed understanding. This inquiry constitutes neither an offer nor a public commitment; we remain guided by the relevant Security Council resolution and the need to advance a durable cessation of violence.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "sy1_2_0",
+        "common_reward": -0.03,
+        "context": "sy1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will maintain a cessation of hostilities for three weeks, provided that you maintain a cessation of hostilities for two weeks; our commitment is expressly contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "sy1_8_0",
+        "common_reward": -0.01,
+        "context": "sy1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and to implement it in full; no additional terms are proposed or implied.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "sy1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "sy1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "sy2",
+    "source_row": 6091,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Privately, we ask whether you require a larger reciprocal concession to accept this understanding; we are making no offer and undertaking no public commitment at this stage.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "sy2_2_0",
+        "common_reward": -0.03,
+        "context": "sy2",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will keep our forces outside the disputed positions for three weeks, provided that you keep your forces outside the agreed observation areas for two weeks; our commitment is conditional upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "sy2_8_0",
+        "common_reward": -0.01,
+        "context": "sy2",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We reaffirm our commitment to ratifying the currently accepted agreement, subject to the bilateral conditions recorded in our talks, and to ensuring the regime’s withdrawal to the line specified therein.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "sy2_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "sy2",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "sy2",
+    "source_row": 6091,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Privately, we ask whether you require a larger reciprocal concession to accept this understanding; we are making no offer and undertaking no public commitment at this stage.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "sy2_2_0",
+        "common_reward": -0.03,
+        "context": "sy2",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will keep our forces outside the disputed positions for three weeks, provided that you keep your forces outside the agreed observation areas for two weeks; our commitment is conditional upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "sy2_8_0",
+        "common_reward": -0.01,
+        "context": "sy2",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We reaffirm our commitment to ratifying the currently accepted agreement, subject to the bilateral conditions recorded in our talks, and to ensuring the regime’s withdrawal to the line specified therein.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "sy2_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "sy2",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ir1",
+    "source_row": 6149,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Privately, we ask whether you require a larger reciprocal concession before accepting this understanding. This inquiry is exploratory only and constitutes neither an offer nor a public commitment.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ir1_2_0",
+        "common_reward": -0.03,
+        "context": "ir1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We are prepared to suspend the specified sanctions for three weeks, conditional upon your suspension of the specified nuclear activities for two weeks. Our commitment is contingent upon, and limited by, yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ir1_8_0",
+        "common_reward": -0.01,
+        "context": "ir1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We reaffirm our readiness to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and note that the indicated steps are reversible, having been undertaken following your withdrawal from the agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ir1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ir1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ir1",
+    "source_row": 6149,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Privately, we ask whether you require a larger reciprocal concession before accepting this understanding. This inquiry is exploratory only and constitutes neither an offer nor a public commitment.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ir1_2_0",
+        "common_reward": -0.03,
+        "context": "ir1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We are prepared to suspend the specified sanctions for three weeks, conditional upon your suspension of the specified nuclear activities for two weeks. Our commitment is contingent upon, and limited by, yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ir1_8_0",
+        "common_reward": -0.01,
+        "context": "ir1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We reaffirm our readiness to ratify the currently accepted agreement, subject to the recorded bilateral conditions, and note that the indicated steps are reversible, having been undertaken following your withdrawal from the agreement.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ir1_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ir1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ir2",
+    "source_row": 3526,
+    "hard_evaluation_only": false,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Privately, we ask whether you require a larger reciprocal concession to accept a negotiated resolution. This inquiry constitutes neither an offer nor a public commitment.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ir2_2_0",
+        "common_reward": -0.03,
+        "context": "ir2",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We are prepared to suspend the specified sanctions for three weeks, provided that you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ir2_8_0",
+        "common_reward": -0.01,
+        "context": "ir2",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject to the bilateral conditions recorded by both sides, thereby advancing the proper resolution of the nuclear issue through dialogue and negotiation.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ir2_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ir2",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "context": "ir2",
+    "source_row": 3526,
+    "hard_evaluation_only": true,
+    "length": 3,
+    "outcome": "agreement",
+    "reward_sum_correct": true,
+    "acceptance_violations": 0,
+    "text_path": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.02,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "Privately, we ask whether you require a larger reciprocal concession to accept a negotiated resolution. This inquiry constitutes neither an offer nor a public commitment.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.5,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ir2_2_0",
+        "common_reward": -0.03,
+        "context": "ir2",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We are prepared to suspend the specified sanctions for three weeks, provided that you suspend the specified nuclear activities for two weeks; our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 1,
+          "b": 0.9,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 8,
+        "bank_id": "ir2_8_0",
+        "common_reward": -0.01,
+        "context": "ir2",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject to the bilateral conditions recorded by both sides, thereby advancing the proper resolution of the nuclear issue through dialogue and negotiation.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "after": {
+          "t": 3,
+          "b": 0.9,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "ir2_9_0",
+        "common_reward": 0.44999999999999996,
+        "context": "ir2",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  }
+]

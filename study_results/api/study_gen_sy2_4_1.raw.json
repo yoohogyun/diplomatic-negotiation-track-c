@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791766191-EFydFsW8MunaFSmpoAxC",
+  "object": "chat.completion",
+  "created": 1791766191,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"We will keep our forces outside the disputed positions for 1 week if you keep yours outside the agreed observation areas for 2 weeks. Our commitment depends on yours.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 172,
+    "completion_tokens": 46,
+    "total_tokens": 218,
+    "cost": 8.96e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.96e-05,
+      "upstream_inference_prompt_cost": 3.44e-05,
+      "upstream_inference_completions_cost": 5.52e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

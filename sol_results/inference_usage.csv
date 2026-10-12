@@ -1,0 +1,4 @@
+role,calls,cost,prompt_tokens,completion_tokens,reasoning_tokens
+direct_medium,349.0,2.0046139999999997,231827.0,154096.0,148861.0
+language,972.0,0.8146980000000005,239249.0,33620.0,0.0
+direct_none,476.0,0.6937300000000011,315925.0,6188.0,0.0

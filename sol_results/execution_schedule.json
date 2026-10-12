@@ -1,0 +1,7 @@
+{
+  "api_workers_per_batch": 4,
+  "max_simultaneous_api_batches": 2,
+  "max_concurrent_api_requests": 8,
+  "shared_process_budget_lock": true,
+  "reason": "Independent generation/interpretation and direct strategy experiment overlap to honor user parallel-speed request; prompts and scientific protocol unchanged."
+}

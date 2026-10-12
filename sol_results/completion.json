@@ -1,0 +1,68 @@
+{
+  "complete": true,
+  "paper_written": false,
+  "direct": [
+    {
+      "policy": "Luna_none_Luna_bank",
+      "cases": 64,
+      "raw_paths": 200,
+      "net_utility": -0.3677453125,
+      "agreement": 0.242734375,
+      "queries": 0.21640625,
+      "signals": 0.051562500000000004,
+      "cost": 0.5387171875,
+      "length": 3.94859375,
+      "repeated_rejected_offer": 0.60671875
+    },
+    {
+      "policy": "Sol_none_luna",
+      "cases": 64,
+      "raw_paths": 200,
+      "net_utility": -0.36727890625000004,
+      "agreement": 0.26273437499999996,
+      "queries": 0.6875,
+      "signals": 0.34453125,
+      "cost": 0.56906953125,
+      "length": 4.772812500000001,
+      "repeated_rejected_offer": 0.5240625
+    },
+    {
+      "policy": "Sol_medium_luna",
+      "cases": 64,
+      "raw_paths": 200,
+      "net_utility": 0.51401171875,
+      "agreement": 1.0,
+      "queries": 0.421875,
+      "signals": 0.716796875,
+      "cost": 0.11326953125,
+      "length": 3.4292968750000004,
+      "repeated_rejected_offer": 0.0
+    },
+    {
+      "policy": "Sol_none_sol",
+      "cases": 64,
+      "raw_paths": 200,
+      "net_utility": -0.36727890625000004,
+      "agreement": 0.26273437499999996,
+      "queries": 0.6875,
+      "signals": 0.34453125,
+      "cost": 0.56906953125,
+      "length": 4.772812500000001,
+      "repeated_rejected_offer": 0.5240625
+    }
+  ],
+  "audit": {
+    "learned_policy_raw_paths": 153360,
+    "learned_policy_raw_turns": 417227,
+    "direct_raw_paths": 600,
+    "checks_passed": true,
+    "sol_calls": 1797,
+    "sol_cost": 3.513042,
+    "all_authorized_cost": 3.6586678,
+    "unresolved_calls": 0,
+    "account_usage_increment": 3.6586678,
+    "response_cost_minus_account_increment": 0.0,
+    "account_counter_matches_response_sum": true,
+    "budget_accounting": "Use full response cost sum conservatively; retain any account-counter difference without assuming its cause."
+  }
+}

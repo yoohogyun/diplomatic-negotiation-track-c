@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791768449-utLZibq4K1GK364xoZgY",
+  "object": "chat.completion",
+  "created": 1791768449,
+  "model": "openai/gpt-5.6-sol",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"In a private channel, we ask whether you would require a larger reciprocal concession to accept the proposed arrangement. This inquiry is exploratory only and constitutes neither an offer nor any public commitment on our part.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 189,
+    "completion_tokens": 52,
+    "total_tokens": 241,
+    "cost": 0.000898,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000898,
+      "upstream_inference_prompt_cost": 0.000378,
+      "upstream_inference_completions_cost": 0.00052
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

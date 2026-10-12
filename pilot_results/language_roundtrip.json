@@ -1,0 +1,494 @@
+[
+  {
+    "id": "0_0",
+    "source_id": "C-012",
+    "canonical": "Our next proposal is provisional; we make no new public commitment.",
+    "generated": "Our next proposal is provisional and entails no new public commitment.",
+    "expected": {
+      "kind": "ambiguity"
+    },
+    "interpreted": {
+      "kind": "ambiguity",
+      "x": null,
+      "y": null,
+      "cost": null,
+      "conditional": "not_applicable"
+    },
+    "meaning": {
+      "kind": "ambiguity"
+    },
+    "match": true
+  },
+  {
+    "id": "0_1",
+    "source_id": "S1-019",
+    "canonical": "We commit resources at cost 0.06 to a monitored confidence-building measure.",
+    "generated": "The parties commit resources at a cost of 0.06 to a monitored confidence-building measure.",
+    "expected": {
+      "kind": "signal",
+      "cost": 0.06
+    },
+    "interpreted": {
+      "kind": "signal",
+      "x": null,
+      "y": null,
+      "cost": 0.06,
+      "conditional": "not_applicable"
+    },
+    "meaning": {
+      "kind": "signal",
+      "cost": 0.06
+    },
+    "match": true
+  },
+  {
+    "id": "0_2",
+    "source_id": "C-006",
+    "canonical": "In a private channel, do you require a larger reciprocal suspension to accept our proposal?",
+    "generated": "In a private channel, would you require a larger reciprocal suspension before accepting our proposal?",
+    "expected": {
+      "kind": "query"
+    },
+    "interpreted": {
+      "kind": "query",
+      "x": null,
+      "y": null,
+      "cost": null,
+      "conditional": "not_applicable"
+    },
+    "meaning": {
+      "kind": "query"
+    },
+    "match": true
+  },
+  {
+    "id": "0_3",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+    "generated": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1,
+      "cost": null,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "id": "0_4",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "generated": "We will suspend our large-scale military exercises for 1 week if you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2,
+      "cost": null,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "id": "0_5",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+    "generated": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 1 week, on a reciprocal basis as a private, conditional commitment without additional resource cost.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1,
+      "cost": 0,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "id": "0_6",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "generated": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2,
+      "cost": null,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "id": "0_7",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+    "generated": "We will privately suspend our large-scale military exercises for 3 weeks if you publicly suspend your nuclear and missile tests for 1 weeks, with no additional resource cost and a limited degree of commitment.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1,
+      "cost": 0,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "id": "0_8",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "generated": "We would suspend our large-scale military exercises for three weeks if you suspend your nuclear and missile tests for two weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2,
+      "cost": null,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "id": "0_9",
+    "source_id": "S4-018",
+    "canonical": "We ratify the currently accepted reciprocal suspension agreement.",
+    "generated": "The parties ratify the currently accepted agreement providing for reciprocal suspension.",
+    "expected": {
+      "kind": "ratify"
+    },
+    "interpreted": {
+      "kind": "ratify",
+      "x": null,
+      "y": null,
+      "cost": null,
+      "conditional": "not_applicable"
+    },
+    "meaning": {
+      "kind": "ratify"
+    },
+    "match": true
+  },
+  {
+    "id": "0_10",
+    "source_id": "S4-040",
+    "canonical": "We withdraw from these negotiations.",
+    "generated": "We hereby withdraw from these negotiations.",
+    "expected": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "withdraw",
+      "x": null,
+      "y": null,
+      "cost": null,
+      "conditional": "not_applicable"
+    },
+    "meaning": {
+      "kind": "withdraw"
+    },
+    "match": true
+  },
+  {
+    "id": "1_0",
+    "source_id": "S1-019",
+    "canonical": "Our next proposal is provisional; we make no new public commitment.",
+    "generated": "Our next proposal is provisional, and we make no new public commitment.",
+    "expected": {
+      "kind": "ambiguity"
+    },
+    "interpreted": {
+      "kind": "ambiguity",
+      "x": null,
+      "y": null,
+      "cost": null,
+      "conditional": "not_applicable"
+    },
+    "meaning": {
+      "kind": "ambiguity"
+    },
+    "match": true
+  },
+  {
+    "id": "1_1",
+    "source_id": "C-006",
+    "canonical": "We commit resources at cost 0.06 to a monitored confidence-building measure.",
+    "generated": "We commit resources at a cost of 0.06 to a monitored confidence-building measure.",
+    "expected": {
+      "kind": "signal",
+      "cost": 0.06
+    },
+    "interpreted": {
+      "kind": "signal",
+      "x": null,
+      "y": null,
+      "cost": 0.06,
+      "conditional": "not_applicable"
+    },
+    "meaning": {
+      "kind": "signal",
+      "cost": 0.06
+    },
+    "match": true
+  },
+  {
+    "id": "1_2",
+    "source_id": "C-007",
+    "canonical": "In a private channel, do you require a larger reciprocal suspension to accept our proposal?",
+    "generated": "In a private channel, would you require a larger reciprocal suspension to accept our proposal?",
+    "expected": {
+      "kind": "query"
+    },
+    "interpreted": {
+      "kind": "query",
+      "x": null,
+      "y": null,
+      "cost": null,
+      "conditional": "not_applicable"
+    },
+    "meaning": {
+      "kind": "query"
+    },
+    "match": true
+  },
+  {
+    "id": "1_3",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+    "generated": "We will suspend our large-scale military exercises for 1 week if you suspend your nuclear and missile tests for 1 week.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1,
+      "cost": null,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 1,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "id": "1_4",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "generated": "We will suspend our large-scale military exercises for 1 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2,
+      "cost": null,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 1,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "id": "1_5",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+    "generated": "We will suspend our large-scale military exercises for 2 weeks if you privately suspend your nuclear and missile tests for 1 week, while neither side makes a public commitment.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1,
+      "cost": null,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 2,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "id": "1_6",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "generated": "We will suspend our large-scale military exercises for 2 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2,
+      "cost": null,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 2,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "id": "1_7",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 1 weeks.",
+    "generated": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 1 week.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1,
+      "cost": null,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 3,
+      "y": 1
+    },
+    "match": true
+  },
+  {
+    "id": "1_8",
+    "source_id": "C-012",
+    "canonical": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "generated": "We will suspend our large-scale military exercises for 3 weeks if you suspend your nuclear and missile tests for 2 weeks.",
+    "expected": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "interpreted": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2,
+      "cost": null,
+      "conditional": "yes"
+    },
+    "meaning": {
+      "kind": "offer",
+      "x": 3,
+      "y": 2
+    },
+    "match": true
+  },
+  {
+    "id": "1_9",
+    "source_id": "S4-040",
+    "canonical": "We ratify the currently accepted reciprocal suspension agreement.",
+    "generated": "We ratify the reciprocal suspension agreement currently accepted by both parties.",
+    "expected": {
+      "kind": "ratify"
+    },
+    "interpreted": {
+      "kind": "ratify",
+      "x": null,
+      "y": null,
+      "cost": null,
+      "conditional": "not_applicable"
+    },
+    "meaning": {
+      "kind": "ratify"
+    },
+    "match": true
+  },
+  {
+    "id": "1_10",
+    "source_id": "S5-015",
+    "canonical": "We withdraw from these negotiations.",
+    "generated": "We are withdrawing from these negotiations.",
+    "expected": {
+      "kind": "withdraw"
+    },
+    "interpreted": {
+      "kind": "withdraw",
+      "x": null,
+      "y": null,
+      "cost": null,
+      "conditional": "not_applicable"
+    },
+    "meaning": {
+      "kind": "withdraw"
+    },
+    "match": true
+  }
+]

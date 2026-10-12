@@ -1,0 +1,22 @@
+{
+  "reviewer": "Codex agent; not independent human gold",
+  "issues": [
+    {
+      "source_id": "C-007",
+      "concern": "Conditional support for engagement does not explicitly state a reciprocal exchange."
+    },
+    {
+      "source_id": "C-011",
+      "concern": "Normative conditions on refugee return are not a reciprocal concession."
+    },
+    {
+      "source_id": "S3-043",
+      "concern": "Conditional approval of another negotiation is not itself an exchange between this speaker and a counterparty."
+    },
+    {
+      "source_id": "candidate_row_1787",
+      "concern": "Evidence field contains added outer quotation marks; substring becomes exact after stripping those marks. This is formatting, not fabricated text."
+    }
+  ],
+  "use": "Keep labels provisional; exclude these from automatic exchange-template induction."
+}

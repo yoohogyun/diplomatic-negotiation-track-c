@@ -1,0 +1,10 @@
+{
+  "selected": "distilled_ppo",
+  "seed": 17,
+  "reproduced_paths": 2736,
+  "query_turns_in_reproduced_paths": 256,
+  "signal_turns_in_reproduced_paths": 1532,
+  "all_match": true,
+  "new_process": true,
+  "model_sha256": "657f35f6dfd3884abe4bb76df48c59772d966599d99176098f09e4313410dafa"
+}

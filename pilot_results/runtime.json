@@ -1,0 +1,11 @@
+{
+  "numpy": "2.3.5",
+  "torch": "2.14.1+cpu",
+  "gymnasium": "1.2.3",
+  "source_hashes": {
+    "pilot\\env.py": "4b287978e6693e5dab52ff2c748d6738f29527abc54cf4a9dff707001dd7edec",
+    "pilot\\live.py": "bc6ebf09cac785d0886268a098f862ae7a3656232aeab277dab6db1ed897d4bf",
+    "pilot\\run.py": "98b715358c7192664dc198495c84903bc56e046f44d13e6c643d4da682428dc7",
+    "pilot\\__init__.py": "d9855cb9236701463c4ed3f4e48e49acc1ed51bff45e1be2747ad719a0f7bf16"
+  }
+}

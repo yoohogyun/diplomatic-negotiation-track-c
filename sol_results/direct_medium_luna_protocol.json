@@ -1,0 +1,32 @@
+{
+  "time": 1791768624.9421082,
+  "mode": "medium_luna",
+  "numeric_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "contexts": [
+    "sy1",
+    "sy2",
+    "ir1",
+    "ir2"
+  ],
+  "style": 0,
+  "effort": "medium",
+  "bank": "study_results",
+  "single_response_cache": true
+}

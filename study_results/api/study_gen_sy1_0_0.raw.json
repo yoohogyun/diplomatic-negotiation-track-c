@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791766154-TBb6xHkOqCub1ZrD3aBQ",
+  "object": "chat.completion",
+  "created": 1791766154,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"We hope all relevant parties will consider their state’s future and peoples’ fundamental interests, uphold our earlier commitments, and strictly follow Resolution 2254 and the agreed outcomes of the fourth ministerial meeting. Our next proposal is provisional and creates no new binding public commitment; existing ceasefire and cessation-of-violence commitments remain to be seriously implemented.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 203,
+    "completion_tokens": 82,
+    "total_tokens": 285,
+    "cost": 0.000139,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000139,
+      "upstream_inference_prompt_cost": 4.06e-05,
+      "upstream_inference_completions_cost": 9.84e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

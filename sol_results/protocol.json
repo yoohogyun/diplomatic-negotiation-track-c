@@ -1,0 +1,128 @@
+{
+  "version": "sol-replication-v1",
+  "frozen_at": 1791768234.7682934,
+  "model": "openai/gpt-5.6-sol",
+  "concurrency": 4,
+  "language_variants_per_context_action": 3,
+  "generation_calls": 396,
+  "interpretation_calls": 396,
+  "parameterized_eval_cases": {
+    "dev": 64,
+    "test": 256
+  },
+  "historical_event_groups": 6,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "steps": 102400,
+  "evaluation_random_seeds": [
+    101,
+    202,
+    303
+  ],
+  "random_repetitions_per_cell": 4,
+  "base_ppo": {
+    "gamma": 0.95,
+    "ent_coef": 0.01,
+    "learning_rate": 0.0003,
+    "n_steps": 256,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "net_arch": [
+      64,
+      64
+    ]
+  },
+  "runs": [
+    {
+      "name": "base",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "name": "gamma08",
+      "seeds": [
+        17
+      ],
+      "gamma": 0.8
+    },
+    {
+      "name": "gamma099",
+      "seeds": [
+        17
+      ],
+      "gamma": 0.99
+    },
+    {
+      "name": "entropy0",
+      "seeds": [
+        17
+      ],
+      "ent_coef": 0.0
+    },
+    {
+      "name": "entropy01",
+      "seeds": [
+        17
+      ],
+      "ent_coef": 0.1
+    },
+    {
+      "name": "no_rejection_penalty",
+      "seeds": [
+        17
+      ],
+      "remove_reward": "rejection"
+    },
+    {
+      "name": "no_reversal_penalty",
+      "seeds": [
+        17
+      ],
+      "remove_reward": "reversal"
+    },
+    {
+      "name": "belief_mask",
+      "seeds": [
+        17
+      ],
+      "mask": "belief"
+    },
+    {
+      "name": "query_disabled",
+      "seeds": [
+        17
+      ],
+      "disable_query": true
+    }
+  ],
+  "heuristic_selection": "Select one fixed heuristic by mean dev net utility before opening test aggregate results.",
+  "ppo_selection": "Final fixed-budget checkpoint for every seed; no test-based selection.",
+  "execution": "All policies share the frozen Luna-generated, Luna-interpreted utterance bank. Interpretation errors are charged and preserved, never replaced with intended labels.",
+  "oracle": "Exact public-belief model planner is an upper benchmark only for canonical language; not presented as an exact optimum for a fallible bank.",
+  "hypotheses": [
+    "Question value depends on rejection cost and reliability after accounting for information from offers.",
+    "High deal rates can coexist with unused information and avoidable utility loss.",
+    "Faithful utterance realization is separate from selecting a useful strategy."
+  ],
+  "statistics": "Aggregate response branches and language variants within synthetic cases, then contexts within event groups. Three-seed SD measures training variability; only two held-out event groups, so no historical population CI.",
+  "human_review": "Agent/model annotation is not human gold; prepare a blinded review sheet. Teammate reproduction remains a human task.",
+  "stop_rule": "Complete fixed run matrix and report all failures; no tuning after test evaluation.",
+  "replication": {
+    "reason": "User explicitly requested testing the same setup with GPT-5.6 Sol.",
+    "primary_direct": "Same 64 cases, prompt and reasoning none as Luna, on the unchanged Luna bank to isolate selector model.",
+    "secondary_direct": "Sol reasoning medium, same 64 cases on Luna bank; max output including reasoning 4096.",
+    "own_bank_direct": "Sol reasoning none on Sol bank, same cases. Cache reused only if public prompt exactly matches.",
+    "language": "396 Sol generations and 396 Sol interpretations, 180 same probes; no correction of errors.",
+    "learning": "Replicate all 14 main learned runs and six distillation/fine-tuning checkpoints, same seeds, budgets and dev selection.",
+    "evaluation": "Same original test for main results; same follow-up 64 numeric settings for improvement. Both are previously exposed, a model replication rather than new blind evidence.",
+    "stop": "No hyperparameter/prompt tuning to favor Sol or the proposed method. Report contrary results.",
+    "budget": "Same shared ledger; cumulative internal ceiling $9, user exclusive ceiling $10; no reset.",
+    "interpretation": "PPO is an established algorithm, but the configured negotiation policy and distillation system are our constructed baselines. Do not claim a general LLM failure from their weaknesses."
+  }
+}

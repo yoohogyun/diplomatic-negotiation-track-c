@@ -1,0 +1,14 @@
+{
+  "learned_policy_raw_paths": 153360,
+  "learned_policy_raw_turns": 417227,
+  "direct_raw_paths": 600,
+  "checks_passed": true,
+  "sol_calls": 1797,
+  "sol_cost": 3.513042,
+  "all_authorized_cost": 3.6586678,
+  "unresolved_calls": 0,
+  "account_usage_increment": 3.6586678,
+  "response_cost_minus_account_increment": 0.0,
+  "account_counter_matches_response_sum": true,
+  "budget_accounting": "Use full response cost sum conservatively; retain any account-counter difference without assuming its cause."
+}

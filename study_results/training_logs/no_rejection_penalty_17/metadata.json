@@ -1,0 +1,24 @@
+{
+  "seconds": 61.064040422439575,
+  "action_counts": [
+    33592,
+    223,
+    289,
+    397,
+    227,
+    353,
+    24709,
+    249,
+    17068,
+    24461,
+    832
+  ],
+  "config": {
+    "name": "no_rejection_penalty",
+    "seeds": [
+      17
+    ],
+    "remove_reward": "rejection"
+  },
+  "seed": 17
+}

@@ -1,0 +1,386 @@
+[
+  {
+    "context": "sy1",
+    "condition": 0,
+    "seconds": 0.07301900023594499,
+    "decisions": 7
+  },
+  {
+    "context": "sy1",
+    "condition": 1,
+    "seconds": 0.08378229988738894,
+    "decisions": 10
+  },
+  {
+    "context": "sy1",
+    "condition": 2,
+    "seconds": 0.07243780000135303,
+    "decisions": 7
+  },
+  {
+    "context": "sy1",
+    "condition": 3,
+    "seconds": 0.07410369999706745,
+    "decisions": 8
+  },
+  {
+    "context": "sy1",
+    "condition": 4,
+    "seconds": 0.08473020000383258,
+    "decisions": 15
+  },
+  {
+    "context": "sy1",
+    "condition": 5,
+    "seconds": 0.0827965997159481,
+    "decisions": 14
+  },
+  {
+    "context": "sy1",
+    "condition": 6,
+    "seconds": 0.08842380018904805,
+    "decisions": 12
+  },
+  {
+    "context": "sy1",
+    "condition": 7,
+    "seconds": 0.09646339993923903,
+    "decisions": 14
+  },
+  {
+    "context": "sy1",
+    "condition": 8,
+    "seconds": 0.07330399984493852,
+    "decisions": 7
+  },
+  {
+    "context": "sy1",
+    "condition": 9,
+    "seconds": 0.07082309992983937,
+    "decisions": 6
+  },
+  {
+    "context": "sy1",
+    "condition": 10,
+    "seconds": 0.08228619955480099,
+    "decisions": 7
+  },
+  {
+    "context": "sy1",
+    "condition": 11,
+    "seconds": 0.08217930002138019,
+    "decisions": 14
+  },
+  {
+    "context": "sy1",
+    "condition": 12,
+    "seconds": 0.08950679982081056,
+    "decisions": 14
+  },
+  {
+    "context": "sy1",
+    "condition": 13,
+    "seconds": 0.09607880003750324,
+    "decisions": 8
+  },
+  {
+    "context": "sy1",
+    "condition": 14,
+    "seconds": 0.08691769978031516,
+    "decisions": 8
+  },
+  {
+    "context": "sy1",
+    "condition": 15,
+    "seconds": 0.08900500042364001,
+    "decisions": 17
+  },
+  {
+    "context": "sy2",
+    "condition": 0,
+    "seconds": 0.0761867999099195,
+    "decisions": 7
+  },
+  {
+    "context": "sy2",
+    "condition": 1,
+    "seconds": 0.07811310002580285,
+    "decisions": 10
+  },
+  {
+    "context": "sy2",
+    "condition": 2,
+    "seconds": 0.07526389975100756,
+    "decisions": 7
+  },
+  {
+    "context": "sy2",
+    "condition": 3,
+    "seconds": 0.07450160011649132,
+    "decisions": 8
+  },
+  {
+    "context": "sy2",
+    "condition": 4,
+    "seconds": 0.08422570023685694,
+    "decisions": 15
+  },
+  {
+    "context": "sy2",
+    "condition": 5,
+    "seconds": 0.08648290019482374,
+    "decisions": 14
+  },
+  {
+    "context": "sy2",
+    "condition": 6,
+    "seconds": 0.0986618003807962,
+    "decisions": 12
+  },
+  {
+    "context": "sy2",
+    "condition": 7,
+    "seconds": 0.08285610005259514,
+    "decisions": 14
+  },
+  {
+    "context": "sy2",
+    "condition": 8,
+    "seconds": 0.07559510041028261,
+    "decisions": 7
+  },
+  {
+    "context": "sy2",
+    "condition": 9,
+    "seconds": 0.07933010021224618,
+    "decisions": 6
+  },
+  {
+    "context": "sy2",
+    "condition": 10,
+    "seconds": 0.08093750011175871,
+    "decisions": 7
+  },
+  {
+    "context": "sy2",
+    "condition": 11,
+    "seconds": 0.08476629992946982,
+    "decisions": 14
+  },
+  {
+    "context": "sy2",
+    "condition": 12,
+    "seconds": 0.08470909995958209,
+    "decisions": 14
+  },
+  {
+    "context": "sy2",
+    "condition": 13,
+    "seconds": 0.07699569966644049,
+    "decisions": 8
+  },
+  {
+    "context": "sy2",
+    "condition": 14,
+    "seconds": 0.07326880004256964,
+    "decisions": 8
+  },
+  {
+    "context": "sy2",
+    "condition": 15,
+    "seconds": 0.08181370003148913,
+    "decisions": 17
+  },
+  {
+    "context": "ir1",
+    "condition": 0,
+    "seconds": 0.07366609992459416,
+    "decisions": 7
+  },
+  {
+    "context": "ir1",
+    "condition": 1,
+    "seconds": 0.07719400012865663,
+    "decisions": 10
+  },
+  {
+    "context": "ir1",
+    "condition": 2,
+    "seconds": 0.07400829996913671,
+    "decisions": 7
+  },
+  {
+    "context": "ir1",
+    "condition": 3,
+    "seconds": 0.09061030019074678,
+    "decisions": 8
+  },
+  {
+    "context": "ir1",
+    "condition": 4,
+    "seconds": 0.10439139977097511,
+    "decisions": 15
+  },
+  {
+    "context": "ir1",
+    "condition": 5,
+    "seconds": 0.09052189998328686,
+    "decisions": 14
+  },
+  {
+    "context": "ir1",
+    "condition": 6,
+    "seconds": 0.08834549970924854,
+    "decisions": 12
+  },
+  {
+    "context": "ir1",
+    "condition": 7,
+    "seconds": 0.10595489991828799,
+    "decisions": 14
+  },
+  {
+    "context": "ir1",
+    "condition": 8,
+    "seconds": 0.09956069989129901,
+    "decisions": 7
+  },
+  {
+    "context": "ir1",
+    "condition": 9,
+    "seconds": 0.14710989966988564,
+    "decisions": 6
+  },
+  {
+    "context": "ir1",
+    "condition": 10,
+    "seconds": 0.17551380023360252,
+    "decisions": 7
+  },
+  {
+    "context": "ir1",
+    "condition": 11,
+    "seconds": 0.11317620007321239,
+    "decisions": 14
+  },
+  {
+    "context": "ir1",
+    "condition": 12,
+    "seconds": 0.11468510003760457,
+    "decisions": 14
+  },
+  {
+    "context": "ir1",
+    "condition": 13,
+    "seconds": 0.09543529991060495,
+    "decisions": 8
+  },
+  {
+    "context": "ir1",
+    "condition": 14,
+    "seconds": 0.11543000023812056,
+    "decisions": 8
+  },
+  {
+    "context": "ir1",
+    "condition": 15,
+    "seconds": 0.1677186000160873,
+    "decisions": 17
+  },
+  {
+    "context": "ir2",
+    "condition": 0,
+    "seconds": 0.10712999990209937,
+    "decisions": 7
+  },
+  {
+    "context": "ir2",
+    "condition": 1,
+    "seconds": 0.17369139986112714,
+    "decisions": 10
+  },
+  {
+    "context": "ir2",
+    "condition": 2,
+    "seconds": 0.09334930032491684,
+    "decisions": 7
+  },
+  {
+    "context": "ir2",
+    "condition": 3,
+    "seconds": 0.10601619957014918,
+    "decisions": 8
+  },
+  {
+    "context": "ir2",
+    "condition": 4,
+    "seconds": 0.12248290004208684,
+    "decisions": 15
+  },
+  {
+    "context": "ir2",
+    "condition": 5,
+    "seconds": 0.11970219993963838,
+    "decisions": 14
+  },
+  {
+    "context": "ir2",
+    "condition": 6,
+    "seconds": 0.12396880006417632,
+    "decisions": 12
+  },
+  {
+    "context": "ir2",
+    "condition": 7,
+    "seconds": 0.121711699757725,
+    "decisions": 14
+  },
+  {
+    "context": "ir2",
+    "condition": 8,
+    "seconds": 0.09945610025897622,
+    "decisions": 7
+  },
+  {
+    "context": "ir2",
+    "condition": 9,
+    "seconds": 0.11331319995224476,
+    "decisions": 6
+  },
+  {
+    "context": "ir2",
+    "condition": 10,
+    "seconds": 0.09847080009058118,
+    "decisions": 7
+  },
+  {
+    "context": "ir2",
+    "condition": 11,
+    "seconds": 0.08827319974079728,
+    "decisions": 14
+  },
+  {
+    "context": "ir2",
+    "condition": 12,
+    "seconds": 0.0856535998173058,
+    "decisions": 14
+  },
+  {
+    "context": "ir2",
+    "condition": 13,
+    "seconds": 0.07953409990295768,
+    "decisions": 8
+  },
+  {
+    "context": "ir2",
+    "condition": 14,
+    "seconds": 0.08982799993827939,
+    "decisions": 8
+  },
+  {
+    "context": "ir2",
+    "condition": 15,
+    "seconds": 0.11437039962038398,
+    "decisions": 17
+  }
+]

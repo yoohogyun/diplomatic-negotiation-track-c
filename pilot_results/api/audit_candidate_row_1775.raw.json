@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791765228-83jMUBO1q6FNfy2M2Ggy",
+  "object": "chat.completion",
+  "created": 1791765228,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"function\":\"noncommitment\",\"evidence\":\"which is not something that we supported\",\"condition\":\"NONE\",\"limitation\":\"Shows opposition to that draft’s permanent-ceasefire provision; does not establish broader policy, motives, or negotiation outcome.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 219,
+    "completion_tokens": 58,
+    "total_tokens": 277,
+    "cost": 0.0001134,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001134,
+      "upstream_inference_prompt_cost": 4.38e-05,
+      "upstream_inference_completions_cost": 6.96e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

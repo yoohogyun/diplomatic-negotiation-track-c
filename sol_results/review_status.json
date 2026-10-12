@@ -1,0 +1,8 @@
+{
+  "source_anchors": 12,
+  "environment_validations": 24,
+  "blinded_items": 45,
+  "completed_human_reviews": 0,
+  "all_case_checks_passed": true,
+  "notes": "Selection enriches errors and is not a prevalence sample. No human inter-annotator agreement claim."
+}

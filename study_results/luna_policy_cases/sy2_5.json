@@ -1,0 +1,664 @@
+[
+  {
+    "policy": "Direct_Luna",
+    "context": "sy2",
+    "event_group": "syria",
+    "condition": 5,
+    "config": {
+      "prior": 0.2,
+      "reliability": 0.6,
+      "query_cost": 0.02,
+      "rejection_cost": 0.16,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.4,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.32000000000000006,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.0
+    },
+    "net_utility": 0.3,
+    "agreement": 1.0,
+    "own_utility": 0.32,
+    "opponent_utility": 0.14999999999999997,
+    "total_utility": 0.47,
+    "cost": 0.020000000000000018,
+    "breakdown": 0.0,
+    "length": 2,
+    "queries": 0,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will keep our forces outside the disputed positions for one week, provided that you keep your forces outside the agreed observation areas for one week. Our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.2,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 3,
+        "bank_id": "sy2_3_0",
+        "common_reward": -0.01,
+        "context": "sy2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.32,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We reaffirm our commitment to ratifying the currently accepted agreement, subject to the bilateral conditions recorded in our talks, and to ensuring the regime’s withdrawal to the line specified therein.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "sy2_9_0",
+        "common_reward": 0.31,
+        "context": "sy2"
+      }
+    ]
+  },
+  {
+    "policy": "Direct_Luna",
+    "context": "sy2",
+    "event_group": "syria",
+    "condition": 5,
+    "config": {
+      "prior": 0.2,
+      "reliability": 0.6,
+      "query_cost": 0.02,
+      "rejection_cost": 0.16,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.4,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.48,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.999999
+    },
+    "net_utility": 0.3,
+    "agreement": 1.0,
+    "own_utility": 0.32,
+    "opponent_utility": 0.14999999999999997,
+    "total_utility": 0.47,
+    "cost": 0.020000000000000018,
+    "breakdown": 0.0,
+    "length": 2,
+    "queries": 0,
+    "signals": 0,
+    "max_escalation": 0,
+    "mean_escalation": 0.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will keep our forces outside the disputed positions for one week, provided that you keep your forces outside the agreed observation areas for one week. Our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "accept",
+        "before": {
+          "t": 0,
+          "b": 0.2,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 3,
+        "bank_id": "sy2_3_0",
+        "common_reward": -0.01,
+        "context": "sy2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.32,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We reaffirm our commitment to ratifying the currently accepted agreement, subject to the bilateral conditions recorded in our talks, and to ensuring the regime’s withdrawal to the line specified therein.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 1,
+          "y": 1,
+          "accepted": true,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 0
+        },
+        "action": 9,
+        "bank_id": "sy2_9_0",
+        "common_reward": 0.31,
+        "context": "sy2"
+      }
+    ]
+  },
+  {
+    "policy": "Direct_Luna",
+    "context": "sy2",
+    "event_group": "syria",
+    "condition": 5,
+    "config": {
+      "prior": 0.2,
+      "reliability": 0.6,
+      "query_cost": 0.02,
+      "rejection_cost": 0.16,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.4,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.12,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "net_utility": -0.275,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.395,
+    "breakdown": 1.0,
+    "length": 3,
+    "queries": 0,
+    "signals": 0,
+    "max_escalation": 2,
+    "mean_escalation": 1.6666666666666667,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "withdrawal",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.16,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will keep our forces outside the disputed positions for one week, provided that you keep your forces outside the agreed observation areas for one week. Our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.2,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 3,
+        "bank_id": "sy2_3_0",
+        "common_reward": -0.17500000000000002,
+        "context": "sy2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.16,
+          "escalation": 0.02,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will keep our forces outside the disputed positions for one week, provided that you keep your forces outside the agreed observation areas for two weeks; our commitment is conditional upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "action": 4,
+        "bank_id": "sy2_4_0",
+        "common_reward": -0.19,
+        "context": "sy2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.02,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0,
+        "utterance": "We reaffirm our commitment to withdraw from these negotiations without proposing or ratifying any agreement.",
+        "meaning": {
+          "kind": "withdraw"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 1.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "after": {
+          "t": 3,
+          "b": 1.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "action": 10,
+        "bank_id": "sy2_10_0",
+        "common_reward": 0.09,
+        "context": "sy2"
+      }
+    ]
+  },
+  {
+    "policy": "Direct_Luna",
+    "context": "sy2",
+    "event_group": "syria",
+    "condition": 5,
+    "config": {
+      "prior": 0.2,
+      "reliability": 0.6,
+      "query_cost": 0.02,
+      "rejection_cost": 0.16,
+      "signal_effect": 0.1,
+      "signal_cost": 0.06,
+      "hard_cost": 0.4,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.08000000000000002,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.999999
+    },
+    "net_utility": -0.275,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.395,
+    "breakdown": 1.0,
+    "length": 3,
+    "queries": 0,
+    "signals": 0,
+    "max_escalation": 2,
+    "mean_escalation": 1.6666666666666667,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "withdrawal",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.16,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will keep our forces outside the disputed positions for one week, provided that you keep your forces outside the agreed observation areas for one week. Our commitment is contingent upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 1
+        },
+        "response": "reject",
+        "before": {
+          "t": 0,
+          "b": 0.2,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 3,
+        "bank_id": "sy2_3_0",
+        "common_reward": -0.17500000000000002,
+        "context": "sy2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.16,
+          "escalation": 0.02,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will keep our forces outside the disputed positions for one week, provided that you keep your forces outside the agreed observation areas for two weeks; our commitment is conditional upon yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 1,
+          "y": 1,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "action": 4,
+        "bank_id": "sy2_4_0",
+        "common_reward": -0.19,
+        "context": "sy2"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.02,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "withdrawal",
+        "reversal": 0,
+        "utterance": "We reaffirm our commitment to withdraw from these negotiations without proposing or ratifying any agreement.",
+        "meaning": {
+          "kind": "withdraw"
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 1.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "after": {
+          "t": 3,
+          "b": 1.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "action": 10,
+        "bank_id": "sy2_10_0",
+        "common_reward": 0.09,
+        "context": "sy2"
+      }
+    ]
+  }
+]

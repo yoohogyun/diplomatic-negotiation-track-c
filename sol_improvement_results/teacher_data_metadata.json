@@ -1,0 +1,27 @@
+{
+  "states": 40706,
+  "optimal_action_counts": [
+    395,
+    7483,
+    1564,
+    1903,
+    4896,
+    817,
+    6528,
+    0,
+    4079,
+    11390,
+    1651
+  ],
+  "contexts": [
+    "kr1",
+    "kr2",
+    "ss1",
+    "ss2",
+    "ss3",
+    "ip1"
+  ],
+  "configs": 96,
+  "hidden_type_in_input": false,
+  "sha256": "b4d7b85833206c3bd15d57b44b2bbf7d6b8fba9b6fcfca0e6931c4c86d1f1eb4"
+}

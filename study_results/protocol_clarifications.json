@@ -1,0 +1,7 @@
+{
+  "type": "post-execution documentation clarification; original frozen protocol retained",
+  "planner": "The original protocol's oracle sentence described a canonical-language planner. Final study.evaluate.planner_for instead enumerates the actual frozen interpreted utterance bank for each context/style. Both full and no-query planners use that same bank and public posterior, never actual opponent type. The no-query planner excludes any action interpreted as query. Results are model-and-bank-aware upper benchmarks, not equal-information learning-efficiency comparisons.",
+  "direct_luna": "Supplemental protocol is separate from the main protocol and uses its fixed 64-case subset and style 0. Its comparison belongs only in the matched-subset table.",
+  "evidence_status": "Only two held-out event groups; source material had prior researcher exposure. No human review, no human teammate reproduction, no historical-outcome accuracy or publication-readiness claim. Auxiliary retraining ablations use one seed. Paired rule sweeps are evaluation-only.",
+  "paper": "Deferred at user's explicit request."
+}

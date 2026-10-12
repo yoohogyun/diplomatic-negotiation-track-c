@@ -1,0 +1,63 @@
+{
+  "model": "openai/gpt-5.6-luna",
+  "service_tier": "default",
+  "provider": {
+    "only": [
+      "openai"
+    ],
+    "order": [
+      "openai"
+    ],
+    "allow_fallbacks": false,
+    "require_parameters": true,
+    "max_price": {
+      "prompt": 0.2,
+      "completion": 1.2
+    }
+  },
+  "stream": false,
+  "max_tokens": 512,
+  "reasoning": {
+    "effort": "none",
+    "exclude": true,
+    "context": "current_turn",
+    "mode": "standard"
+  },
+  "verbosity": "low",
+  "tool_choice": "none",
+  "prompt_cache_options": {
+    "mode": "explicit"
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "study_record",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 10
+          }
+        },
+        "required": [
+          "action"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "You choose a strategy action in a SYNTHETIC diplomatic negotiation. Maximize expected undiscounted OWN net utility; agreement alone is not the objective. Only public state is available. Opponent is soft with type_cost .2 or hard with type_cost given in config. Belief b is probability of hard type. Offer x weeks of our specified measure conditional on y weeks of their measure. Own agreement utility=.5*y-.18*x. Opponent utility=.35*x-type_cost*y+signal_effect*signaled. They accept iff their utility>=0. Ratification requires observed acceptance and own utility>=outside. You can revise accepted proposals before ratification. Terminal utility is paid once. Withdrawal and exhaustion give outside. Every action costs turn_cost; a question adds query_cost, a signal adds signal_cost, a rejection adds rejection_cost and increases escalation by one. Each turn also costs escalation_weight*escalation^2. Reducing a public promised x costs reversal_cost. Invalid ratification costs .1. Signal makes its benefit active once. Query returns a noisy indication with reliability from config and updates b; repeated queries add cost but no information. Offers also update b through deterministic accept/reject. Ambiguity makes the next proposal provisional without removing old promises. Maximum horizon is five actions. All these numerical assumptions are synthetic. Choose one action index; do not supply hidden-state guesses as facts."
+    },
+    {
+      "role": "user",
+      "content": "{\"source_context\": \"We hope that relevant parties can truly bear in mind the future of their state and the fundamental interests of their people, strictly follow Resolution 2254 of the UN Security Council and the outcomes of the 4th foreign ministers' meeting of the International Syria Support Group, and seriously implement ceasefire and cessation of violence.\", \"our_measure\": \"maintain a cessation of hostilities\", \"their_measure\": \"maintain a cessation of hostilities\", \"public\": {\"state\": {\"t\": 3, \"b\": 1.0, \"x\": 1, \"y\": 2, \"accepted\": false, \"signaled\": false, \"queried\": true, \"provisional\": false, \"commitment\": 1, \"escalation\": 2}, \"config\": {\"prior\": 0.5, \"reliability\": 0.75, \"query_cost\": 0.02, \"rejection_cost\": 0.16, \"signal_effect\": 0.1, \"signal_cost\": 0.06, \"hard_cost\": 0.45, \"outside\": 0.12, \"turn_cost\": 0.01, \"escalation_weight\": 0.005, \"reversal_cost\": 0.08, \"horizon\": 5}, \"last_interpreted_function\": \"offer\"}, \"actions\": {\"0\": \"ambiguity\", \"1\": \"signal\", \"2\": \"query\", \"3\": \"offer_1_1\", \"4\": \"offer_1_2\", \"5\": \"offer_2_1\", \"6\": \"offer_2_2\", \"7\": \"offer_3_1\", \"8\": \"offer_3_2\", \"9\": \"ratify\", \"10\": \"withdraw\"}}"
+    }
+  ],
+  "seed": 74001078
+}

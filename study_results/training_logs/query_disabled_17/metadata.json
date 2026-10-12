@@ -1,0 +1,24 @@
+{
+  "seconds": 56.5862820148468,
+  "action_counts": [
+    32705,
+    345,
+    181,
+    336,
+    155,
+    657,
+    7088,
+    370,
+    21106,
+    19912,
+    19545
+  ],
+  "config": {
+    "name": "query_disabled",
+    "seeds": [
+      17
+    ],
+    "disable_query": true
+  },
+  "seed": 17
+}

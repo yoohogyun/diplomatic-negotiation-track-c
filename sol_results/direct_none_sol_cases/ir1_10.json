@@ -1,0 +1,595 @@
+[
+  {
+    "policy": "Direct_Sol_none_sol",
+    "context": "ir1",
+    "event_group": "iran",
+    "condition": 10,
+    "config": {
+      "prior": 0.35,
+      "reliability": 1.0,
+      "query_cost": 0.08,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.25,
+      "signal_cost": 0.06,
+      "hard_cost": 0.55,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.65,
+    "hidden_evaluation_only": {
+      "hard": false,
+      "query_uniform": 0.999999
+    },
+    "net_utility": -0.48,
+    "agreement": 0.0,
+    "own_utility": 0.12,
+    "opponent_utility": 0.0,
+    "total_utility": 0.12,
+    "cost": 0.6,
+    "breakdown": 1.0,
+    "length": 5,
+    "queries": 1,
+    "signals": 0,
+    "max_escalation": 4,
+    "mean_escalation": 2.0,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "exhausted",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.08,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In private, we ask whether you would require a larger reciprocal concession in order to accept. This inquiry is exploratory only and does not constitute an offer or any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "soft",
+        "before": {
+          "t": 0,
+          "b": 0.35,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ir1_2_0",
+        "common_reward": -0.09,
+        "context": "ir1",
+        "opponent_utterance": "Privately, a more limited reciprocal concession may meet our acceptance conditions.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for 1 week, provided that you suspend the specified nuclear activities for 2 weeks. Our commitment is contingent upon your fulfillment of this condition.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 1,
+          "b": 0.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "action": 4,
+        "bank_id": "ir1_4_0",
+        "common_reward": -0.095,
+        "context": "ir1",
+        "opponent_utterance": "We do not accept those reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.02,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for 1 week, provided that you suspend the specified nuclear activities for 2 weeks. Our commitment is contingent upon your fulfillment of this condition.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 2,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 1
+        },
+        "after": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "action": 4,
+        "bank_id": "ir1_4_0",
+        "common_reward": -0.11,
+        "context": "ir1",
+        "opponent_utterance": "We do not accept those reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.045,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for 1 week, provided that you suspend the specified nuclear activities for 2 weeks. Our commitment is contingent upon your fulfillment of this condition.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 3,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 2
+        },
+        "after": {
+          "t": 4,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 3
+        },
+        "action": 4,
+        "bank_id": "ir1_4_0",
+        "common_reward": -0.135,
+        "context": "ir1",
+        "opponent_utterance": "We do not accept those reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.08,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.12,
+        "outcome": "exhausted",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for 1 week, provided that you suspend the specified nuclear activities for 2 weeks. Our commitment is contingent upon your fulfillment of this condition.",
+        "meaning": {
+          "kind": "offer",
+          "x": 1,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 4,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 3
+        },
+        "after": {
+          "t": 5,
+          "b": 0.0,
+          "x": 1,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 1,
+          "escalation": 4
+        },
+        "action": 4,
+        "bank_id": "ir1_4_0",
+        "common_reward": -0.05000000000000002,
+        "context": "ir1",
+        "opponent_utterance": "We do not accept those reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  },
+  {
+    "policy": "Direct_Sol_none_sol",
+    "context": "ir1",
+    "event_group": "iran",
+    "condition": 10,
+    "config": {
+      "prior": 0.35,
+      "reliability": 1.0,
+      "query_cost": 0.08,
+      "rejection_cost": 0.08,
+      "signal_effect": 0.25,
+      "signal_cost": 0.06,
+      "hard_cost": 0.55,
+      "outside": 0.12,
+      "turn_cost": 0.01,
+      "escalation_weight": 0.005,
+      "reversal_cost": 0.08,
+      "horizon": 5
+    },
+    "variant": 0,
+    "weight": 0.35,
+    "hidden_evaluation_only": {
+      "hard": true,
+      "query_uniform": 0.0
+    },
+    "net_utility": 0.16999999999999993,
+    "agreement": 1.0,
+    "own_utility": 0.45999999999999996,
+    "opponent_utility": 0.19999999999999973,
+    "total_utility": 0.6599999999999997,
+    "cost": 0.29000000000000004,
+    "breakdown": 0.0,
+    "length": 5,
+    "queries": 1,
+    "signals": 1,
+    "max_escalation": 1,
+    "mean_escalation": 0.8,
+    "reversals": 0,
+    "invalid_attempts": 0,
+    "acceptance_violations": 0,
+    "feasible": 1.0,
+    "outcome": "agreement",
+    "trajectory": [
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.08,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.0,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "In private, we ask whether you would require a larger reciprocal concession in order to accept. This inquiry is exploratory only and does not constitute an offer or any public commitment on our part.",
+        "meaning": {
+          "kind": "query"
+        },
+        "response": "hard",
+        "before": {
+          "t": 0,
+          "b": 0.35,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": false,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "action": 2,
+        "bank_id": "ir1_2_0",
+        "common_reward": -0.09,
+        "context": "ir1",
+        "opponent_utterance": "Privately, we require a larger reciprocal concession before considering acceptance.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.08,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for two weeks, provided that you suspend the specified nuclear activities for the same two-week period. Our suspension is expressly conditional upon and dependent on your corresponding suspension.",
+        "meaning": {
+          "kind": "offer",
+          "x": 2,
+          "y": 2
+        },
+        "response": "reject",
+        "before": {
+          "t": 1,
+          "b": 1.0,
+          "x": 0,
+          "y": 0,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 0,
+          "escalation": 0
+        },
+        "after": {
+          "t": 2,
+          "b": 1.0,
+          "x": 2,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 1
+        },
+        "action": 6,
+        "bank_id": "ir1_6_0",
+        "common_reward": -0.095,
+        "context": "ir1",
+        "opponent_utterance": "We do not accept those reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.06,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We hereby commit resources, at a cost of 0.06 utility units, to a monitored confidence-building measure.",
+        "meaning": {
+          "kind": "signal",
+          "cost": 0.06
+        },
+        "response": "ack",
+        "before": {
+          "t": 2,
+          "b": 1.0,
+          "x": 2,
+          "y": 2,
+          "accepted": false,
+          "signaled": false,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 1
+        },
+        "after": {
+          "t": 3,
+          "b": 1.0,
+          "x": 2,
+          "y": 2,
+          "accepted": false,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 1
+        },
+        "action": 1,
+        "bank_id": "ir1_1_0",
+        "common_reward": -0.075,
+        "context": "ir1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.0,
+        "outcome": "ongoing",
+        "reversal": 0,
+        "utterance": "We will suspend the specified sanctions for three weeks, provided that you suspend the specified nuclear activities for two weeks. Our commitment is expressly conditional upon your fulfillment of yours.",
+        "meaning": {
+          "kind": "offer",
+          "x": 3,
+          "y": 2
+        },
+        "response": "accept",
+        "before": {
+          "t": 3,
+          "b": 1.0,
+          "x": 2,
+          "y": 2,
+          "accepted": false,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 2,
+          "escalation": 1
+        },
+        "after": {
+          "t": 4,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 8,
+        "bank_id": "ir1_8_0",
+        "common_reward": -0.015,
+        "context": "ir1",
+        "opponent_utterance": "We accept the proposal subject to its stated reciprocal terms.",
+        "opponent_text_origin": "fixed synthetic template"
+      },
+      {
+        "costs": {
+          "turn": 0.01,
+          "query": 0.0,
+          "signal": 0.0,
+          "rejection": 0.0,
+          "escalation": 0.005,
+          "reversal": 0.0,
+          "invalid": 0.0
+        },
+        "terminal_utility": 0.45999999999999996,
+        "outcome": "agreement",
+        "reversal": 0,
+        "utterance": "We call upon you to ratify the currently accepted agreement, subject solely to the bilateral conditions already on record.",
+        "meaning": {
+          "kind": "ratify"
+        },
+        "response": "ack",
+        "before": {
+          "t": 4,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "after": {
+          "t": 5,
+          "b": 1.0,
+          "x": 3,
+          "y": 2,
+          "accepted": true,
+          "signaled": true,
+          "queried": true,
+          "provisional": false,
+          "commitment": 3,
+          "escalation": 1
+        },
+        "action": 9,
+        "bank_id": "ir1_9_0",
+        "common_reward": 0.44499999999999995,
+        "context": "ir1",
+        "opponent_utterance": "We acknowledge your statement.",
+        "opponent_text_origin": "fixed synthetic template"
+      }
+    ]
+  }
+]

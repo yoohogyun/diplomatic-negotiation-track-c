@@ -1,0 +1,13 @@
+{
+  "time": 1791765281.810792,
+  "reason": "All three short PPO seeds ignored information; inspect learning-budget limitation.",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "steps": 102400,
+  "fresh_initialization": true,
+  "other_settings": "unchanged",
+  "no_additional_tuning": "Stop after these three runs regardless of outcome."
+}

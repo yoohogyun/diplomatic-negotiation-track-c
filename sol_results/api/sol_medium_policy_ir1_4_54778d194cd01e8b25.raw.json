@@ -1,0 +1,82 @@
+{
+  "id": "gen-1791768983-VuroKGyhz64QMEemC1nd",
+  "object": "chat.completion",
+  "created": 1791768983,
+  "model": "openai/gpt-5.6-sol",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"action\":2}",
+        "refusal": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0c7de955830d1bc2016acc399810f887d1a8dcc91026e23ac9",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0c7de955830d1bc2016acc399f2fa087d19fadddc99327ce67",
+            "index": 1
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0c7de955830d1bc2016acc39a766cc87d1b5467a5e26a4fd06",
+            "index": 2
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0c7de955830d1bc2016acc39aeb97c87d191ae1abbeb591b2e",
+            "index": 3
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "[Opaque encrypted reasoning omitted from release]",
+            "format": "openai-responses-v1",
+            "id": "rs_0c7de955830d1bc2016acc39b74c9887d1b193e5dcaff555a8",
+            "index": 4
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 658,
+    "completion_tokens": 2359,
+    "total_tokens": 3017,
+    "cost": 0.024906,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.024906,
+      "upstream_inference_prompt_cost": 0.001316,
+      "upstream_inference_completions_cost": 0.02359
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2344,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

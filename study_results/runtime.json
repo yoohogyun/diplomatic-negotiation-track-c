@@ -1,0 +1,13 @@
+{
+  "python": "3.13.9",
+  "packages": {
+    "numpy": "2.3.5",
+    "torch": "2.14.1",
+    "gymnasium": "1.2.3",
+    "stable_baselines3": "2.7.1",
+    "matplotlib": "3.10.6",
+    "pandas": "2.3.3",
+    "requests": "2.32.5",
+    "cloudpickle": "3.1.1"
+  }
+}

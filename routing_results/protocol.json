@@ -1,0 +1,70 @@
+{
+  "frozen_at": 1791770155.2347033,
+  "question": "Can a public-state learned regret gate retain Sol medium utility with fewer reasoning calls?",
+  "cheap_policy": "Existing Sol distilled_ppo seed17, fixed before new dev/test; no seed selection.",
+  "gate": "Three train-only MLP Q estimators; max(mean Q)-mean Q[cheap action]. Call Sol if this exceeds threshold.",
+  "gate_training": "Existing Sol teacher data (40706 rows); seeds71,73,79; 3000 Adam updates, batch512, lr.001, Q MSE. No new planner labels.",
+  "threshold_candidates": [
+    -1.0,
+    0.01,
+    0.03,
+    0.06,
+    0.1,
+    0.2
+  ],
+  "dev": "First 8 original dev configurations, both dev documents, style0; actual Sol medium fallback.",
+  "selection": "Minimum expected Sol calls among candidates with dev utility >= always-Sol minus .01; ties by greater utility. Always-Sol threshold -1 guarantees feasible fallback.",
+  "test_contexts": [
+    {
+      "id": "sy1",
+      "event_group": "syria",
+      "split": "test",
+      "source": {
+        "source": "S4",
+        "doc_title": "CMFA PressCon dyad 12850 (Hong Lei)",
+        "date": "2016-03-01",
+        "url_or_doi": "doi:10.7910/DVN/BAKGET; http://web.archive.org/web/20160310051413/http://www.fmprc.gov.cn/mfa_eng/xwfw_665399/s2510_665401/2511_665403/t1344375.shtml",
+        "speaker_role": "spokesperson (answer)",
+        "source_type": "official English version",
+        "sentence": "We hope that relevant parties can truly bear in mind the future of their state and the fundamental interests of their people, strictly follow Resolution 2254 of the UN Security Council and the outcomes of the 4th foreign ministers' meeting of the International Syria Support Group, and seriously implement ceasefire and cessation of violence.",
+        "has_cue": "True",
+        "csv_row": 3628
+      },
+      "our_measure": "maintain a cessation of hostilities",
+      "their_measure": "maintain a cessation of hostilities",
+      "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+      "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+    },
+    {
+      "id": "ir1",
+      "event_group": "iran",
+      "split": "test",
+      "source": {
+        "source": "S5",
+        "doc_title": "S/2020/644 — Halimah DeShong (Saint Vincent And The Grenadines)",
+        "date": "2020-06-30",
+        "url_or_doi": "doi:10.7910/DVN/KGVSYH; UNSC_2020_S_2020_644_spch0014.txt",
+        "speaker_role": "delegate",
+        "source_type": "source text",
+        "sentence": "We take note that Iran has indicated that those steps are reversible, having undertaken them subsequent to the withdrawal of the United States from the agreement.",
+        "has_cue": "True",
+        "csv_row": 6149
+      },
+      "our_measure": "suspend the specified sanctions",
+      "their_measure": "suspend the specified nuclear activities",
+      "interpretation": "Researcher-authored bilateral hypothetical inspired by this public discourse; durations, reciprocity, types and payoffs are synthetic.",
+      "prior_exposure": "Some sources were inspected in pilot/planning. Held out from training, not claimed researcher-blind or historically untouched."
+    }
+  ],
+  "test": "16 new numerical configs x 2 previously exposed source documents, style0. Full nonzero hidden/query branches probability-weighted. Not new historical holdout.",
+  "comparators": [
+    "cheap only",
+    "always Sol medium",
+    "dev-selected hybrid",
+    "public planner"
+  ],
+  "prompt": "Exact previous direct-policy RULES, model and reasoning budget unchanged; one cached model sample per identical public prompt shared between methods.",
+  "resource_accounting": "Expected calls/tokens/API cost per episode include every logical invocation even cache hits; actual billed unique requests reported separately. Offline teacher/gate costs separate.",
+  "limits": "Exploratory small pilot; no novelty, noninferiority, human-accuracy or real diplomatic success claim; no test-driven tuning.",
+  "budget": "Same shared ledger; internal cumulative $9, user ceiling <$10; 4 concurrent case workers."
+}

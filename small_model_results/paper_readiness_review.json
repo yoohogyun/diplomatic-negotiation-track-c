@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-12",
+  "scope": "Readiness review only; no new paid experiments or paper drafting. User excludes additional model families.",
+  "assessment": "A focused empirical short-paper candidate exists, but current evidence alone does not establish a novel small-language-model negotiation method or end-to-end efficiency.",
+  "new_offline_checks": {
+    "matched_test_style0_bank_entries": 44,
+    "entries_differing_from_canonical_template_meaning": 0,
+    "implication": "Under the existing transition function, replacing these utterances with canonical templates preserves dynamics and utility. Current utility table does not establish a necessary contribution from Luna language realization.",
+    "planner_minus_sol_mean": 0.019416406250000018,
+    "numeric_clusters": 16,
+    "numeric_cluster_win_tie_loss": [9, 7, 0],
+    "exploratory_paired_numeric_bootstrap_95": [0.008878671875000002, 0.031933652343750014],
+    "uncertainty_scope": "Previously observed numeric conditions, four fixed documents in two event groups, one cached Sol response per prompt. Not historical or model-sampling uncertainty."
+  },
+  "priority_gaps": [
+    {
+      "priority": 1,
+      "gap": "Language contribution and source grounding",
+      "minimal_check": "A small frozen set of unseen paraphrases and meaning-changing diplomatic conditions, with actual Luna realization/interpretation feeding public state. Compare fixed-template controller. Report numeric/conditional fidelity and negotiation return, with no prior access to the full test interpretation bank."
+    },
+    {
+      "priority": 2,
+      "gap": "Exact-model planning is currently a strong known-rule benchmark",
+      "minimal_check": "Hold controller likelihood/signal assumptions fixed while perturbing only environment truth. Existing jointly changed public parameters are sensitivity tests, not model-mismatch tests. Also compare belief updates disabled and signal disabled for the actual selected planning module."
+    },
+    {
+      "priority": 3,
+      "gap": "Within-model inference control",
+      "minimal_check": "Keep Luna and Sol only. Use a reasonably configured Luna direct-strategy baseline or narrow claims explicitly to the tested none configuration; audit identical public information and realized-action knowledge. No additional model family is required."
+    },
+    {
+      "priority": 4,
+      "gap": "Efficiency claim scope",
+      "minimal_check": "Separate strategy selection, language generation, interpretation and offline training costs. Count logical calls even on cache hits. Measure whole-pipeline cost for the small online set, or limit the claim to strategy-selection API savings."
+    }
+  ],
+  "novelty_position": "Strategy/generation separation and language-plus-planning are established. Contribution must be a specific empirical finding about public-belief/cost-sensitive control, robustness, and language fidelity in the declared diplomatic simulation; do not claim a new planning or PPO algorithm.",
+  "prior_work": [
+    "https://aclanthology.org/D18-1256/",
+    "https://github.com/facebookresearch/diplomacy_cicero"
+  ],
+  "venue": {
+    "source": "https://2027.coling-iccl.org/calls/main_conference_papers/",
+    "main_text_short_pages": 4,
+    "arr_deadline_AoE": "2026-10-12 23:59",
+    "arr_deadline_KST": "2026-10-13 20:59"
+  }
+}

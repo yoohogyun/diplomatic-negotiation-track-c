@@ -1,0 +1,100 @@
+{
+  "model": "openai/gpt-5.6-luna",
+  "service_tier": "default",
+  "provider": {
+    "only": [
+      "openai"
+    ],
+    "order": [
+      "openai"
+    ],
+    "allow_fallbacks": false,
+    "require_parameters": true,
+    "max_price": {
+      "prompt": 0.2,
+      "completion": 1.2
+    }
+  },
+  "stream": false,
+  "max_tokens": 512,
+  "reasoning": {
+    "effort": "none",
+    "exclude": true,
+    "context": "current_turn",
+    "mode": "standard"
+  },
+  "verbosity": "low",
+  "tool_choice": "none",
+  "prompt_cache_options": {
+    "mode": "explicit"
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "study_record",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "offer",
+              "query",
+              "signal",
+              "ambiguity",
+              "ratify",
+              "withdraw",
+              "invalid"
+            ]
+          },
+          "x": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "y": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "cost": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "conditional": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "not_applicable"
+            ]
+          }
+        },
+        "required": [
+          "kind",
+          "x",
+          "y",
+          "cost",
+          "conditional"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "Interpret the supplied synthetic diplomatic utterance, not its presumed intent. x=weeks of OUR measure, y=weeks of THEIR reciprocal measure, cost=explicit resource expenditure. Use null for unstated numbers. Classify offer only if our measure is explicitly conditional on theirs and x in {1,2,3}, y in {1,2}. Negated offers, unless-conditions, unilateral promises, missing reciprocity and out-of-range terms are invalid; do not repair them. Query seeks conditions privately. Signal commits resources at a stated cost. Ambiguity makes the next proposal provisional. Ratify finalizes an accepted agreement. Withdraw exits talks. Return only the schema."
+    },
+    {
+      "role": "user",
+      "content": "{\"our_measure\": \"keep forces outside disputed positions\", \"their_measure\": \"keep forces outside agreed observation areas\", \"utterance\": \"If you keep your forces outside the agreed observation areas for 2 weeks, we will keep ours outside the disputed positions for 1 week; our commitment depends on yours.\"}"
+    }
+  ],
+  "seed": 74000701
+}

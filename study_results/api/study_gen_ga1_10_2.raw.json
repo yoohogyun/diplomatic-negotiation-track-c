@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791766127-DxWtEvfS30M0KijP1fYS",
+  "object": "chat.completion",
+  "created": 1791766127,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"If no agreement can immediately secure a sustained ceasefire of at least six weeks, hostage releases, and essential additional humanitarian assistance, we will withdraw from these negotiations without proposing or ratifying any agreement.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 186,
+    "completion_tokens": 52,
+    "total_tokens": 238,
+    "cost": 9.96e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 9.96e-05,
+      "upstream_inference_prompt_cost": 3.72e-05,
+      "upstream_inference_completions_cost": 6.24e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

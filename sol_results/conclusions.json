@@ -1,0 +1,11 @@
+{
+  "model_only_delta_none": 0.00046640624999993996,
+  "sol_medium_minus_none": 0.881290625,
+  "sol_medium_minus_matched_selected_luna_mean": 0.03869401041666659,
+  "sol_medium_minus_matched_selected_sol_mean": 0.03039192708333327,
+  "matched_luna_selected_mean": 0.47531770833333337,
+  "matched_sol_selected_mean": 0.4836197916666667,
+  "test_style_zero_bank_semantic_differences": [],
+  "sol_medium_minus_matched_heuristic": 0.04429296874999994,
+  "comparison_limit": "Medium changes reasoning and output budget; same prompts and fixed execution bank. Constructed PPO failures are not general LLM failures."
+}

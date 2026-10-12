@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791768403-MQ5WrBbE5zoyrVZ1lS9Y",
+  "object": "chat.completion",
+  "created": 1791768403,
+  "model": "openai/gpt-5.6-sol",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"We urge you to ratify the agreement as currently accepted, subject solely to the bilateral conditions already recorded.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 166,
+    "completion_tokens": 34,
+    "total_tokens": 200,
+    "cost": 0.000672,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000672,
+      "upstream_inference_prompt_cost": 0.000332,
+      "upstream_inference_completions_cost": 0.00034
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

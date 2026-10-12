@@ -1,0 +1,45 @@
+{
+  "id": "gen-1791766232-uUgevz2Z8tg6heDSAX9B",
+  "object": "chat.completion",
+  "created": 1791766232,
+  "model": "openai/gpt-5.6-luna",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"utterance\":\"We are prepared to ratify the currently accepted agreement, subject to the recorded bilateral conditions. We understand that the steps you undertook following our withdrawal are reversible, and we commit to proceeding on that basis without adding terms.\"}",
+        "refusal": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 167,
+    "completion_tokens": 57,
+    "total_tokens": 224,
+    "cost": 0.0001018,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001018,
+      "upstream_inference_prompt_cost": 3.34e-05,
+      "upstream_inference_completions_cost": 6.84e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

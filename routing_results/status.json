@@ -1,0 +1,11 @@
+{
+  "time": 1791771098.0667186,
+  "dev_complete": true,
+  "test_complete": false,
+  "test_completed_cells": 17,
+  "planned_test_cells": 32,
+  "reason": "User redirected to small Luna plus strategic controller and stated time is short. Paid test deliberately stopped; partial cohort is not a completed holdout.",
+  "active_paid_jobs": 0,
+  "response_cost_total": 4.7896438,
+  "reserved_unresolved": 0.048328
+}

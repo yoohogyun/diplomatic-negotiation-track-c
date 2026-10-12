@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+budget/
+__pycache__/
+*.py[cod]
+.venv/
+.pilot_deps/
+.local_tools/
+verification/
+tmp/
+*.lock
+*.tmp
+*.pem
+*.key
+
