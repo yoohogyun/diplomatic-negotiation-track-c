@@ -98,9 +98,9 @@ def main():
         'learned_decisions_reproduced':cheap_decisions,'unique_public_requests_verified':len(public_requests),
         'test_configuration_overlap':0,'selection_frozen_before_test':True,'acceptance_violations':0,
         'unresolved_transport_calls_retained':unresolved,'reserved_for_unresolved_usd':reserved})
-    labels={'always_sol':'항상 Sol medium','cheap':'작은 학습 정책만','planner':'공개 규칙 계획기','initial_sol':'첫 판단만 Sol',name:'선택적 Sol (개발 선택)'}
+    labels={'always_sol':'Always Sol medium','cheap':'Learned policy only','planner':'Public-rule planner','initial_sol':'Sol at first decision',name:'Selective Sol (development-selected)'}
     def table(data):
-        s='<table><tr><th>방식</th><th>순효용</th><th>합의율</th><th>Sol 호출/회</th><th>총 토큰/회</th><th>API $/회</th><th>질문/회</th><th>신호/회</th></tr>'
+        s='<table><tr><th>Method</th><th>Net utility</th><th>Agreement</th><th>Sol calls/episode</th><th>Tokens/episode</th><th>Model-call $/episode</th><th>Queries/episode</th><th>Signals/episode</th></tr>'
         for n,r in data.items():
             s+=f'<tr><td>{html.escape(labels.get(n,n))}</td><td>{r["net_utility"]:.5f}</td><td>{r["agreement"]:.1%}</td><td>{r["sol_calls"]:.3f}</td><td>{r["prompt_tokens"]+r["completion_tokens"]:.1f}</td><td>{r["api_usd"]:.5f}</td><td>{r["queries"]:.3f}</td><td>{r["signals"]:.3f}</td></tr>'
         return s+'</table>'
@@ -131,18 +131,18 @@ def main():
         ax.set(xlabel=xlabel,ylabel='Expected net utility');ax.grid(alpha=.18)
     axes[0].legend(fontsize=8);fig.suptitle('Exploratory selective-reasoning pilot: 16 numeric settings, 2 fixed sources',fontsize=11)
     fig.savefig(OUT/'utility_cost.png',dpi=180);fig.savefig(OUT/'utility_cost.pdf');plt.close(fig)
-    page=f'''<!doctype html><html lang="ko"><meta charset="utf-8"><title>Selective Sol pilot</title>
+    page=f'''<!doctype html><html lang="en"><meta charset="utf-8"><title>Selective Sol pilot</title>
     <style>body{{font:16px/1.6 system-ui;max-width:1150px;margin:40px auto;padding:0 20px;color:#18242c}}table{{border-collapse:collapse;width:100%;font-size:14px}}td,th{{border-bottom:1px solid #ccd5db;text-align:right;padding:9px}}td:first-child,th:first-child{{text-align:left}}h1,h2{{line-height:1.25}}.note{{background:#eff5f7;padding:18px}}blockquote{{border-left:3px solid #54798a;padding-left:18px}}</style>
-    <h1>필요한 판단만 Sol에 맡기는 외교 협상 파일럿</h1>
-    <p class="note">항상 Sol 대비 순효용 차이 {result['utility_delta']:+.5f}; 호출 {result['calls_reduction_fraction']:.1%}, 토큰 {result['token_reduction_fraction']:.1%}, API 비용 {result['api_cost_reduction_fraction']:.1%} 감소. 합의율 {hybrid['agreement']:.1%}. 성공·실패를 포함한 고정된 파일럿 결과다.</p>
-    <h2>새 수치 조건 평가</h2>{table(summary)}<img src="utility_cost.png" alt="Utility versus Sol calls and API cost" style="width:100%">
-    <p>새 수치 설정 16개 × 기존 실제 문서 2개 = 32개 평가 셀. 숨은 유형과 질문 응답 분기를 확률 가중했다. 평가 스타일은 0이며 문서·언어 bank는 이전에 사용했다. 숫자·효용·상대 반응은 합성이다.</p>
-    <h2>방법과 개발 선택</h2><p>기존 증류+PPO seed17을 고정했다. 공개 상태의 행동가치를 예측하는 작은 MLP 3개는 기존 학습 데이터 40,706개만 사용했다. 기존 정책 행동의 예측 손실이 임계값을 넘을 때 Sol medium을 호출한다. 배포 시 계획기는 호출하지 않는다. 공개 규칙 계획기 교사라는 추가 자원과 기존 PPO 학습을 사용하므로 같은 학습 비용 비교는 아니다.</p>
-    <p>개발 설정 8개 × 문서 2개에서 실제 Sol을 사용했다. 항상 Sol 대비 효용 손실 0.01 이내인 후보 중 호출이 가장 적은 임계값 {selection['threshold']}을 선택하고 새 수치 평가 전에 고정했다. 평가 결과를 보고 바꾸지 않았다. 개발집합에서는 호출 0회 후보가 선택되어, 평가 시작 전 추가 기록으로 모든 기존 임계값의 보조 탐색 곡선과 첫 턴만 Sol을 쓰는 단순 비교도 정했다. 이 보조 결과에서 좋은 임계값이 보이더라도 그것을 개발 선택의 성공으로 바꾸어 보고하지 않는다.</p>{table(selection['summary'])}
-    <h2>비용·검사·해석 범위</h2><p>표의 비용은 캐시 적중도 호출로 세는 가상 배포 1회당 기대값이다. 실제 파일럿은 중복 공개 프롬프트를 재사용했고 총 {len(validated)}개 성공 응답에 ${result['actual_new_api_usd']:.6f}, 전체 응답 기준 누적 ${spent:.6f}가 들었다. 전송 중단 요청 비용은 미확정이며 예약 ${reserved:.6f}를 추가로 유지한다. 이를 포함한 보수적 누적 상한은 ${spent+reserved:.6f}이다. 언어 bank 작성비·교사 계산·학습 비용은 표의 배포 비용에 포함하지 않는다. CPU 실행 시간이나 전체 시스템 지연의 감소로 해석하지 않는다.</p>
-    <p>개발·평가 경로 {len(rows)}개, {turns}개 전이를 별도 프로세스에서 재생했다. 입력은 공개 상태만 포함하며 실제 숨은 유형은 API에 제공하지 않았다. 요청·토큰·비용·호출 기준·수락 조건을 감사했다.</p>
-    <p>수치 설정 단위 paired bootstrap의 효용 차이 95% 구간: [{np.quantile(boots,.025):+.5f}, {np.quantile(boots,.975):+.5f}]. 이는 고정된 두 문서와 단일 캐시 응답에서의 탐색적 수치 변동만 나타낸다. 역사적 일반화·모델 샘플 변동·확정적 비열등성 검증은 아니다. 일반적인 routing 자체를 새 알고리즘이라고 주장하지 않는다.</p>
-    <h2>사용한 실제 원문</h2>'''
+    <h1>Selective Sol routing for diplomatic negotiation</h1>
+    <p class="note">Net utility difference from always using Sol: {result['utility_delta']:+.5f}; reductions in calls: {result['calls_reduction_fraction']:.1%}, tokens: {result['token_reduction_fraction']:.1%}, and model-call cost: {result['api_cost_reduction_fraction']:.1%}. Agreement: {hybrid['agreement']:.1%}. Report all outcomes of the fixed pilot, including failures.</p>
+    <h2>Evaluation on new numerical settings</h2>{table(summary)}<img src="utility_cost.png" alt="Utility versus Sol calls and API cost" style="width:100%">
+    <p>The planned evaluation contains 16 new numerical settings across two previously used real documents, for 32 cells. Hidden-type and query-response branches are probability-weighted. Style 0 and the document/language bank were used previously. Numerical utilities and opponent responses are synthetic.</p>
+    <h2>Method and development selection</h2><p>The existing distilled-plus-PPO policy at seed 17 is frozen. Three small MLPs predict public-state action values using only the existing 40,706 training states. Sol medium is called when the predicted loss of the original policy action exceeds a threshold. No planner is called at deployment. Training uses a public-rule planner teacher and the existing PPO policy, so this is not an equal-training-cost comparison.</p>
+    <p>Development used Sol on eight numerical settings across two documents. Among candidates with utility loss at most 0.01 relative to always using Sol, threshold {selection['threshold']} minimizes calls. It was frozen before the new numerical evaluation and not changed based on test results. Development selected a zero-call candidate. Before testing, an addendum specified auxiliary curves for all existing thresholds and a first-decision-only Sol baseline. A favorable auxiliary threshold must not be reported as success of the development-selected method.</p>{table(selection['summary'])}
+    <h2>Cost, checks, and interpretation</h2><p>Table costs are expected values per hypothetical deployment, counting cache hits as logical calls. The actual pilot reused duplicate public prompts: {len(validated)} successful responses cost ${result['actual_new_api_usd']:.6f}, with ${spent:.6f} cumulatively billed across responses. Interrupted requests remain unresolved, with an additional reserve of ${reserved:.6f}; the conservative cumulative upper bound is ${spent+reserved:.6f}. Deployment costs exclude language-bank construction, teacher computation, and training. They do not measure CPU runtime or end-to-end latency reductions.</p>
+    <p>A separate process replayed {len(rows)} development/evaluation trajectories and {turns} transitions. Inputs contain only public state; the actual hidden type is never provided to the model. Requests, tokens, charges, call triggers, and acceptance conditions were audited.</p>
+    <p>The paired bootstrap 95% interval for the utility difference across numerical settings is [{np.quantile(boots,.025):+.5f}, {np.quantile(boots,.975):+.5f}]. It reflects exploratory numerical variation conditional on two fixed documents and single cached responses. It does not establish historical generalization, model-sampling variability, or confirmatory non-inferiority. Routing itself is not claimed as a new algorithm.</p>
+    <h2>Real source excerpts</h2>'''
     for ctx in protocol['test_contexts']:
         page+=f'<blockquote>{html.escape(ctx["source"]["sentence"])}</blockquote><p>{html.escape(ctx["source"]["doc_title"])} · {html.escape(str(ctx["source"]["date"]))}</p>'
     page+='</html>';(OUT/'report.html').write_text(page,encoding='utf-8')

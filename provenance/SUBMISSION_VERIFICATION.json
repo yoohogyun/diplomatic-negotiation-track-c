@@ -91,7 +91,7 @@
     "references_forced_page_break": false,
     "pre_references_end_y_points": 761.92
   },
-  "source_zip_sha256": "c7a31e7c526c9e3add23bf70574b826ff279f67335fbb5c857e7f029bcf9f840",
+  "source_zip_sha256": "00a6ea8ebfbcf16878ec868af1e0ce947d63b4bd827fe37b14e76c9cd24e43c3",
   "secret_scan": "Passed before staging; no scientific archive file changed.",
   "raw_log_audit": {
     "episodes": 92144,
@@ -99,5 +99,5 @@
     "weighted_context_settings": 6768,
     "passed": true
   },
-  "note": "Earlier offline tests/replays apply to unchanged experiment artifacts. This paper-only revision clarifies existing methods/results; training objective checked against improvement/run.py and source example against contexts.json. Eight-page PDF and independent 19-file ZIP match, with Limitations ending at the bottom of page four."
+  "note": "Earlier offline tests and full replays apply to preserved experimental artifacts. The English-language update changes only report prose and documentation. All Overleaf compilation inputs and the eight-page PDF match the previously independently compiled version; only the package README and manifest changed. See ENGLISH_REVIEW.json for the latest audit."
 }

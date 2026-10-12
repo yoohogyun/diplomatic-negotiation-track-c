@@ -5,9 +5,6 @@ User requested a less technical, contribution-focused Introduction. These substa
 English
 Utility obtained with a fixed utterance set does not by itself establish an advantage over fixed language templates or reliable negotiation in real diplomacy. In the matched style-0 evaluation, the interpreted meanings of all 44 Luna utterances equal the canonical template meanings. This prevents attributing the measured utility advantage to language generation alone.
 
-한국어
-고정 발화 집합에서 얻은 효용만으로는 고정 언어 템플릿보다 낫다거나 실제 외교에서 신뢰할 수 있는 협상을 수행한다고 결론지을 수 없다. 동일 조건의 스타일 0 평가에서 Luna 발화 44개의 해석 의미는 모두 기본 템플릿의 의미와 같다. 따라서 측정된 효용의 이점을 언어 생성 자체의 효과로 해석할 수 없다.
-
 Other material for Methods / Evaluation / Limitations
 - The exact planner has access to the declared synthetic response model and fixed interpretation mapping; it never receives the actual hidden type. Model knowledge is an additional resource, not an equal-resource comparison with model-free learning.
 - Matched cases come from four documents in only two evaluation event groups. Synthetic numerical conditions and enumerated paths are not independent historical negotiations.

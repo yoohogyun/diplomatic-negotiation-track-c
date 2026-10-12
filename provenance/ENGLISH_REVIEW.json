@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-12",
+  "base_commit": "dea5d10b03fcbbf8886aad8a6d0c7cef69a96a3c",
+  "scope": "English repository documentation, report prose, submission records, and Overleaf README; local bilingual draft archive retained outside Git.",
+  "github_visibility": "public",
+  "github_about_language": "English",
+  "github_open_issues": 0,
+  "github_wiki_enabled": false,
+  "text_files_scanned": 10956,
+  "compressed_raw_files_scanned": 124,
+  "Korean_text_matches": [],
+  "report_generators_structure_and_expressions_unchanged": [
+    "improvement/report.py",
+    "study/finalize.py",
+    "solstudy/report.py",
+    "tools/small_model_pilot.py",
+    "routing/report.py",
+    "tools/package_overleaf.py"
+  ],
+  "HTML_tables_and_quoted_blocks_unchanged": [
+    "improvement_results/report.html",
+    "sol_improvement_results/report.html",
+    "study_results/report.html",
+    "sol_results/report.html",
+    "small_model_results/report.html"
+  ],
+  "protected_experiment_files_verified_unchanged": 10790,
+  "paper_pdf_unchanged": true,
+  "Overleaf_compilation_inputs_unchanged": true,
+  "overleaf_zip_sha256": "00a6ea8ebfbcf16878ec868af1e0ce947d63b4bd827fe37b14e76c9cd24e43c3",
+  "new_model_calls": 0,
+  "secret_scan": "Passed: known keys and credential patterns absent from release files.",
+  "offline_smoke_check": {
+    "stage": "quick",
+    "integrity": {
+      "release_files_verified": 11168,
+      "all_hashes_match": true,
+      "network_used": false
+    },
+    "checks": [
+      {
+        "stage": "tests",
+        "returncode": 0,
+        "log": "verification/tests.log"
+      },
+      {
+        "stage": "main_replay",
+        "returncode": 0,
+        "log": "verification/main_replay.log"
+      }
+    ],
+    "all_passed": true,
+    "paid_calls": 0,
+    "teammate_reproduction": false
+  },
+  "unit_tests": {
+    "tests": 31,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": true,
+    "network_disabled": true
+  },
+  "local_README_links": "All targets exist"
+}

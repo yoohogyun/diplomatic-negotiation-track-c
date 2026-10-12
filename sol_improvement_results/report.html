@@ -1,4 +1,4 @@
-<!doctype html><html lang="ko"><meta charset="utf-8"><title>정보를 활용하는 정책 실험</title><style>body{max-width:1150px;margin:35px auto;font:16px/1.65 system-ui;padding:0 22px;color:#18383d}img{max-width:100%}td,th{padding:8px;border-bottom:1px solid #ddd}pre{white-space:pre-wrap;background:#f1f5f5;padding:15px}</style><h1>정보를 활용하는 정책: 개선 확인</h1><p>기존 결과를 확인한 뒤 사용자의 요청으로 시작한 후속 실험입니다. 개발 조건에서 선택한 방법: <b>distilled_ppo</b>. 기존 기록은 보존했습니다. 새로운 수치 조건 64개 × 기존 평가 원문 맥락 4개를 사용했습니다. 새로운 역사적 사건 검증이나 연구자 비노출 자료는 아닙니다.</p><p>공개정보 계획기의 학습 조건 행동가치를 작은 정책망에 증류했습니다. 학습·추론 입력에 실제 상대 유형은 없습니다. 새 정책은 평가 때 계획기를 호출하지 않지만, 학습에 알려진 전이 규칙과 추가 교사 계산을 이용했습니다. 동일 예산의 순수 모델 프리 RL 개선이나 새로운 알고리즘 발명으로 해석하지 않습니다. Sol 발화·해석 bank는 그대로이며 신규 API 호출은 없습니다.</p><img src="comparison.png"><p>오차막대는 학습 seed 3개의 표준편차입니다. 규칙 정책과 계획기는 고정 정책입니다.</p><table border="1" class="dataframe">
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Information-use policy experiment</title><style>body{max-width:1150px;margin:35px auto;font:16px/1.65 system-ui;padding:0 22px;color:#18383d}img{max-width:100%}td,th{padding:8px;border-bottom:1px solid #ddd}pre{white-space:pre-wrap;background:#f1f5f5;padding:15px}</style><h1>Information-use policy: Improvement observed</h1><p>This follow-up began after inspection of the original results. Development-selected method: <b>distilled_ppo</b>. Original records are preserved. Evaluation uses 64 new numerical settings across four previously used document contexts. These are not new historical events or previously unseen source documents.</p><p>Action values from a public-belief planner were distilled into a small policy network. Neither training nor inference inputs contain the actual opponent type. The learned policy does not call the planner at evaluation time, but training uses known transition rules and additional teacher computation. This is not an equal-budget model-free learning comparison or a new algorithm. The Sol utterance/interpretation bank is unchanged, with no new model calls.</p><img src="comparison.png"><p>Error bars show standard deviations across three training seeds. The heuristic and planner are fixed policies.</p><table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -113,7 +113,7 @@
       <td>0.0</td>
     </tr>
   </tbody>
-</table><h2>결과 해석</h2><p>선택된 정책의 순효용은 0.47833 (seed SD 0.00166)입니다. 같은 새 평가에서 기존 PPO 대비 +0.19090, 강한 규칙 정책 대비 +0.03003였습니다. 학습된 정책에서 신호를 막으면 평균 0.09570, 갱신된 믿음을 가리면 0.05633만큼 순효용이 낮아졌습니다. 따라서 개선은 주로 선택적 신호와 상대 응답에서 얻은 정보의 활용으로 해석합니다.</p><p>유료 질문의 활용은 제한적입니다. 선택된 세 seed 중 3개만 질문을 사용했고, 질문 제거의 평균 순효용 손실은 0.00366였습니다. 이 실험으로 질문 활용 문제가 모든 seed에서 해결됐다고 주장하지 않습니다. 제거 실험은 정책 입력/출력의 교란이며 완전한 인과 분해나 재학습된 대체 정책 비교는 아닙니다.</p><h2>개발 조건 선택 기록</h2><table border="1" class="dataframe">
+</table><h2>Interpretation</h2><p>The selected policy achieves net utility 0.47833 (seed SD 0.00166). On the same new numerical evaluation, its gains are +0.19090 over the original PPO and +0.03003 over the strong heuristic. Disabling signals reduces mean net utility by 0.09570; masking updated beliefs reduces it by 0.05633. The improvement is therefore associated mainly with selective signaling and use of information from opponent responses.</p><p>Use of costly queries remains limited. Only 3 of the three selected seeds use queries, and query removal reduces mean net utility by 0.00366. Query use is not resolved across all seeds. These interventions perturb policy inputs or outputs; they are neither a complete causal decomposition nor comparisons against retrained alternatives.</p><h2>Development selection record</h2><table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th>method</th>
@@ -167,7 +167,7 @@
       <td>0.47656</td>
     </tr>
   </tbody>
-</table><h2>정보 활용이 성과에 기여했는가</h2><img src="interventions.png"><pre>{
+</table><h2>Does information use improve performance?</h2><img src="interventions.png"><pre>{
   &quot;selected&quot;: &quot;distilled_ppo&quot;,
   &quot;mean_gain_over_base&quot;: 0.19090390625000003,
   &quot;mean_gain_over_heuristic&quot;: 0.03002717013888888,
@@ -184,4 +184,4 @@
   &quot;audited_episodes&quot;: 61416,
   &quot;audited_turns&quot;: 175310,
   &quot;integrity_checks_passed&quot;: true
-}</pre><p>질문·신호 제거는 해당 행동을 제외하고 다음으로 높은 학습된 행동 점수를 선택합니다. 믿음 가림은 사후확률을 초기 사전확률로 바꾸며 다른 공개 상태는 남깁니다. 별도 재학습한 제거 실험과 다릅니다. 질문 가치가 양수인 조건은 공개정보 계획기와 질문 제한 계획기의 차이로 정의했습니다.</p><h2>보존한 자료</h2><p>프로토콜, 교사 데이터와 학습 곡선, 6개 체크포인트, 모든 평가 경로, seed별 결과, 대응 조건 비교와 성공 질문 사례를 같은 폴더에 저장했습니다. 논문은 작성하지 않았습니다.</p></html>
+}</pre><p>Query and signal removal exclude the corresponding action and select the next-highest learned action score. Belief masking replaces the posterior with the initial prior while retaining other public state variables. These are deployment interventions, not retrained ablations. Positive query value is defined by the utility difference between the public-belief planner and its query-disabled counterpart.</p><h2>Retained artifacts</h2><p>This directory retains the protocol, teacher data, learning curves, six checkpoints, all evaluation trajectories, per-seed results, matched comparisons, and successful query examples. This report records the experiment stage; the current manuscript is in ../paper/main.pdf.</p></html>

@@ -10,12 +10,11 @@
   "remaining_user_actions": [
     "Author names/student IDs/affiliation in authors.tex; switch review to final for named PDF",
     "Actual contributions and teammate execution record in TEAM_RECORD.txt",
-    "Private GitHub evaluator access",
     "Submit final PDF and repository URL to course destination"
   ],
   "guides": [
-    "Common guide pp.9,17–24,31–32",
-    "Track C sections 4–7 and Task 14"
+    "Common guide pp.9,17\u201324,31\u201332",
+    "Track C sections 4\u20137 and Task 14"
   ],
   "not_required": [
     "Conference acceptance",
@@ -33,5 +32,6 @@
   "reference_count": 24,
   "references_forced_page_break": false,
   "references_start_page": 5,
-  "pre_references_fills_four_pages": true
+  "pre_references_fills_four_pages": true,
+  "github_visibility": "public; verified via GitHub API on 2026-10-12"
 }

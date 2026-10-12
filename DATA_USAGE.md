@@ -1,6 +1,6 @@
 # Data provenance and use
 
-This private course/research repository includes the supplied source material so that collaborators can reproduce the experiment. No blanket redistribution license is asserted for third-party diplomatic text or the supplied corpus. Keep the repository private until the applicable source terms and an appropriate public-data subset/access route have been reviewed.
+This course/research repository includes supplied source material for reproducibility and is currently public on GitHub. Public visibility does not establish a blanket redistribution license for third-party diplomatic text or the supplied corpus. Source-specific terms and provenance remain applicable.
 
 - `data/source/sentences/all_250.csv` and `condition_supplement.csv`: 281 primary source rows in total.
 - `data/source/sentences/candidates.csv`: 7,429 candidate rows.

@@ -17,7 +17,7 @@ Real diplomatic documents supply context; utilities/types/responses are syntheti
 Seven bibliography entries prepared; five cited in paragraph 1. Uncited entries will not print. Add more references where subsequent claims require them, not with nocite to inflate counts. Actual empirical results remain unchanged. One English paragraph followed by one Korean paragraph remains the drafting workflow.
 
 
-UPDATE: user requested full Introduction, superseding one-paragraph workflow. See introduction_bilingual.txt and novelty_assessment.txt. Added primary arXiv papers SocialRL (2026-08-13) and RL-Trained Sellers (2026-10-05). Nine entries are now cited in the complete draft. The old five-citation/paragraph plan above is historical.
+UPDATE: user requested full Introduction, superseding one-paragraph workflow. The former bilingual draft is archived locally; see the current main.tex and novelty_assessment.txt. Added primary arXiv papers SocialRL (2026-08-13) and RL-Trained Sellers (2026-10-05). Nine entries are now cited in the complete draft. The old five-citation/paragraph plan above is historical.
 
 INTRO STYLE UPDATE: The user finds the readiness-to-ratify example too specific for the Introduction. The Introduction now states the general analysis of whether dialogue conditions and commitments are preserved in negotiation actions. Keep the saved ratification example for the detailed discourse-analysis section, not the Introduction. This is qualitative case analysis, not a new human-validated semantic accuracy metric.
 

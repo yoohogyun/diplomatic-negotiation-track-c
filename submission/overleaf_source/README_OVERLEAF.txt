@@ -1,35 +1,35 @@
-Overleaf 공동작업용 최소 프로젝트
+Minimal Overleaf collaboration project
 
-업로드
-- 새 프로젝트: Overleaf의 New Project → Upload Project에서 overleaf_upload.zip을 선택합니다.
-- 기존 공동 프로젝트: overleaf_source 폴더 안 파일과 figures 하위폴더를 프로젝트 최상위에 올립니다. 폴더 구조를 유지하고 같은 이름의 예전 파일은 교체합니다.
-- Main document: main.tex / Compiler: pdfLaTeX / bibliography: BibTeX (자동 처리).
-- main.pdf, 코드, raw 로그, 체크포인트, .env, PPTX는 업로드할 필요가 없습니다. figures/*.pdf는 본문에 들어가는 그림이므로 꼭 올립니다.
+Upload
+- New project: choose New Project > Upload Project in Overleaf and select overleaf_upload.zip.
+- Existing shared project: upload the contents of overleaf_source to the project root, preserving the figures subdirectory and replacing old files with the same names.
+- Main document: main.tex. Compiler: pdfLaTeX. Bibliography: BibTeX (processed automatically).
+- Include all figures/*.pdf files. The compiled main.pdf, experiment code, raw logs, checkpoints, .env, and PPTX are not needed for compilation.
 
-사용자가 작성할 곳
-1. authors.tex: 실제 이름/소속/학번. pdfLaTeX에서는 영문 표기를 사용합니다.
-2. main.tex 2행: 실명 과제 제출 시 [review]를 [final]로 변경합니다. 익명 검토 초안은 review를 유지합니다.
-3. 역할·실제 팀원 재현 기록은 별도 제출 폴더의 TEAM_RECORD.txt에 작성합니다. 논문 본문에 억지로 넣을 필요는 없습니다.
-4. 이름/내용 수정 후 Limitations 끝까지4쪽인지 다시 확인합니다. References는 강제 페이지 나눔 없이 바로 이어집니다. 원본 ACL 여백/폰트를 줄이지 마세요.
+Fields to complete
+1. authors.tex: actual names, affiliations, and student IDs. Use English text with pdfLaTeX.
+2. main.tex, line 2: change [review] to [final] for named course submission. Keep review for an anonymous draft.
+3. Record actual roles and teammate execution separately in TEAM_RECORD.txt in the submission directory.
+4. After editing authors or content, verify that the end of Limitations remains within four pages. References follow without a forced page break. Preserve the original ACL fonts and margins.
 
-편집 위치
-main.tex: 제목, 초록, Introduction, Related Work
-methods_results.tex: Method, Experimental Setup, Results, 본문 담화분석
+Editing map
+main.tex: title, abstract, Introduction, Related Work
+methods_results.tex: Method, Experimental Setup, Results, main discourse analysis
 discussion_conclusion.tex: Discussion, Conclusion
-limitations.tex: 한계와 모델 작성 보조 공개 (별도 Ethics 절 없음)
-appendix_experiments.tex: 부록 1쪽 — 핵심 환경·학습 설정과 담화6사례
-appendix_assignment.tex: 부록 2쪽 — 전이행렬·학습곡선·성과/개입/민감도 표
-assignment_*_table.tex: 저장결과에서 생성한 표
-references.bib: 참고문헌
-figures/: 컴파일용 벡터 PDF 그림5개
+limitations.tex: limitations and disclosure of model assistance; no separate Ethics section
+appendix_experiments.tex: first appendix page, core environment/training details and six discourse cases
+appendix_assignment.tex: second appendix page, transitions, learning curves, metrics, interventions, and sensitivity
+assignment_*_table.tex: tables generated from saved results
+references.bib: references
+figures/: five vector PDF figures used for compilation
 
-티저 수정: 별도 제공 teaser_editable_v2.pptx를 PowerPoint에서 편집한 후 PDF로 내보내 figures/teaser.pdf만 교체합니다.
-논문용 수치 수정은 반드시 저장 실험 결과와 대조하세요.
-현재 출력: Limitations까지4쪽 하단, References는 강제 나눔 없이5–6쪽, 부록7–8쪽. 전체8쪽, 인용 문헌24편.
-티저는 제목·저자 아래, Abstract 위에 전폭으로 배치됩니다. main.tex의 paperteaser가 ACL 제목 블록에 그림을 추가합니다.
-긴 상세 설명은 GitHub paper/supplementary_appendix_full.tex에 별도 보존했습니다.
+To edit the teaser, open the separately supplied teaser_editable_v2.pptx in PowerPoint, export to PDF, and replace figures/teaser.pdf.
+Check any numerical edits against the saved experiment results.
+Current layout: Limitations ends at the bottom of page 4; References flow naturally onto pages 5–6; appendices occupy pages 7–8. Total: eight pages and 24 cited works.
+The full-width teaser appears below the title/authors and above the abstract. The paperteaser macro in main.tex adds it to the ACL title block.
+Extended supplementary details remain in paper/supplementary_appendix_full.tex in the GitHub repository.
 
-공식 사용법
+Official instructions
 https://www.overleaf.com/learn/latex/Kb/Uploading_a_project
 https://docs.overleaf.com/managing-projects-and-files/adding-files-to-a-project/uploading-files-to-a-project
 https://docs.overleaf.com/getting-started/recompiling-your-project/the-main-document

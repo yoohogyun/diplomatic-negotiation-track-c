@@ -9,7 +9,7 @@ Figure 2: python make_figures.py creates the intervention loss plot from saved C
 Figure 3: python make_discourse_figure.py creates selected speech-act paths from the saved discourse manifest. Both Python scripts require repository dependencies and make no model calls.
 Table 1: main comparisons. Tables 2–4 and six discourse episodes: appendices. Appendix C and its Figures 4–5 cover assignment-required diagnostics from existing saved results. Rebuild them with python make_assignment_diagnostics.py.
 
-English TeX is the latest manuscript. Earlier bilingual files retain prior wording; the English TeX and PDF are authoritative.
+English TeX is the latest manuscript. Earlier bilingual drafts are archived locally outside this release; the English TeX and PDF are authoritative.
 ACL style, fonts, and margins are unchanged. Prior figures/drafts: drafts/pre_layout_20261012.
 Verification: layout_validation.json and teaser_pptx_validation.json. No new negotiation experiments or paid negotiation model calls were made during this layout revision.
 

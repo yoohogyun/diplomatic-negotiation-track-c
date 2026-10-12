@@ -1,40 +1,40 @@
-Track C — 실제 팀원 기록 (사용자가 작성)
+Track C — actual team record (to be completed by the team)
 
-1. 과제 저자 / 제출 정보
-팀명:
-팀원 이름 / 학번 / 소속:
-제출자:
-제출일:
-교수님/조교/팀원의 GitHub 계정에 저장소 읽기 권한을 부여했는가:
+1. Authors and submission
+Team name:
+Member names / student IDs / affiliations:
+Submitter:
+Submission date:
+Repository URL and access checked for the instructor, teaching assistant, and teammates:
 
-2. 실제 기여 (수행한 내용만 적기)
-팀원 1 이름:
-데이터 / 환경 / 실험 / 검토 / 담화 분석 / 집필에서 실제 한 일:
-팀원 2 이름:
-실제 한 일:
-팀원 3 이름 (해당할 때):
-실제 한 일:
+2. Actual contributions (record only work performed)
+Member 1 name:
+Actual work on data / environment / experiments / review / discourse analysis / writing:
+Member 2 name:
+Actual work:
+Member 3 name (if applicable):
+Actual work:
 
-3. 다른 팀원의 재현 실행 기록
-근거: 공통 과제 가이드 21·24·32쪽, Track C Task 14.
-모델을 새로 구매하거나 다시 학습하는 것이 아니라, 공개된 재현 범위를 실제 팀원이 실행해 확인하는 단계입니다.
-실행자:
-실행 날짜 / OS / Python / 패키지 버전:
+3. Reproduction by another teammate
+Basis: common course guide, pages 21, 24, 32; Track C Task 14.
+This records a teammate executing the released reproduction workflow. It does not require purchasing model calls or retraining models.
+Executor:
+Execution date / OS / Python / package versions:
 Git commit (git rev-parse HEAD):
-설치 / 데이터 준비 방법:
-실행 명령:
+Installation and data preparation:
+Commands:
   python -X utf8 -m tools.verify_release
   python -X utf8 -m tools.reproduce_release all
   python -X utf8 paper/make_figures.py
   python -X utf8 paper/make_discourse_figure.py
   python -X utf8 paper/make_assignment_diagnostics.py
-verification/summary.json과 각 로그의 위치:
-결과 일치 여부 / 실패 원인 / 수정 내용:
+Location of verification/summary.json and logs:
+Result agreement / failure causes / fixes:
 
-4. 원고 검토
-원고 수치·발화 인용을 실제 검토한 사람과 범위:
-저자 정보를 authors.tex에 기입했는가:
-main.tex의 [review]를 실명 제출용 [final]로 바꾸었는가:
-변경 후 결론까지 4쪽인지 다시 확인했는가:
+4. Manuscript review
+Reviewer and scope of checking numerical results and utterance quotations:
+Author information entered in authors.tex:
+Changed [review] to [final] in main.tex for named course submission:
+Rechecked the four-page limit through the end of Limitations after editing:
 
-아직 수행하지 않은 항목은 완료로 표시하지 마세요. 별도 62개 사람 라벨링이나 새 모델 추가는 이 체크리스트의 요건이 아닙니다.
+Do not mark unperformed work as complete. A separate 62-item human-labeling exercise or another model extension is not required by this checklist.
