@@ -1,5 +1,5 @@
 Current manuscript: main.tex and included sections; compiled main.pdf.
-Limitations ends within page 4. References follow without a forced break on pages 4–5 (24 cited works). No separate Ethics section; drafting assistance disclosed in Limitations. Appendices occupy pages 6–7; total seven pages.
+Substantive methods/results additions fill pages 1–4 through Limitations. References follow naturally on pages 5–6 (24 cited works); no forced bibliography page break. No separate Ethics section. Appendices occupy pages 7–8; total eight pages.
 Build: python build_paper.py. Uses installed pdfLaTeX and BibTeX, including local MiKTeX discovery on Windows.
 
 Figure 1: full-width teaser below the title/authors and above the abstract on page 1. Editable source: figures/teaser_editable_v2.pptx. Text, shapes, arrows, and chart are editable; chart values are included in an embedded workbook. Actual PowerPoint open/export verified. figures/teaser.pdf is the vector PowerPoint export used in LaTeX.

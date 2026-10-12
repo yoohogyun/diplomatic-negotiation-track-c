@@ -56,8 +56,8 @@
   "paper_validation": {
     "engine": "Installed MiKTeX pdfLaTeX; build_paper.py, all four passes exit 0",
     "pdf": "main.pdf",
-    "sha256": "fe49d5555f327f69ca571ec78d2011f92a47579b2fa36b9bc76e60d88245ec80",
-    "total_pages": 7,
+    "sha256": "b5c814f404b799eb7820b1197f4f74f26c1bd79cec097678aacc4d6ec074f9ca",
+    "total_pages": 8,
     "main_text_pages": 4,
     "conclusion_page": 4,
     "first_teaser_page": 1,
@@ -65,12 +65,12 @@
     "intervention_figure_page": 3,
     "discourse_figure_page": 4,
     "limitations_page": 4,
-    "references_page": 4,
-    "appendix_start_page": 6,
+    "references_page": 5,
+    "appendix_start_page": 7,
     "acl_style_unchanged": true,
     "overfull_boxes": false,
     "unresolved_citations_or_references": false,
-    "visual_review": "Poppler-rendered introduction, related work, methods, limitations and bibliography checked after edits; no clipping or unresolved citations. Appendix contents and two-page layout retained.",
+    "visual_review": "Rendered updated layout with Poppler; checked source-grounding paragraph, two-line distillation objective, controller comparison, full page-four ending, and flowing references. No overflow or unresolved citations.",
     "teaser_creation": "Built-in image generation concept, inspected, then redrawn as native editable PowerPoint shapes and chart using @oai/artifact-tool.",
     "teaser_native_powerpoint_open_and_export": true,
     "teaser_pptx": "figures/teaser_editable_v2.pptx",
@@ -80,17 +80,18 @@
     "teaser_embedded_chart_workbooks": 1,
     "new_negotiation_model_calls": 0,
     "image_generation_calls": 1,
-    "notes": "24 cited works (nine additions verified against primary sources). References flow directly after Limitations on page four, continuing through page five. No separate Ethics section; model-assisted drafting/visual concept disclosure retained in Limitations. Extracted 19-file ZIP independently compiles to identical seven-page text.",
+    "notes": "Substantive clarification fills four pages through Limitations: source-to-action example, exact actor/value distillation objective, matched branch enumeration, and utility/cost trade-off. References naturally start on page five with no forced break. Appendix remains two pages. Independently compiled ZIP matches all eight page texts.",
     "overleaf_zip_independent_compile": true,
     "appendix_pages": 2,
     "pre_references_pages": 4,
     "teaser_above_abstract": true,
-    "references_end_page": 5,
+    "references_end_page": 6,
     "reference_count": 24,
     "separate_ethics_section": false,
-    "references_forced_page_break": false
+    "references_forced_page_break": false,
+    "pre_references_end_y_points": 761.92
   },
-  "source_zip_sha256": "fda72db39c9e4c35fe766ba0299d54a1cc4c2d1126f2d4f3bfa49e1b337e879a",
+  "source_zip_sha256": "c7a31e7c526c9e3add23bf70574b826ff279f67335fbb5c857e7f029bcf9f840",
   "secret_scan": "Passed before staging; no scientific archive file changed.",
   "raw_log_audit": {
     "episodes": 92144,
@@ -98,5 +99,5 @@
     "weighted_context_settings": 6768,
     "passed": true
   },
-  "note": "Experimental code and artifacts remain unchanged from the earlier offline tests/replay. Current paper-only revision: 24 citations; no forced break before References; no separate Ethics section. Seven-page PDF and independently compiled 19-file ZIP validated."
+  "note": "Earlier offline tests/replays apply to unchanged experiment artifacts. This paper-only revision clarifies existing methods/results; training objective checked against improvement/run.py and source example against contexts.json. Eight-page PDF and independent 19-file ZIP match, with Limitations ending at the bottom of page four."
 }

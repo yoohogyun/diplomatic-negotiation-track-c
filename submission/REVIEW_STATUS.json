@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "paper_main_pages": 4,
-  "paper_total_pages": 7,
+  "paper_total_pages": 8,
   "source_zip_compiled_independently": true,
   "overleaf_service_itself_used": false,
   "experimental_results_changed": false,
@@ -32,5 +32,6 @@
   "separate_ethics_section": false,
   "reference_count": 24,
   "references_forced_page_break": false,
-  "references_start_page": 4
+  "references_start_page": 5,
+  "pre_references_fills_four_pages": true
 }

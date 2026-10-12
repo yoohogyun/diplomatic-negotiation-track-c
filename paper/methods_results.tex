@@ -4,6 +4,8 @@
 
 We use 12 document contexts from six diplomatic event groups, including CMFA PressCon \citep{mochtak2021corpus} and Security Council discourse. Training covers the Korean Peninsula, South Sudan, and Kashmir (six contexts); development uses Gaza (two); testing uses Syria and Iran (four). Passages about ceasefires, reciprocal measures, and commitments guide synthetic bilateral negotiations. One party offers to maintain its measure for $x\in\{1,2,3\}$ weeks if the counterpart maintains its measure for $y\in\{1,2\}$ weeks. Durations, payoffs, types, and responses are researcher-defined.
 
+For example, a peninsula briefing links suspending nuclear and missile activities to suspending military exercises. These reciprocal measures become the parties' actions. Documents supply the issues and commitment language; synthetic durations and costs determine acceptance.
+
 \paragraph{State, actions, and reward.}
 
 The agent has at most five decisions and cannot observe the counterpart's type, $\tau\in\{S,H\}$. It observes the offer, acceptance, commitments, costs, and belief $b_t=P(\tau=H)$. Eleven actions cover ambiguity, signaling, a private question, six conditional offers, ratification, and withdrawal. Questions provide noisy type cues; offer responses also reveal information. Ratification requires observed acceptance and own utility at least as high as the outside option.
@@ -26,11 +28,22 @@ GPT-5.6 Luna generates three styles per context--action pair, yielding 396 utter
 
 We compare Random, a development-selected signal-first Heuristic, an immediate-reward Bandit, and PPO \citep{schulman2017ppo}. An exact belief-state planner maximizes expected net utility under the declared rules without seeing the true type. We distill its action values from training contexts and configurations, then refine the policy with PPO. Direct Luna (reasoning \texttt{none}) and Sol (\texttt{none}/\texttt{medium}) receive the public state and numerical rules.
 
-The planner solves response branches by backward recursion. Following policy distillation and expert-guided learning \citep{rusu2016distillation,anthony2017expert}, we use 43,440 public states from planner and exploratory trajectories to learn soft action-value targets (temperature 0.03) and a value estimate. After 2,400 supervised updates, PPO refines the network. Deployment selects the highest-scoring action from 31 public features.
+The planner solves response branches by backward recursion. Following policy distillation and expert-guided learning \citep{rusu2016distillation,anthony2017expert}, we train on 43,440 public states from planner and exploratory trajectories. After 2,400 supervised updates, PPO refines the network. Deployment selects the highest-scoring action from 31 public features.
+
+Planner values $Q_T(s,a)$ define the teacher distribution $p_T(a\mid s)\propto\exp(Q_T(s,a)/0.03)$. The supervised loss is
+\begin{equation}
+\begin{aligned}
+\mathcal{L}={}&-\sum_a p_T(a\mid s)\log\pi_\theta(a\mid s)\\
+&+\tfrac12\bigl(V_\theta(s)-\max_a Q_T(s,a)\bigr)^2.
+\end{aligned}
+\end{equation}
+Policy targets preserve action preferences; value targets estimate return. PPO updates both using interaction rewards.
 
 \section{Experimental Setup}
 
 Initial evaluation crosses four contexts, 64 configurations, and three styles. Matched evaluation uses the first 16 configurations and one style (64 conditions); follow-up uses 64 new configurations and three styles. We take expectations over types and question responses, then average within and across event groups. Bandit and base PPO receive 102,400 steps per seed; distillation adds teacher supervision. Learned results average three seeds, using final checkpoints and development-selected methods. Appendices~\ref{app:training} and~\ref{app:diagnostics} give settings and diagnostics.
+
+Every matched controller encounters the same context, numerical rules, utterances, and response-branch probabilities. We enumerate nonzero branches rather than relying on a single sampled counterpart, so differences reflect action choices under the shared environment.
 
 \section{Results}
 
@@ -72,6 +85,8 @@ Planner & 0.533 & 100.0 & 0 \\
 Initially, PPO outperforms Random and Bandit but falls below the heuristic (Table~\ref{tab:policies}). In the matched comparison, the planner reaches 0.533 utility versus 0.514 for Sol medium. Distilled PPO reaches 0.475 versus 0.378 for base PPO and 0.470 for the heuristic. Sol none remains near Luna none: direct-model performance depends strongly on reasoning settings.
 
 Local controllers require no language model calls for action selection. Sol medium uses an expected 3.429 calls per negotiation, corresponding to 4,184.8 tokens and \$0.02363 at the recorded request costs. These figures count logical requests even when experimental caching avoids a repeated call. These strategy-selection figures exclude shared utterance construction, interpretation, and offline training.
+
+Distilled PPO gains 0.097 utility over base PPO and remains 0.039 below Sol medium. Offline planner supervision thus offers a deployment trade-off, reducing repeated model-based decision costs while recovering part of the stronger controller's performance.
 
 On the follow-up configurations, distilled PPO achieves 0.468 utility, compared with 0.364 for base PPO and 0.445 for the heuristic (Figure~\ref{fig:interventions}). Blocking signals reduces utility by 0.094; replacing the posterior feature with the prior reduces it by 0.041. Blocking questions reduces it by only 0.001. These are evaluation-time interventions without retraining. The learned policy benefits mainly from signals and updated beliefs in this setting. Updated beliefs can come from offer responses as well as questions. The planner's no-question comparison yields a larger utility loss of 0.008.
 

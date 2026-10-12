@@ -14,3 +14,5 @@ Latest revision: appendix condensed to the recommended two pages; total eight pa
 Latest user correction: References must start after a maximum of four pages including Limitations and Ethics. Achieved: pre-reference content4, References1, appendix2, total7. Full-width teaser now above Abstract on page1.
 
 Latest: references expanded from15 to24 and flow after Limitations without a page break. Separate Ethics removed at user request; model-assistance disclosure retained. Total7 pages, appendix2.
+
+Latest: methods/results expanded using existing evidence to fill four pages through Limitations. Added source-to-action example, exact teacher loss, matched branch comparison and numerical utility/cost trade-off. References flow to pages5–6, appendix7–8. No new experiments.

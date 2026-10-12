@@ -25,7 +25,7 @@ figures/: 컴파일용 벡터 PDF 그림5개
 
 티저 수정: 별도 제공 teaser_editable_v2.pptx를 PowerPoint에서 편집한 후 PDF로 내보내 figures/teaser.pdf만 교체합니다.
 논문용 수치 수정은 반드시 저장 실험 결과와 대조하세요.
-현재 출력: Limitations까지4쪽 이내, References는 바로 이어짐, 부록2쪽. 인용 문헌24편.
+현재 출력: Limitations까지4쪽 하단, References는 강제 나눔 없이5–6쪽, 부록7–8쪽. 전체8쪽, 인용 문헌24편.
 티저는 제목·저자 아래, Abstract 위에 전폭으로 배치됩니다. main.tex의 paperteaser가 ACL 제목 블록에 그림을 추가합니다.
 긴 상세 설명은 GitHub paper/supplementary_appendix_full.tex에 별도 보존했습니다.
 

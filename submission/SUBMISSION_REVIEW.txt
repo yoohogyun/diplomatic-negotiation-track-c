@@ -6,7 +6,7 @@
 환경/정식화 25점: 숨은 유형을 제외한 31차원 관측, 베이즈 갱신, 11개 행동, 양측 수락, 5결정 종료, 보상식과 비용. 본문 Method, Appendix A, pilot/env.py, study/env.py. 실제 문서12개/6사건군과 유형별 검증24경로를 합성 시나리오와 구별.
 학습/실험 25점: Random/Heuristic/Bandit/PPO, 기본학습3seed, 동일 상호작용102400, 할인율/entropy/주요 보상 ablation, 믿음mask 및 질문/신호 개입, 규칙민감도. 본문 Table 1/Figure 2, Appendix A/C, 저장모델과 raw. PPO가 휴리스틱보다 낮은 결과를 그대로 설명.
 담화/언어분석 30점: 본문 전략 경로 그림과 해석, Appendix B의 성공·실패·양보·철회 6개 에피소드, 실제 합성 발화 인용과 출처, Appendix C의 전이행렬 해석. 기능명만 외교적으로 바꾼 분석이 아님. 발화의 수치/조건/약속 강도가 전이에 영향을 줌.
-논문/재현 20점: ACL 원형 유지, 사용자 지정 기준으로 Limitations까지4쪽, References는 페이지 나눔 없이4쪽에서 이어짐, 데이터 원논문 포함 참고문헌, 편집소스/그림/체크포인트/오프라인 재현 절차. 부록은 가이드 권장 범위인 2쪽으로 축약했고 전체 PDF는 7쪽. 상세 설명은 paper/supplementary_appendix_full.tex에 별도 보존.
+논문/재현 20점: ACL 원형 유지, 사용자 지정 기준으로 Limitations까지4쪽, Limitations가4쪽하단에서 끝나고 References는 강제 나눔 없이5쪽에서 시작, 데이터 원논문 포함 참고문헌, 편집소스/그림/체크포인트/오프라인 재현 절차. 부록은 가이드 권장 범위인 2쪽으로 축약했고 전체 PDF는 8쪽. 상세 설명은 paper/supplementary_appendix_full.tex에 별도 보존.
 
 이번 검토에서 보강한 점
 - 본문의 단계별 보상식과 비용 정의.

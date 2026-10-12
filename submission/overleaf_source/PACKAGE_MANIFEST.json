@@ -12,7 +12,7 @@
     },
     {
       "path": "methods_results.tex",
-      "sha256": "42054e2543d9c4cdbdabf85ff024d88e36e75d52d6da77aeb3c772e695f4d51f"
+      "sha256": "6e0d80ff4ba71ca8eb216eac6cfa06691300af63b958eead40ce91b53d54e568"
     },
     {
       "path": "discussion_conclusion.tex",
@@ -72,7 +72,7 @@
     },
     {
       "path": "README_OVERLEAF.txt",
-      "sha256": "ad96f517c80cf7e0de7c3e457ba42c67496bd9983fb1694dec763b95f563f603"
+      "sha256": "842ce7a57ab8fb964092045229a0124352d845f08cd17e22a1ff488e2221f442"
     }
   ]
 }

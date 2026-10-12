@@ -918,8 +918,8 @@
     },
     {
       "path": "paper/README.txt",
-      "bytes": 2744,
-      "sha256": "d36311d60253a0747eda57891de415b7852b6520e76be761bfc7fd6beba704e5"
+      "bytes": 2764,
+      "sha256": "176ad89158ac3a507b16f6e47a10b11d81ff2c7fe7e583c2db0f9963bddccb8f"
     },
     {
       "path": "paper/acl.sty",
@@ -1078,13 +1078,13 @@
     },
     {
       "path": "paper/layout_revision_notes.txt",
-      "bytes": 1766,
-      "sha256": "7ad93797aabe37aafa59f0f69a5991f93d813be91b91eb156c107ef5817f9f80"
+      "bytes": 2048,
+      "sha256": "82df019f9d130cc3d6ef50a8dfb6814c729edbb8df0ed2865ad4ceea5d96b720"
     },
     {
       "path": "paper/layout_validation.json",
-      "bytes": 1931,
-      "sha256": "42f61ba222977b8eb9c67854f364a8057b5259fe8c4611bfd477232a4696a7bd"
+      "bytes": 2002,
+      "sha256": "0232474c36db718cfbee24ade7734166b8f3329dde0a46ef7205bd4162f59109"
     },
     {
       "path": "paper/limitations.tex",
@@ -1103,8 +1103,8 @@
     },
     {
       "path": "paper/main.pdf",
-      "bytes": 420935,
-      "sha256": "fe49d5555f327f69ca571ec78d2011f92a47579b2fa36b9bc76e60d88245ec80"
+      "bytes": 430889,
+      "sha256": "b5c814f404b799eb7820b1197f4f74f26c1bd79cec097678aacc4d6ec074f9ca"
     },
     {
       "path": "paper/main.tex",
@@ -1133,8 +1133,8 @@
     },
     {
       "path": "paper/methods_results.tex",
-      "bytes": 8416,
-      "sha256": "42054e2543d9c4cdbdabf85ff024d88e36e75d52d6da77aeb3c772e695f4d51f"
+      "bytes": 9585,
+      "sha256": "6e0d80ff4ba71ca8eb216eac6cfa06691300af63b958eead40ce91b53d54e568"
     },
     {
       "path": "paper/methods_results_bilingual.txt",
@@ -2603,8 +2603,8 @@
     },
     {
       "path": "provenance/SUBMISSION_VERIFICATION.json",
-      "bytes": 4035,
-      "sha256": "c4a8eff8e3f5f7bc767a707f6bda42e23c98e1a48316cfc1710a573d4a417558"
+      "bytes": 4179,
+      "sha256": "1beacba95eb570e61ca49f89070f82effff2484357875564dcdb3b722d53b2c6"
     },
     {
       "path": "provenance/source_export.json",
@@ -55708,13 +55708,13 @@
     },
     {
       "path": "submission/REVIEW_STATUS.json",
-      "bytes": 1320,
-      "sha256": "3564d62bc83eb326a1e51427b95b91d1dcc0020ab28a776814fd7eade892e267"
+      "bytes": 1364,
+      "sha256": "0ec434ac3cbfd0d64b5570ea748bcdd90a1bf5691870873c890d1570d3e1d2a1"
     },
     {
       "path": "submission/SUBMISSION_REVIEW.txt",
-      "bytes": 3585,
-      "sha256": "87d86dc50129bdc0a430c132804edb7266591a4578ec7c9ebd5d9057b67fa697"
+      "bytes": 3620,
+      "sha256": "cba70fc433371f5e22c10a60f908bab6003e0e78faba7e8c6be0d800e4fafb06"
     },
     {
       "path": "submission/TEAM_RECORD.txt",
@@ -55724,12 +55724,12 @@
     {
       "path": "submission/overleaf_source/PACKAGE_MANIFEST.json",
       "bytes": 2587,
-      "sha256": "a71e38b706d5605492c14b9c8779268d671b594de5d0c3a4fecb55ee5debd4d2"
+      "sha256": "9920b6d84a9f2c3cc228e1ae44bcf96eff2225de84e7169022b9d455d10c0c3b"
     },
     {
       "path": "submission/overleaf_source/README_OVERLEAF.txt",
-      "bytes": 2741,
-      "sha256": "ad96f517c80cf7e0de7c3e457ba42c67496bd9983fb1694dec763b95f563f603"
+      "bytes": 2769,
+      "sha256": "842ce7a57ab8fb964092045229a0124352d845f08cd17e22a1ff488e2221f442"
     },
     {
       "path": "submission/overleaf_source/acl.sty",
@@ -55808,8 +55808,8 @@
     },
     {
       "path": "submission/overleaf_source/methods_results.tex",
-      "bytes": 8416,
-      "sha256": "42054e2543d9c4cdbdabf85ff024d88e36e75d52d6da77aeb3c772e695f4d51f"
+      "bytes": 9585,
+      "sha256": "6e0d80ff4ba71ca8eb216eac6cfa06691300af63b958eead40ce91b53d54e568"
     },
     {
       "path": "submission/overleaf_source/references.bib",
@@ -55818,8 +55818,8 @@
     },
     {
       "path": "submission/overleaf_upload.zip",
-      "bytes": 185038,
-      "sha256": "fda72db39c9e4c35fe766ba0299d54a1cc4c2d1126f2d4f3bfa49e1b337e879a"
+      "bytes": 185529,
+      "sha256": "c7a31e7c526c9e3add23bf70574b826ff279f67335fbb5c857e7f029bcf9f840"
     },
     {
       "path": "tests/test_pilot.py",
@@ -55848,8 +55848,8 @@
     },
     {
       "path": "tools/package_overleaf.py",
-      "bytes": 4472,
-      "sha256": "7b737e59494e5f27d8ea41e11822dd933a5466374a87368cc0a798d757efbce1"
+      "bytes": 4500,
+      "sha256": "737ebd58fe0d220d33aaab510f217546a6f4b0de4e9f40855ba1feae4c7954e1"
     },
     {
       "path": "tools/reproduce_release.py",
