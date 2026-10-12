@@ -1,10 +1,6 @@
-# Current paper and English-language release — 2026-10-12
+# Experiment-only release — 2026-10-12
 
-The current manuscript has eight pages: four through Limitations, two for References (24 cited works), and two for appendices. References follow without a forced break. The full-width teaser is above the abstract. There is no separate Ethics section; scope and model-assistance disclosures remain in Limitations. Editable TeX, PDF figures, and the native teaser PPTX are included.
-
-Repository documentation, saved HTML reports, report-generator text, submission records, and the Overleaf README are in English. Older bilingual drafts are preserved locally outside the release. Historical claims that the paper or Sol replication had not yet been completed have been clarified. Experimental values, raw trajectories, source records, checkpoints, and manuscript compilation inputs remain unchanged by the language cleanup.
-
-The minimal Overleaf ZIP has an English README. Its compilation inputs are identical to the independently compiled eight-page manuscript; changing the README does not change layout. Team identity, actual teammate reproduction, and final course submission remain owner tasks. GitHub visibility was verified as public during the English-language audit.
+The current repository contains experiment code, data, saved results, and reproduction instructions. Manuscript files, publication figures, Overleaf packages, and course identity/contribution forms are kept locally outside the tracked release. Documentation and reports are in English. Scientific values, raw trajectories, and trained checkpoints are unchanged.
 
 # Release notes — 2026-10-12
 
@@ -20,4 +16,4 @@ The private-handoff verifier is replaced by the release manifest verifier, and i
 
 Historical report costs/completion assertions apply to their original stage, not the later interrupted routing experiment. The current conservative cumulative cost is $4.8379718, consisting of $4.7896438 response cost and $0.048328 unresolved reservation. No new paid model calls were made for this release.
 
-An automatic replay is not a real teammate's reproduction. The repository is now a public course/research handoff, not an anonymized review supplement or licensed public redistribution of third-party data. The manuscript is now included.
+An automatic replay is not a real teammate's reproduction. The repository is now a public course/research handoff, not an anonymized review supplement or licensed public redistribution of third-party data.

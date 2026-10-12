@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "base_commit": "dea5d10b03fcbbf8886aad8a6d0c7cef69a96a3c",
-  "scope": "English repository documentation, report prose, submission records, and Overleaf README; local bilingual draft archive retained outside Git.",
+  "scope": "English repository documentation and experiment report prose. Manuscript and course-only files are now excluded from the tracked release.",
   "github_visibility": "public",
   "github_about_language": "English",
   "github_open_issues": 0,
@@ -14,8 +14,7 @@
     "study/finalize.py",
     "solstudy/report.py",
     "tools/small_model_pilot.py",
-    "routing/report.py",
-    "tools/package_overleaf.py"
+    "routing/report.py"
   ],
   "HTML_tables_and_quoted_blocks_unchanged": [
     "improvement_results/report.html",
@@ -25,9 +24,6 @@
     "small_model_results/report.html"
   ],
   "protected_experiment_files_verified_unchanged": 10790,
-  "paper_pdf_unchanged": true,
-  "Overleaf_compilation_inputs_unchanged": true,
-  "overleaf_zip_sha256": "00a6ea8ebfbcf16878ec868af1e0ce947d63b4bd827fe37b14e76c9cd24e43c3",
   "new_model_calls": 0,
   "secret_scan": "Passed: known keys and credential patterns absent from release files.",
   "offline_smoke_check": {

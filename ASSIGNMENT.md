@@ -1,4 +1,4 @@
-# Track C submission requirements
+# Track C experiment requirements
 
 The course assignment takes priority. This map summarizes the supplied guide against repository evidence without redistributing the guide itself.
 
@@ -11,23 +11,7 @@ The course assignment takes priority. This map summarizes the supplied guide aga
 | Three seeds for base Bandit/PPO | Seeds 17, 29, 43; 102,400 interactions per run |
 | Discount, entropy, and reward ablations; information/rule sensitivity | `study_results/protocol.json`, `sensitivity_metrics.json`, figures |
 | Both utilities, costs, agreement, breakdown, length, transitions, and learning curves | Tables, raw trajectories, training logs, and figures in `study_results/` |
-| Discourse analysis of at least six episodes | Main Figure 3 and analysis, six quoted synthetic-dialogue cases in Appendix B, transition analysis in Appendix C |
+| Discourse analysis of at least six episodes | `study_results/discourse_walkthroughs.txt`, `small_model_results/outline_matched_discourse.json`, saved action-transition figures and logs |
 | GitHub code, data, and execution instructions | Public repository and offline verification commands |
-| Four pages before References, including Limitations, and editable sources | `paper/main.pdf`, TeX sources, and Overleaf ZIP; author information to be filled in by the owner |
-| Actual teammate reproduction and contributions | Record actual execution in `submission/TEAM_RECORD.txt`; distinct from automated host verification |
 
 PPO does not need to be the best policy. A fixed template/cached language module and Luna with reasoning none are allowed. The planner is an additional comparison, not a replacement for the four required policies. Conference submission or acceptance is not required for course completion. Reviewing 20 discourse turns is recommended; the separately prepared 62-item labeling sheet is optional research material.
-
-## Teammate reproduction record
-
-Distinguish automated replay in fresh Python processes from an actual teammate running the release. Leave fields blank until the work is performed.
-
-```text
-Executor:
-Date / OS / Python / package versions:
-Git commit:
-Commands:
-Verification output files:
-Agreement with saved results / causes of failure:
-Actual contribution:
-```

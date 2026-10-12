@@ -1,9 +1,0 @@
-{
-  "citation_and_reference_check": "passed",
-  "latex_structure_check": "balanced braces and begin/end environments; references resolve",
-  "tables": "generated from stored CSVs; SD recomputed from saved seed means",
-  "intervention_differences_and_discourse_returns": "passed",
-  "pdf_compilation": "not completed: Tectonic bundle not cached and network fetch failed",
-  "visual_layout_and_page_limit": "not verified",
-  "new_paid_model_calls": 0
-}

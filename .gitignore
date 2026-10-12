@@ -19,3 +19,10 @@ paper/template_original/
 submission/overleaf_source/build/
 submission/overleaf_source/main.pdf
 
+
+# Local manuscript and course-submission material; never publish in this repository.
+/paper/
+/submission/
+/tools/package_overleaf.py
+/provenance/SUBMISSION_VERIFICATION.json
+/provenance/SUBMISSION_UPDATE.json
