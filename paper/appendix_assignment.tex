@@ -1,46 +1,48 @@
-\clearpage
-\section{Learning, Transitions, and Rule Sensitivity}
+\onecolumn
+\raggedbottom
+\captionsetup{hypcap=false}
+\section{Diagnostic Results}
 \label{app:diagnostics}
-
-\begin{figure*}[t]
-\centering
-\includegraphics[width=\textwidth]{figures/assignment_transitions.pdf}
-\caption{Within-episode action transitions in the initial test evaluation. A: ambiguity; S: signal; Q: question; O: any offer; R: ratify; W: withdraw. We merge six offer actions, then normalize each count row. Grey rows have no outgoing observations. All panels use the same scale.}
+\begin{center}
+\includegraphics[width=.82\textwidth]{figures/assignment_transitions.pdf}
+\captionof{figure}{Row-normalized initial-test transitions. A: ambiguity; S: signal; Q: question; O: offer; R: ratify; W: withdraw. Grey: no outgoing counts. Learned panels: seed 17. Counts enumerate response paths.}
 \label{fig:course_transitions}
-\end{figure*}
-
-\paragraph{Transition counts and interpretation.}
-Figure~\ref{fig:course_transitions} summarizes saved action sequences, without connecting different episodes. Original eleven-action counts, weighted counts, and row probabilities are released in \texttt{transition\_matrices.json}; the figure's grouped counts accompany the paper. Counts describe enumerated response paths, not independent historical events or their population frequencies. The illustrative learned panels use seed 17.
-
-Base PPO has 2,260 ambiguity-to-ambiguity transitions and 1,528 transitions from a 3:2 offer to ratification. The Bandit has 312 ambiguity repetitions and 672 transitions from 2:1 to ratification. The heuristic frequently moves from a signal to 2:2 (1,224 transitions); the planner often moves from a signal to 1:2 (836). These patterns connect the aggregate results to different strategic paths. In the implemented rules, ambiguity alone changes commitment status, not the counterpart's information response. Repeated ambiguity can therefore use opportunities without resolving uncertainty. The signal-to-offer pattern instead changes acceptance incentives before proposing terms. Frequencies summarize behavior; the matched cases in Appendix~\ref{app:discourse} provide the actual utterances and consequences.
-
-\begin{figure*}[t]
-\centering
-\includegraphics[width=\textwidth]{figures/assignment_learning.pdf}
-\caption{Base PPO training diagnostics for seeds 17, 29, and 43. Return is the training logger's rolling episode mean. Entropy is the negative of the logged entropy loss; value loss is shown without additional smoothing. These are training diagnostics, not held-out performance.}
+\vspace{4pt}
+\includegraphics[width=.82\textwidth]{figures/assignment_learning.pdf}
+\captionof{figure}{Base PPO training: rolling return, entropy, and value loss. Lower loss does not establish better negotiation: base PPO remains below the heuristic on the initial test.}
 \label{fig:course_learning}
-\end{figure*}
+\vspace{4pt}
+{\small\setlength{\tabcolsep}{3.5pt}\input{assignment_metrics_table}\par}
+\captionof{table}{Initial-test metrics, event-group weighted. Own/Other: pre-cost utilities over all outcomes; Break: breakdown rate; $e$: rejection index; Reverse: reversals; Viol.: bilateral acceptance violations.}
+\label{tab:course_metrics}
+\vspace{4pt}
+\end{center}
+\noindent\begin{minipage}[t]{.48\textwidth}
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrr}
+\toprule
+Controller / intervention & Utility & Change \\
+\midrule
+PPO & $.364\pm.016$ & -- \\
+Heuristic & .445 & -- \\
+Distilled only & $.446\pm.011$ & -- \\
+Distilled PPO & $.468\pm.012$ & -- \\
+Without questions & $.467\pm.014$ & $-.001$ \\
+Belief masked & $.427\pm.013$ & $-.041$ \\
+Without signals & $.374\pm.014$ & $-.094$ \\
+Planner & .500 & -- \\
+Planner without questions & .492 & $-.008$ \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Follow-up: 256 conditions, three styles. $\pm$: three-seed SD. Changes use distilled PPO or full planner as reference. Policies are frozen; masking replaces posterior with prior.}
+\label{tab:interventions}
+\par\raggedright\normalsize PPO repeats ambiguity 2,260 times without gaining a type cue. Full counts and probabilities are in \texttt{transition\_matrices.json}.
 
-\paragraph{Learning stability.}
-Training return rises from approximately $-0.14$ to $-0.12$ in the first logged episodes to 0.278, 0.339, and 0.308 at the final checkpoints (Figure~\ref{fig:course_learning}). Policy entropy falls from about 2.40 to 0.152, 0.125, and 0.228. Final value losses are 0.025, 0.028, and 0.039. The policy becomes more concentrated, but low entropy does not establish good negotiation: base PPO asks no questions and sends no signals on the initial test, and remains below the heuristic. Its test utility is $0.358\pm0.018$ across seeds. This motivates adding planner supervision rather than interpreting falling loss as sufficient evidence of success.
-
-\begin{table}[t]
+\end{minipage}\hfill\begin{minipage}[t]{.48\textwidth}
 \centering\small
 \input{assignment_sensitivity_table}
-\caption{One-factor evaluation-only rule shifts. Planner and PPO columns report utility; Questions is the planner's expected question count. PPO averages three frozen seeds. Other parameters are fixed to the reference configuration.}
+\captionof{table}{One-factor rule shifts: utility and expected planner question count. PPO averages three frozen seeds. Other rules stay fixed.}
 \label{tab:course_sensitivity}
-\end{table}
-
-\paragraph{Information and rule sensitivity.}
-Table~\ref{tab:course_sensitivity} separates question reliability from signal strength. The planner asks no question at reliability 0.5 or 0.7 and asks one at 0.9 or 1.0. Higher reliability becomes useful when it changes the preferred path enough to justify the question cost. Increasing the signal effect from 0 to 0.25 raises planner utility from 0.486 to 0.596. Base PPO stays at mean utility 0.410 across these shifts because it uses neither action in these evaluations. The frozen-policy design tests behavior under changed rules; it does not estimate what retraining would learn. Additional hard-type, rejection-cost, and question-cost sweeps are preserved in \texttt{sensitivity\_metrics.json}.
-
-\begin{table*}[t]
-\centering\small
-\setlength{\tabcolsep}{3.5pt}
-\input{assignment_metrics_table}
-\caption{Additional initial-test metrics, averaged with the same event-group weighting as Table~\ref{tab:policies}A. Own and Other are pre-cost utilities averaged over all outcomes. Break is the breakdown rate, Reverse counts commitment reversals, and Viol. counts bilateral-acceptance violations. Escalation $e$ is a designed rejection index.}
-\label{tab:course_metrics}
-\end{table*}
-
-\paragraph{Outcome quality and failure.}
-Table~\ref{tab:course_metrics} reports both parties' utilities, costs, breakdowns, length, escalation, reversals, and violations. The planner's higher own net utility does not imply higher counterpart utility. No reported terminal agreement violates numerical acceptance conditions. The initial evaluation has a weighted infeasible fraction of 4.7\% under canonical offer and signal options, so withdrawal is not automatically a policy error. Initial discount, entropy, and reward-term training interventions are reported in Appendix~\ref{app:training}; their single-seed status is explicit.
+\par\raggedright\normalsize Base PPO uses neither questions nor signals here. Reliable information benefits the planner. Full sweeps are in \texttt{sensitivity\_metrics.json}.
+\end{minipage}

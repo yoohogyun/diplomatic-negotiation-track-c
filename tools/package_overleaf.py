@@ -42,14 +42,16 @@ main.tex: 제목, 초록, Introduction, Related Work
 methods_results.tex: Method, Experimental Setup, Results, 본문 담화분석
 discussion_conclusion.tex: Discussion, Conclusion
 limitations.tex / ethics.tex: 별도 한계 / 윤리
-appendix_experiments.tex: 환경·학습·담화6사례
-appendix_assignment.tex: 필수 과제 실험 진단과 해석
+appendix_experiments.tex: 부록 1쪽 — 핵심 환경·학습 설정과 담화6사례
+appendix_assignment.tex: 부록 2쪽 — 전이행렬·학습곡선·성과/개입/민감도 표
 assignment_*_table.tex: 저장결과에서 생성한 표
 references.bib: 참고문헌
 figures/: 컴파일용 벡터 PDF 그림5개
 
 티저 수정: 별도 제공 teaser_editable_v2.pptx를 PowerPoint에서 편집한 후 PDF로 내보내 figures/teaser.pdf만 교체합니다.
 논문용 수치 수정은 반드시 저장 실험 결과와 대조하세요.
+현재 출력: 본문4쪽 + 한계·윤리·참고문헌2쪽 + 부록2쪽 = 전체8쪽.
+긴 상세 설명은 GitHub paper/supplementary_appendix_full.tex에 별도 보존했습니다.
 
 공식 사용법
 https://www.overleaf.com/learn/latex/Kb/Uploading_a_project

@@ -8,3 +8,5 @@
 7. Numerical results unchanged; one image-generation concept, zero new negotiation model calls.
 
 Submission audit revision: main text remains four pages; total twelve after Ethics, source citation, and Appendix D diagnostics. Source ZIP independently compiled. See submission/SUBMISSION_REVIEW.txt for requirement mapping and remaining user tasks.
+
+Latest revision: appendix condensed to the recommended two pages; total eight pages, main text four. All six discourse cases and principal diagnostics retained. Extracted ZIP independently compiled.

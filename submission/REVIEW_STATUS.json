@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "paper_main_pages": 4,
-  "paper_total_pages": 12,
+  "paper_total_pages": 8,
   "source_zip_compiled_independently": true,
   "overleaf_service_itself_used": false,
   "experimental_results_changed": false,
@@ -22,5 +22,7 @@
     "Additional model family",
     "PPO outperforming heuristic",
     "62-example independent annotation study"
-  ]
+  ],
+  "appendix_pages": 2,
+  "appendix_within_recommended_length": true
 }

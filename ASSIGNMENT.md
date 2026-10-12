@@ -11,7 +11,7 @@
 | Bandit/PPO 기본 3 seeds | 17, 29, 43; 각 102,400 상호작용 |
 | 할인율·entropy·보상 ablation, 정보·규칙 민감도 | `protocol.json`, `sensitivity_metrics.json`, 관련 그림 |
 | 효용·비용·합의·결렬·길이·전이·학습 곡선 | `study_results/` 표, raw, training_logs, 그림 |
-| 최소 6개 에피소드의 담화 분석 | 본문 Figure 3 및 분석, Appendix C의 실제 합성 발화 인용을 포함한 6개 사례; Appendix D의 행동 전이 해석 |
+| 최소 6개 에피소드의 담화 분석 | 본문 Figure 3 및 분석, Appendix B의 실제 합성 발화 인용을 포함한 6개 사례; Appendix C의 행동 전이 해석 |
 | GitHub 코드·자료·실행 절차 | 이 저장소와 오프라인 검증 명령; 비공개이므로 평가자 접근 권한 필요 |
 | 본문 4쪽 및 Limitations, 편집 가능한 논문 소스 | `paper/main.pdf`, `paper/*.tex`, Overleaf ZIP 완료. 저자 정보는 사용자가 기입 |
 | 실제 다른 팀원의 재현과 기여도 | `submission/TEAM_RECORD.txt`에 실제 수행 후 사용자가 기입. 자동 재현과 구별 |

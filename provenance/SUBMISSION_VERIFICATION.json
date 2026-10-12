@@ -56,8 +56,8 @@
   "paper_validation": {
     "engine": "Installed MiKTeX pdfLaTeX; build_paper.py, all four passes exit 0",
     "pdf": "main.pdf",
-    "sha256": "a241c8d9b1c25317f99794bd0edd81ebd9a3cc7df0dbc9f68d36d3031c378497",
-    "total_pages": 12,
+    "sha256": "9085315d153b3614c6297c2c20fa17c1c00a6a542b833fab9b83e71e438312bf",
+    "total_pages": 8,
     "main_text_pages": 4,
     "conclusion_page": 4,
     "first_teaser_page": 2,
@@ -72,7 +72,7 @@
     "unresolved_citations_or_references": false,
     "limitations_words": 136,
     "discussion_conclusion_words": 276,
-    "visual_review": "All 12 final pages rendered at 100 dpi and inspected; no clipping or unintended overlaps.",
+    "visual_review": "Revised appendix pages 7–8 rendered and inspected: no clipping or overlaps; preceding pages retain layout with updated cross-reference numbers.",
     "teaser_creation": "Built-in image generation concept, inspected, then redrawn as native editable PowerPoint shapes and chart using @oai/artifact-tool.",
     "teaser_native_powerpoint_open_and_export": true,
     "teaser_pptx": "figures/teaser_editable_v2.pptx",
@@ -82,11 +82,12 @@
     "teaser_embedded_chart_workbooks": 1,
     "new_negotiation_model_calls": 0,
     "image_generation_calls": 1,
-    "notes": "Course submission audit: explicit step reward, primary corpus citation, ethics, transition/learning/rule sensitivity appendix. Source ZIP independently compiled with identical page text and page count.",
+    "notes": "Appendix shortened from six to two pages. Six discourse cases, transition and learning plots, outcomes, interventions and sensitivity tables retained. Detailed supplement retained separately. Extracted ZIP independently compiled with identical text on all eight pages.",
     "ethics_page": 5,
-    "overleaf_zip_independent_compile": true
+    "overleaf_zip_independent_compile": true,
+    "appendix_pages": 2
   },
-  "source_zip_sha256": "70f9a460d5a4fecb99c996344f2670ccf74f07e7891c7eeaa6e88260bb2f8711",
+  "source_zip_sha256": "64876f33f9521ed3acf0e057fb95f2244773eb75b37884c552a21765c86c8939",
   "secret_scan": "Passed before staging; no scientific archive file changed.",
   "raw_log_audit": {
     "episodes": 92144,
@@ -94,5 +95,5 @@
     "weighted_context_settings": 6768,
     "passed": true
   },
-  "note": "This record was added after the successful 11172-file integrity and replay check; the final manifest adds this record without changing tested artifacts."
+  "note": "Offline tests/replays above were completed before this paper-only appendix shortening. Experiment artifacts are unchanged; updated paper and extracted ZIP compile successfully to eight pages, including two appendix pages."
 }
